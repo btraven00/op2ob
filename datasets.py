@@ -27,11 +27,14 @@ BASE_URL_OPENPROBLEMS = "https://openproblems.bio/"
 
 TASKS = [
     "batch_integration",
-    "cell_cell_communication",
+    "cell_cell_communication_source_targe",
+    "cell_cell_communication_ligand_target",
     "denoising",
     "dimensionality_reduction",
+    # "foundation_models",
     "label_projection",
-    "match_modalities",
+    "matching_modalities",
+    "perturbation_prediction",
     "predict_modality",
     "spatial_decomposition",
     "spatially_variable_genes",
@@ -292,14 +295,91 @@ def save_cache(cache_path, datasets):
         pass  # Ignore cache errors
 
 
+def fetch_task(task):
+    """Download all datasets for a task with confirmation."""
+    # Get list of datasets for the task
+    datasets = list_datasets(task)
+
+    if not datasets:
+        print(f"No datasets found for task '{task}'", file=sys.stderr)
+        return False
+
+    # Calculate totals
+    total_size = sum(d["size"] for d in datasets)
+    total_datasets = len(datasets)
+    total_files = sum(d["file_count"] for d in datasets)
+
+    # Show confirmation prompt with mindful reminder
+    console = Console()
+    console.print(f"\n[bold red]BENCHMARK-LEVEL DOWNLOAD[/bold red]")
+    console.print(f"[bold]Task:[/bold] {task}")
+    console.print(f"[bold]Datasets:[/bold] {total_datasets}")
+    console.print(f"[bold]Total files:[/bold] {total_files}")
+    console.print(f"[bold]Total size:[/bold] {humanize.naturalsize(total_size)}")
+
+    console.print(f"\n[yellow]⚠️  Please be mindful of bandwidth and storage:[/yellow]")
+    console.print(
+        f"[dim]• This will download {humanize.naturalsize(total_size)} of research data[/dim]"
+    )
+    console.print(
+        f"[dim]• Consider downloading individual datasets if you don't need everything[/dim]"
+    )
+    console.print(f"[dim]• Downloads will resume if interrupted[/dim]")
+
+    console.print(f"\n[bold red]Type 'yes I am sure' to proceed:[/bold red]")
+    response = input().strip()
+
+    if response != "yes I am sure":
+        print(
+            "Download cancelled. You must type 'yes I am sure' to proceed.",
+            file=sys.stderr,
+        )
+        return False
+
+    # Download all datasets
+    success_count = 0
+    for i, dataset_info in enumerate(datasets, 1):
+        console.print(
+            f"\n[bold]Dataset {i}/{total_datasets}:[/bold] {dataset_info['name']}"
+        )
+        console.print(
+            f"[dim]Size: {dataset_info['size_human']}, Files: {dataset_info['file_count']}[/dim]"
+        )
+
+        success = fetch_entire_dataset(
+            task, dataset_info["name"], skip_confirmation=True
+        )
+        if success:
+            success_count += 1
+        else:
+            console.print(
+                f"[red]Failed to download dataset {dataset_info['name']}[/red]"
+            )
+
+    # Final summary
+    console.print(f"\n[bold]TASK DOWNLOAD COMPLETE[/bold]")
+    console.print(f"Successfully downloaded: {success_count}/{total_datasets} datasets")
+
+    if success_count == total_datasets:
+        console.print(
+            f"[green]✓ All datasets for '{task}' downloaded successfully![/green]"
+        )
+        return True
+    else:
+        console.print(
+            f"[red]✗ {total_datasets - success_count} datasets failed to download[/red]"
+        )
+        return False
+
+
 def fetch_dataset(task, dataset_name, filename=None):
     """Download and verify files from a dataset."""
     if filename:
         # Download single file
         return fetch_single_file(task, dataset_name, filename)
     else:
-        # Download entire dataset
-        return fetch_entire_dataset(task, dataset_name)
+        # Download entire dataset (with confirmation)
+        return fetch_entire_dataset(task, dataset_name, skip_confirmation=False)
 
 
 def fetch_single_file(task, dataset_name, filename):
@@ -345,8 +425,8 @@ def fetch_single_file(task, dataset_name, filename):
     return success
 
 
-def fetch_entire_dataset(task, dataset_name):
-    """Download all files in a dataset with confirmation."""
+def fetch_entire_dataset(task, dataset_name, skip_confirmation=False):
+    """Download all files in a dataset with optional confirmation."""
     # Get file list (use cache if available)
     cache_path = get_cache_path(task, dataset_name)
     files = load_cache(cache_path)
@@ -364,11 +444,14 @@ def fetch_entire_dataset(task, dataset_name):
     total_size = sum(f["size"] for f in files)
     file_count = len(files)
 
-    # Show confirmation prompt
+    # Initialize console for all cases
     console = Console()
-    console.print(f"\n[bold]Dataset:[/bold] {dataset_name}")
-    console.print(f"[bold]Files:[/bold] {file_count}")
-    console.print(f"[bold]Total size:[/bold] {humanize.naturalsize(total_size)}")
+
+    # Show confirmation prompt only if not skipping
+    if not skip_confirmation:
+        console.print(f"\n[bold]Dataset:[/bold] {dataset_name}")
+        console.print(f"[bold]Files:[/bold] {file_count}")
+        console.print(f"[bold]Total size:[/bold] {humanize.naturalsize(total_size)}")
 
     # Check existing files
     dataset_dir = Path("datasets") / dataset_name
@@ -385,20 +468,21 @@ def fetch_entire_dataset(task, dataset_name):
     else:
         missing_size = total_size
 
-    if existing_files:
-        console.print(f"[dim]Already downloaded: {len(existing_files)} files[/dim]")
+    if not skip_confirmation:
+        if existing_files:
+            console.print(f"[dim]Already downloaded: {len(existing_files)} files[/dim]")
 
-    if missing_size > 0:
-        console.print(
-            f"[yellow]To download: {humanize.naturalsize(missing_size)}[/yellow]"
-        )
+        if missing_size > 0:
+            console.print(
+                f"[yellow]To download: {humanize.naturalsize(missing_size)}[/yellow]"
+            )
 
-        if not Confirm.ask(f"\nProceed with download?"):
-            print("Download cancelled.", file=sys.stderr)
-            return False
-    else:
-        console.print("[green]All files already downloaded![/green]")
-        return True
+            if not Confirm.ask(f"\nProceed with download?"):
+                print("Download cancelled.", file=sys.stderr)
+                return False
+        else:
+            console.print("[green]All files already downloaded![/green]")
+            return True
 
     # Create directory
     dataset_dir.mkdir(parents=True, exist_ok=True)
@@ -454,18 +538,26 @@ def fetch_entire_dataset(task, dataset_name):
 
 def print_usage():
     print("Usage:")
+    print("  python datasets.py list [--json]")
     print("  python datasets.py list <task> [--json]")
     print("  python datasets.py list <task> <dataset> [--json]")
+    print("  python datasets.py fetch <task>")
     print("  python datasets.py fetch <task> <dataset> [<filename>]")
     print()
     print("Examples:")
+    print("  # List all available tasks")
+    print("  python datasets.py list")
+    print()
     print("  # List all datasets for a task")
     print("  python datasets.py list denoising")
     print()
     print("  # List files in a specific dataset")
     print("  python datasets.py list denoising cellxgene_census/dkd/log_cp10k")
     print()
-    print("  # Download entire dataset")
+    print("  # Download ALL datasets for a task (with confirmation)")
+    print("  python datasets.py fetch denoising")
+    print()
+    print("  # Download single dataset")
     print("  python datasets.py fetch denoising cellxgene_census/dkd/log_cp10k")
     print()
     print("  # Download single file from dataset")
@@ -490,9 +582,23 @@ if __name__ == "__main__":
         args = [arg for arg in sys.argv[2:] if arg != "--json"]
         json_output = "--json" in sys.argv
 
-        if len(args) not in [1, 2]:
+        if len(args) == 0:
+            # Show available tasks
+            if json_output:
+                print(json.dumps(TASKS, indent=2))
+            else:
+                console = Console()
+                table = Table(title="Available Tasks")
+                table.add_column("Task", style="cyan")
+
+                for task in TASKS:
+                    table.add_row(task)
+
+                console.print(table)
+            sys.exit(0)
+        elif len(args) not in [1, 2]:
             print(
-                "Usage: python datasets.py list <task> [<dataset>] [--json]",
+                "Usage: python datasets.py list [<task>] [<dataset>] [--json]",
                 file=sys.stderr,
             )
             sys.exit(1)
@@ -559,15 +665,15 @@ if __name__ == "__main__":
             sys.exit(1)
 
     elif command == "fetch":
-        if len(sys.argv) not in [4, 5]:
+        if len(sys.argv) not in [3, 4, 5]:
             print(
-                "Usage: python datasets.py fetch <task> <dataset> [<filename>]",
+                "Usage: python datasets.py fetch <task> [<dataset>] [<filename>]",
                 file=sys.stderr,
             )
             sys.exit(1)
 
         task = sys.argv[2]
-        dataset = sys.argv[3]
+        dataset = sys.argv[3] if len(sys.argv) >= 4 else None
         filename = sys.argv[4] if len(sys.argv) == 5 else None
 
         if task not in TASKS:
@@ -576,7 +682,12 @@ if __name__ == "__main__":
             sys.exit(1)
 
         try:
-            success = fetch_dataset(task, dataset, filename)
+            if dataset is None:
+                # Download entire task
+                success = fetch_task(task)
+            else:
+                # Download specific dataset/file
+                success = fetch_dataset(task, dataset, filename)
             sys.exit(0 if success else 1)
         except Exception as e:
             print(f"Error: {e}", file=sys.stderr)
