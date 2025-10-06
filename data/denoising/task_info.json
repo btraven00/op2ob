@@ -1,0 +1,6 @@
+{
+  "taskId": "denoising",
+  "taskName": "Denoising",
+  "taskSummary": "Removing noise in sparse single-cell RNA-sequencing count data",
+  "taskDescription": "\nSingle-cell RNA-Seq protocols only detect a fraction of the mRNA molecules present\nin each cell. As a result, the measurements (UMI counts) observed for each gene and each\ncell are associated with generally high levels of technical noise ([Grün et al.,\n2014](https://openproblems.bio/bibliography#grn2014validation)). Denoising describes the\ntask of estimating the true expression level of each gene in each cell. In the\nsingle-cell literature, this task is also referred to as *imputation*, a term which is\ntypically used for missing data problems in statistics. Similar to the use of the terms\n\\"
+}

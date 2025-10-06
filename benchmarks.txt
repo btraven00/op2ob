@@ -1,0 +1,12 @@
+batch_integration
+cell_cell_communication_source_target
+cell_cell_communication_ligand_target
+denoising
+dimensionality_reduction
+foundation_models
+label_projection
+matching_modalities
+perturbation_prediction
+predict_modality
+spatial_decomposition
+spatially_variable_genes
