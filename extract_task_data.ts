@@ -62,7 +62,7 @@ async function extractTaskData(
   const resultsJson = jsToJson(`[${resultMatches.join(",")}]`);
 
   // Create output directory
-  const outputDir = `data/${benchmarkName}`;
+  const outputDir = `metadata/${benchmarkName}`;
   await Deno.mkdir(outputDir, { recursive: true });
 
   // Save files
