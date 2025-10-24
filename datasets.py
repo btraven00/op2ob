@@ -27,7 +27,7 @@ BASE_URL_OPENPROBLEMS = "https://openproblems.bio/"
 
 TASKS = [
     "batch_integration",
-    "cell_cell_communication_source_targe",
+    "cell_cell_communication_source_target",
     "cell_cell_communication_ligand_target",
     "denoising",
     "dimensionality_reduction",
@@ -40,6 +40,17 @@ TASKS = [
     "spatially_variable_genes",
 ]
 
+# Map task names to their S3 paths (for tasks where they differ)
+TASK_TO_S3_PATH = {
+    "cell_cell_communication_source_target": "cell_cell_communication",
+    "cell_cell_communication_ligand_target": "cell_cell_communication",
+}
+
+
+def get_s3_task_path(task):
+    """Get the S3 path for a task, handling special cases where task name != S3 path."""
+    return TASK_TO_S3_PATH.get(task, task)
+
 
 def list_datasets(task, dataset_name=None):
     """List all datasets for a given task, or files in a specific dataset."""
@@ -50,9 +61,12 @@ def list_datasets(task, dataset_name=None):
         if cached:
             return cached
 
+    # Get the S3 path for this task (may differ from task name)
+    s3_task = get_s3_task_path(task)
+
     params = {
         "list-type": "2",
-        "prefix": f"resources/{task}/datasets/",
+        "prefix": f"resources/{s3_task}/datasets/",
         "max-keys": "1000",
     }
 
@@ -72,7 +86,7 @@ def list_datasets(task, dataset_name=None):
                 key = key_elem.text
                 if not key.endswith("/"):  # Skip directories
                     # Extract dataset path: everything between datasets/ and filename
-                    prefix = f"resources/{task}/datasets/"
+                    prefix = f"resources/{s3_task}/datasets/"
                     if key.startswith(prefix):
                         relative_path = key[len(prefix) :]
                         # Get directory path (everything except filename)
@@ -109,7 +123,7 @@ def list_datasets(task, dataset_name=None):
     else:
         # Return all files for the specific dataset
         files = []
-        dataset_prefix = f"resources/{task}/datasets/{dataset_name}/"
+        dataset_prefix = f"resources/{s3_task}/datasets/{dataset_name}/"
 
         for content in root.findall(".//s3:Contents", ns):
             key_elem = content.find("s3:Key", ns)
