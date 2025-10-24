@@ -1,1 +1,66 @@
-[{"image":"https://github.com/openproblems-bio/openproblems/pkgs/container/openproblems","task_id":"label_projection","maximize": true,"metric_id":"accuracy","commit_sha":"b3456fd73c04c28516f6df34c57e6e3e8b0dab32","references":"grandini2020metrics","metric_name":"Accuracy","code_version":"v1.0.0","metric_summary":"Average number of correctly applied labels.","paper_reference":"grandini2020metrics","implementation_url":"https://github.com/openproblems-bio/openproblems/blob/v1.0.0/openproblems/tasks/label_projection/metrics/accuracy.py"},{"image":"https://github.com/openproblems-bio/openproblems/pkgs/container/openproblems","task_id":"label_projection","maximize": true,"metric_id":"f1","commit_sha":"b3456fd73c04c28516f6df34c57e6e3e8b0dab32","references":"grandini2020metrics","metric_name":"F1 score","code_version":"v1.0.0","metric_summary":"The [F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) is a weighted average of the precision and recall over all class labels, where an F1 score reaches its best value at 1 and worst score at 0, where each class contributes to the score relative to its frequency in the dataset.","paper_reference":"grandini2020metrics","implementation_url":"https://github.com/openproblems-bio/openproblems/blob/v1.0.0/openproblems/tasks/label_projection/metrics/f1.py"},{"image":"https://github.com/openproblems-bio/openproblems/pkgs/container/openproblems","task_id":"label_projection","maximize": true,"metric_id":"f1_macro","commit_sha":"b3456fd73c04c28516f6df34c57e6e3e8b0dab32","references":"grandini2020metrics","metric_name":"Macro F1 score","code_version":"v1.0.0","metric_summary":"The macro F1 score is an unweighted F1 score, where each class contributes equally, regardless of its frequency.","paper_reference":"grandini2020metrics","implementation_url":"https://github.com/openproblems-bio/openproblems/blob/v1.0.0/openproblems/tasks/label_projection/metrics/f1.py"}]
+{
+  "accuracy": {
+    "image": "https://ghcr.io/openproblems-bio/task_label_projection/metrics/accuracy:build_main",
+    "task_id": "metrics",
+    "maximize": true,
+    "metric_id": "accuracy",
+    "commit_sha": "f52ca0a9c28a6dc72520871de56ed3102c87c840",
+    "references": "grandini2020metrics",
+    "metric_name": "Accuracy",
+    "code_version": "build_main",
+    "component_name": "accuracy",
+    "metric_summary": "The percentage of correctly predicted labels.",
+    "references_doi": "10.48550/arxiv.2008.05756",
+    "references_bibtex": {},
+    "implementation_url": "https://github.com/openproblems-bio/task_label_projection/blob/f52ca0a9c28a6dc72520871de56ed3102c87c840/src/metrics/accuracy",
+    "metric_description": "The percentage of correctly predicted labels."
+  },
+  "f1_macro": {
+    "image": "https://ghcr.io/openproblems-bio/task_label_projection/metrics/f1:build_main",
+    "task_id": "metrics",
+    "maximize": true,
+    "metric_id": "f1_macro",
+    "commit_sha": "f52ca0a9c28a6dc72520871de56ed3102c87c840",
+    "references": "grandini2020metrics",
+    "metric_name": "F1 macro",
+    "code_version": "build_main",
+    "component_name": "f1",
+    "metric_summary": "Unweighted mean of each label F1-score",
+    "references_doi": "10.48550/arxiv.2008.05756",
+    "references_bibtex": {},
+    "implementation_url": "https://github.com/openproblems-bio/task_label_projection/blob/f52ca0a9c28a6dc72520871de56ed3102c87c840/src/metrics/f1",
+    "metric_description": "Calculates the F1 score for each label, and find their unweighted mean. This does not take label imbalance into account."
+  },
+  "f1_micro": {
+    "image": "https://ghcr.io/openproblems-bio/task_label_projection/metrics/f1:build_main",
+    "task_id": "metrics",
+    "maximize": true,
+    "metric_id": "f1_micro",
+    "commit_sha": "f52ca0a9c28a6dc72520871de56ed3102c87c840",
+    "references": "grandini2020metrics",
+    "metric_name": "F1 micro",
+    "code_version": "build_main",
+    "component_name": "f1",
+    "metric_summary": "Calculation of TP, FN and FP.",
+    "references_doi": "10.48550/arxiv.2008.05756",
+    "references_bibtex": {},
+    "implementation_url": "https://github.com/openproblems-bio/task_label_projection/blob/f52ca0a9c28a6dc72520871de56ed3102c87c840/src/metrics/f1",
+    "metric_description": "Calculates the F1 score globally by counting the total true positives, false negatives and false positives."
+  },
+  "f1_weighted": {
+    "image": "https://ghcr.io/openproblems-bio/task_label_projection/metrics/f1:build_main",
+    "task_id": "metrics",
+    "maximize": true,
+    "metric_id": "f1_weighted",
+    "commit_sha": "f52ca0a9c28a6dc72520871de56ed3102c87c840",
+    "references": "grandini2020metrics",
+    "metric_name": "F1 weighted",
+    "code_version": "build_main",
+    "component_name": "f1",
+    "metric_summary": "Average weigthed support between each labels F1 score",
+    "references_doi": "10.48550/arxiv.2008.05756",
+    "references_bibtex": {},
+    "implementation_url": "https://github.com/openproblems-bio/task_label_projection/blob/f52ca0a9c28a6dc72520871de56ed3102c87c840/src/metrics/f1",
+    "metric_description": "Calculates the F1 score for each label, and find their average weighted by support (the number of true instances for each label). This alters 'macro' to account for label imbalance; it can result in an F-score that is not between precision and recall."
+  }
+}

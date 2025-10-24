@@ -1,6 +1,6 @@
 {
   "taskId": "label_projection",
-  "taskName": "Label Projection",
+  "taskName": "Label projection",
   "taskSummary": "Automated cell type annotation from rich, labeled reference data",
-  "taskDescription": "\nA major challenge for integrating single cell datasets is creating matching cell type\nannotations for each cell. One of the most common strategies for annotating cell types\nis referred to as\n[\\"
+  "taskDescription": "A major challenge for integrating single cell datasets is creating matching\ncell type annotations for each cell. One of the most common strategies for\nannotating cell types is referred to as\n[\\"
 }

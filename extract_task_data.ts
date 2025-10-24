@@ -1,8 +1,10 @@
 #!/usr/bin/env -S deno run --allow-net --allow-write
 
 function getVersionForBenchmark(benchmarkName: string): string {
+  // by default, return v1.0.0
   const versionMap: Record<string, string> = {
     batch_integration: "v2.0.0",
+    label_projection: "v2.0.0",
     // Add more benchmark-specific versions here as needed
   };
 

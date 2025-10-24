@@ -1,1 +1,26 @@
-[{"image":"openproblems-r-extras","task_id":"cell_cell_communication_ligand_target","data_url":"https://figshare.com/ndownloader/files/37593188","commit_sha":"9d1665076cf6215a31f89ed2be8be20a02502887","dataset_id":"tnbc_data","dataset_name":"Triple negative breast cancer atlas","data_reference":"wu2021single","dataset_summary":"Human breast cancer atlas (Wu et al., 2021), with cytokine activities, inferred using a multivariate linear model with cytokine-focused signatures, as assumed true cell-cell communication (Dimitrov et al., 2022). 42512 cells x 28078 features with 29 cell types from 10 patients","source_dataset_id":"openproblems_v1/tnbc_wu2021","implementation_url":"https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/_cell_cell_communication/cell_cell_communication_ligand_target/datasets/tnbc_wu2021.py"}]
+{
+  "tnbc_data": {
+    "task_id": "cell_cell_communication_ligand_target",
+    "method_id": "magnitude_sum",
+    "resources": {
+      "cpu_pct": 99.9,
+      "disk_read_mb": 1300,
+      "duration_sec": 7680,
+      "disk_write_mb": 1700,
+      "peak_memory_mb": 101800
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tnbc_data",
+    "mean_score": 0.0853,
+    "code_version": "0.1.9",
+    "metric_values": {
+      "auprc": 0.218,
+      "odds_ratio": 0.4623
+    },
+    "scaled_scores": {
+      "auprc": -0.0305,
+      "odds_ratio": 0.2012
+    },
+    "submission_time": "2023-02-21 21:57:52.028"
+  }
+}

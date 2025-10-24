@@ -1,1 +1,26 @@
-[{"image":"openproblems-r-extras","task_id":"cell_cell_communication_source_target","data_url":"https://figshare.com/ndownloader/files/36509385","commit_sha":"9d1665076cf6215a31f89ed2be8be20a02502887","dataset_id":"mouse_brain_atlas","dataset_name":"Mouse brain atlas","data_reference":"tasic2016adult","dataset_summary":"A murine brain atlas with adjacent cell types as assumed benchmark truth, inferred from deconvolution proportion correlations using matching 10x Visium slides (see Dimitrov et al., 2022). 14249 cells x 34617 features with 23 cell type labels.","source_dataset_id":"openproblems_v1/allen_brain_atlas","implementation_url":"https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/_cell_cell_communication/cell_cell_communication_source_target/datasets/allen_brain_atlas.py"}]
+{
+  "mouse_brain_atlas": {
+    "task_id": "cell_cell_communication_source_target",
+    "method_id": "cellphonedb_max",
+    "resources": {
+      "cpu_pct": 100,
+      "disk_read_mb": 2000,
+      "duration_sec": 8101,
+      "disk_write_mb": 2800,
+      "peak_memory_mb": 116900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_brain_atlas",
+    "mean_score": 0.3862,
+    "code_version": "0.1.9",
+    "metric_values": {
+      "auprc": 0.1101,
+      "odds_ratio": 0.7845
+    },
+    "scaled_scores": {
+      "auprc": 0.0698,
+      "odds_ratio": 0.7026
+    },
+    "submission_time": "2023-02-21 21:49:51.550"
+  }
+}
