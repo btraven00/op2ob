@@ -70,15 +70,6 @@ async function extractTaskData(benchmarkName: string, version?: string) {
 
   const response = await fetch(url);
   const html = await response.text();
-  console.log(`HTML length: ${html.length} characters`);
-
-  // Debug: Show a sample of the HTML to understand structure
-  const sampleStart =
-    html.indexOf("method_id") !== -1 ? html.indexOf("method_id") : 0;
-  console.log(
-    `HTML sample around method_id:`,
-    html.substring(sampleStart, sampleStart + 200),
-  );
 
   // Extract task basic info
   const taskIdMatch = html.match(/taskId:"([^"]*)"/);
@@ -120,10 +111,6 @@ async function extractTaskData(benchmarkName: string, version?: string) {
   const methodRegex =
     /\{(?=(?:[^{}]|\{[^{}]*\})*task_id:"(?:methods|control_methods)")(?=(?:[^{}]|\{[^{}]*\})*method_id:"[^"]*")(?:[^{}]|\{[^{}]*\})*\}/g;
   const methodMatches = html.match(methodRegex) || [];
-  console.log(
-    `Found ${methodMatches.length} method matches:`,
-    methodMatches.slice(0, 2),
-  );
   const methodsJsonRaw = jsToJson(`[${methodMatches.join(",")}]`);
   let methodsJson = methodsJsonRaw;
   if (isV2) {
@@ -133,9 +120,6 @@ async function extractTaskData(benchmarkName: string, version?: string) {
         new Map(parsed.map((m: any) => [m.method_id, m])).values(),
       );
       methodsJson = JSON.stringify(deduped, null, 2);
-      console.log(
-        `Deduplicated methods (v2): from ${parsed.length} to ${deduped.length}`,
-      );
     } catch (e) {
       console.log("Warning: failed to parse methodsJson for deduplication:", e);
     }
@@ -145,30 +129,18 @@ async function extractTaskData(benchmarkName: string, version?: string) {
   const metricRegex =
     /\{(?=(?:[^{}]|\{[^{}]*\})*task_id:"metrics")(?=(?:[^{}]|\{[^{}]*\})*metric_id:"[^"]*")(?:[^{}]|\{[^{}]*\})*\}/g;
   const metricMatches = html.match(metricRegex) || [];
-  console.log(
-    `Found ${metricMatches.length} metric matches:`,
-    metricMatches.slice(0, 2),
-  );
   const metricsJson = jsToJson(`[${metricMatches.join(",")}]`);
 
   // Extract dataset data
   const datasetRegex =
     /\{(?=(?:[^{}]|\{[^{}]*\})*dataset_id:"[^"]*")(?:[^{}]|\{[^{}]*\})*\}/g;
   const datasetMatches = html.match(datasetRegex) || [];
-  console.log(
-    `Found ${datasetMatches.length} dataset matches:`,
-    datasetMatches.slice(0, 2),
-  );
   const datasetsJson = jsToJson(`[${datasetMatches.join(",")}]`);
 
   // Extract results data (objects with method_id, dataset_id, and mean_score)
   const resultRegex =
     /\{(?=(?:[^{}]|\{[^{}]*\})*method_id:"[^"]*")(?=(?:[^{}]|\{[^{}]*\})*dataset_id:"[^"]*")(?=(?:[^{}]|\{[^{}]*\})*mean_score:)(?:[^{}]|\{[^{}]*\})*\}/g;
   const resultMatches = html.match(resultRegex) || [];
-  console.log(
-    `Found ${resultMatches.length} result matches:`,
-    resultMatches.slice(0, 2),
-  );
   const resultsJson = jsToJson(`[${resultMatches.join(",")}]`);
 
   // Create output directory
