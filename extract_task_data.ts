@@ -131,9 +131,9 @@ async function extractTaskData(benchmarkName: string, version?: string) {
   const metricMatches = html.match(metricRegex) || [];
   const metricsJson = jsToJson(`[${metricMatches.join(",")}]`);
 
-  // Extract dataset data
+  // Extract dataset data (exclude objects with method_id to avoid capturing results)
   const datasetRegex =
-    /\{(?=(?:[^{}]|\{[^{}]*\})*dataset_id:"[^"]*")(?:[^{}]|\{[^{}]*\})*\}/g;
+    /\{(?=(?:[^{}]|\{[^{}]*\})*dataset_id:"[^"]*")(?!(?:[^{}]|\{[^{}]*\})*method_id:)(?:[^{}]|\{[^{}]*\})*\}/g;
   const datasetMatches = html.match(datasetRegex) || [];
   const datasetsJson = jsToJson(`[${datasetMatches.join(",")}]`);
 

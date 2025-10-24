@@ -1,86 +1,68 @@
 {
   "openproblems_neurips2021/bmmc_cite/swap": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-11-25 13:45:55",
-      "cpu_pct": 329,
-      "exit_code": 0,
-      "disk_read_mb": 64,
-      "duration_sec": 4,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 1434
-    },
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194122",
+    "file_size": 13467880,
     "dataset_id": "openproblems_neurips2021/bmmc_cite/swap",
-    "metric_component_name": "mse"
+    "dataset_name": "NeurIPS2021 CITE-Seq (ADT2GEX)",
+    "date_created": "25-11-2024",
+    "data_reference": "luecken2021neurips",
+    "dataset_summary": "Single-cell CITE-Seq (GEX+ADT) data collected from bone marrow mononuclear cells of 12 healthy human donors.",
+    "common_dataset_id": "openproblems_neurips2021/bmmc_cite",
+    "dataset_description": "Single-cell CITE-Seq data collected from bone marrow mononuclear cells of 12 healthy human donors using the 10X 3 prime Single-Cell Gene Expression kit with Feature Barcoding in combination with the BioLegend TotalSeq B Universal Human Panel v1.0. The dataset was generated to support Multimodal Single-Cell Data Integration Challenge at NeurIPS 2021. Samples were prepared using a standard protocol at four sites. The resulting data was then annotated to identify cell types and remove doublets. The dataset was designed with a nested batch layout such that some donor samples were measured at multiple sites with some donors measured at a single site."
   },
   "openproblems_neurips2021/bmmc_cite/normal": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-11-25 13:47:35",
-      "cpu_pct": 64.6,
-      "exit_code": 0,
-      "disk_read_mb": 38,
-      "duration_sec": 13.4,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 1536
-    },
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194122",
+    "file_size": 704994,
     "dataset_id": "openproblems_neurips2021/bmmc_cite/normal",
-    "metric_component_name": "mse"
+    "dataset_name": "NeurIPS2021 CITE-Seq (GEX2ADT)",
+    "date_created": "25-11-2024",
+    "data_reference": "luecken2021neurips",
+    "dataset_summary": "Single-cell CITE-Seq (GEX+ADT) data collected from bone marrow mononuclear cells of 12 healthy human donors.",
+    "common_dataset_id": "openproblems_neurips2021/bmmc_cite",
+    "dataset_description": "Single-cell CITE-Seq data collected from bone marrow mononuclear cells of 12 healthy human donors using the 10X 3 prime Single-Cell Gene Expression kit with Feature Barcoding in combination with the BioLegend TotalSeq B Universal Human Panel v1.0. The dataset was generated to support Multimodal Single-Cell Data Integration Challenge at NeurIPS 2021. Samples were prepared using a standard protocol at four sites. The resulting data was then annotated to identify cell types and remove doublets. The dataset was designed with a nested batch layout such that some donor samples were measured at multiple sites with some donors measured at a single site."
   },
   "openproblems_neurips2021/bmmc_multiome/swap": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-11-25 13:50:15",
-      "cpu_pct": 409,
-      "exit_code": 0,
-      "disk_read_mb": 52,
-      "duration_sec": 3.2,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 1434
-    },
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194122",
+    "file_size": 7883109,
     "dataset_id": "openproblems_neurips2021/bmmc_multiome/swap",
-    "metric_component_name": "mse"
+    "dataset_name": "NeurIPS2021 Multiome (ATAC2GEX)",
+    "date_created": "25-11-2024",
+    "data_reference": "luecken2021neurips",
+    "dataset_summary": "Single-cell Multiome (GEX+ATAC) data collected from bone marrow mononuclear cells of 12 healthy human donors.",
+    "common_dataset_id": "openproblems_neurips2021/bmmc_multiome",
+    "dataset_description": "Single-cell CITE-Seq data collected from bone marrow mononuclear cells of 12 healthy human donors using the 10X Multiome Gene Expression and Chromatin Accessibility kit. The dataset was generated to support Multimodal Single-Cell Data Integration Challenge at NeurIPS 2021. Samples were prepared using a standard protocol at four sites. The resulting data was then annotated to identify cell types and remove doublets. The dataset was designed with a nested batch layout such that some donor samples were measured at multiple sites with some donors measured at a single site."
   },
   "openproblems_neurips2021/bmmc_multiome/normal": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-11-25 13:46:35",
-      "cpu_pct": 76.1,
-      "exit_code": 0,
-      "disk_read_mb": 96,
-      "duration_sec": 28.2,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 2765
-    },
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194122",
+    "file_size": 31080807,
     "dataset_id": "openproblems_neurips2021/bmmc_multiome/normal",
-    "metric_component_name": "mse"
+    "dataset_name": "NeurIPS2021 Multiome (GEX2ATAC)",
+    "date_created": "25-11-2024",
+    "data_reference": "luecken2021neurips",
+    "dataset_summary": "Single-cell Multiome (GEX+ATAC) data collected from bone marrow mononuclear cells of 12 healthy human donors.",
+    "common_dataset_id": "openproblems_neurips2021/bmmc_multiome",
+    "dataset_description": "Single-cell CITE-Seq data collected from bone marrow mononuclear cells of 12 healthy human donors using the 10X Multiome Gene Expression and Chromatin Accessibility kit. The dataset was generated to support Multimodal Single-Cell Data Integration Challenge at NeurIPS 2021. Samples were prepared using a standard protocol at four sites. The resulting data was then annotated to identify cell types and remove doublets. The dataset was designed with a nested batch layout such that some donor samples were measured at multiple sites with some donors measured at a single site."
   },
   "openproblems_neurips2022/pbmc_cite/swap": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-11-25 13:48:35",
-      "cpu_pct": 160.9,
-      "exit_code": 0,
-      "disk_read_mb": 100,
-      "duration_sec": 6,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 1536
-    },
+    "data_url": "https://www.kaggle.com/competitions/open-problems-multimodal/data",
+    "file_size": 32551804,
     "dataset_id": "openproblems_neurips2022/pbmc_cite/swap",
-    "metric_component_name": "mse"
+    "dataset_name": "OpenProblems NeurIPS2022 CITE-Seq (ADT2GEX)",
+    "date_created": "25-11-2024",
+    "data_reference": "lance2024predicting",
+    "dataset_summary": "Single-cell CITE-Seq (GEX+ADT) data collected from bone marrow mononuclear cells of 12 healthy human donors.",
+    "common_dataset_id": "openproblems_neurips2022/pbmc_cite",
+    "dataset_description": "Single-cell CITE-Seq data collected from bone marrow mononuclear cells of 12 healthy human donors using the 10X 3 prime Single-Cell Gene Expression kit with Feature Barcoding in combination with the BioLegend TotalSeq B Universal Human Panel v1.0. The dataset was generated to support Multimodal Single-Cell Data Integration Challenge at NeurIPS 2022. Samples were prepared using a standard protocol at four sites. The resulting data was then annotated to identify cell types and remove doublets. The dataset was designed with a nested batch layout such that some donor samples were measured at multiple sites with some donors measured at a single site."
   },
   "openproblems_neurips2022/pbmc_cite/normal": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-11-25 13:51:45",
-      "cpu_pct": 222.9,
-      "exit_code": 0,
-      "disk_read_mb": 38,
-      "duration_sec": 3.8,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 774
-    },
+    "data_url": "https://www.kaggle.com/competitions/open-problems-multimodal/data",
+    "file_size": 591886,
     "dataset_id": "openproblems_neurips2022/pbmc_cite/normal",
-    "metric_component_name": "mse"
+    "dataset_name": "OpenProblems NeurIPS2022 CITE-Seq (GEX2ADT)",
+    "date_created": "25-11-2024",
+    "data_reference": "lance2024predicting",
+    "dataset_summary": "Single-cell CITE-Seq (GEX+ADT) data collected from bone marrow mononuclear cells of 12 healthy human donors.",
+    "common_dataset_id": "openproblems_neurips2022/pbmc_cite",
+    "dataset_description": "Single-cell CITE-Seq data collected from bone marrow mononuclear cells of 12 healthy human donors using the 10X 3 prime Single-Cell Gene Expression kit with Feature Barcoding in combination with the BioLegend TotalSeq B Universal Human Panel v1.0. The dataset was generated to support Multimodal Single-Cell Data Integration Challenge at NeurIPS 2022. Samples were prepared using a standard protocol at four sites. The resulting data was then annotated to identify cell types and remove doublets. The dataset was designed with a nested batch layout such that some donor samples were measured at multiple sites with some donors measured at a single site."
   }
 }

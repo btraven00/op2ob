@@ -1,156 +1,86 @@
 {
   "destvi": {
+    "image": "openproblems-python-pytorch",
     "task_id": "spatial_decomposition",
-    "method_id": "destvi",
-    "resources": {
-      "cpu_pct": 2259.9,
-      "disk_read_mb": 493.8,
-      "duration_sec": 23700,
-      "disk_write_mb": 28.4,
-      "peak_memory_mb": 22200
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/master/simulations/make_dataset.py",
+    "commit_sha": "b3456fd73c04c28516f6df34c57e6e3e8b0dab32",
     "dataset_id": "destvi",
-    "mean_score": 0.9109,
-    "code_version": "0.20.0",
-    "metric_values": {
-      "r2": 0.8903
-    },
-    "scaled_scores": {
-      "r2": 0.9109
-    },
-    "submission_time": "2023-02-22 08:08:32.187"
+    "dataset_name": "DestVI",
+    "data_reference": "lopez2022destvi",
+    "dataset_summary": "scRNA-seq is generated based on learn NB parameters from the destVI manuscripts leveraging sparsePCA. Number of cells and cell types present in each spatial spot is computed via combination of kernel-based parametrization of a categorical distribution and the NB model.",
+    "source_dataset_id": "openproblems_v1/destvi",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/destvi/generate.py"
   },
   "pancreas_alpha_0_5": {
+    "image": "openproblems",
     "task_id": "spatial_decomposition",
-    "method_id": "cell2location_detection_alpha_1",
-    "resources": {
-      "cpu_pct": 1345.2,
-      "disk_read_mb": 240.1,
-      "duration_sec": 21590,
-      "disk_write_mb": 15,
-      "peak_memory_mb": 3400
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/36086813",
+    "commit_sha": "c2470ce02e6f196267cec1c554ba7ae389c0956a",
     "dataset_id": "pancreas_alpha_0_5",
-    "mean_score": 0.9241,
-    "code_version": "0.1.3",
-    "metric_values": {
-      "r2": 0.8725
-    },
-    "scaled_scores": {
-      "r2": 0.9241
-    },
-    "submission_time": "2023-02-21 23:16:32.009"
+    "dataset_name": "Pancreas (alpha=0.5)",
+    "data_reference": "luecken2022benchmarking",
+    "dataset_summary": "Human pancreas cells aggregated from single-cell (Dirichlet alpha=0.5)",
+    "source_dataset_id": "openproblems_v1/pancreas",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/pancreas.py"
   },
   "pancreas_alpha_1": {
+    "image": "openproblems",
     "task_id": "spatial_decomposition",
-    "method_id": "cell2location_detection_alpha_1",
-    "resources": {
-      "cpu_pct": 1342.5,
-      "disk_read_mb": 240.1,
-      "duration_sec": 9880,
-      "disk_write_mb": 15,
-      "peak_memory_mb": 4900
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/36086813",
+    "commit_sha": "c2470ce02e6f196267cec1c554ba7ae389c0956a",
     "dataset_id": "pancreas_alpha_1",
-    "mean_score": 0.9004,
-    "code_version": "0.1.3",
-    "metric_values": {
-      "r2": 0.8249
-    },
-    "scaled_scores": {
-      "r2": 0.9004
-    },
-    "submission_time": "2023-02-21 23:01:42.511"
+    "dataset_name": "Pancreas (alpha=1)",
+    "data_reference": "luecken2022benchmarking",
+    "dataset_summary": "Human pancreas cells aggregated from single-cell (Dirichlet alpha=1)",
+    "source_dataset_id": "openproblems_v1/pancreas",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/pancreas.py"
   },
   "pancreas_alpha_5": {
+    "image": "openproblems",
     "task_id": "spatial_decomposition",
-    "method_id": "cell2location_amortised_detection_alpha_20",
-    "resources": {
-      "cpu_pct": 1904.8,
-      "disk_read_mb": 240,
-      "duration_sec": 25550,
-      "disk_write_mb": 47.5,
-      "peak_memory_mb": 17900
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/36086813",
+    "commit_sha": "c2470ce02e6f196267cec1c554ba7ae389c0956a",
     "dataset_id": "pancreas_alpha_5",
-    "mean_score": 0.8584,
-    "code_version": "0.1.3",
-    "metric_values": {
-      "r2": 0.6453
-    },
-    "scaled_scores": {
-      "r2": 0.8584
-    },
-    "submission_time": "2023-02-21 23:18:32.401"
+    "dataset_name": "Pancreas (alpha=5)",
+    "data_reference": "luecken2022benchmarking",
+    "dataset_summary": "Human pancreas cells aggregated from single-cell (Dirichlet alpha=5)",
+    "source_dataset_id": "openproblems_v1/pancreas",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/pancreas.py"
   },
   "tabula_muris_senis_alpha_0_5": {
+    "image": "openproblems",
     "task_id": "spatial_decomposition",
-    "method_id": "destvi",
-    "resources": {
-      "cpu_pct": 2316.3,
-      "disk_read_mb": 307,
-      "duration_sec": 13145,
-      "disk_write_mb": 7.7,
-      "peak_memory_mb": 16400
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://tabula-muris-senis.ds.czbiohub.org/",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "tabula_muris_senis_alpha_0_5",
-    "mean_score": 0.8065,
-    "code_version": "0.20.0",
-    "metric_values": {
-      "r2": 0.4776
-    },
-    "scaled_scores": {
-      "r2": 0.8065
-    },
-    "submission_time": "2023-02-21 23:00:57.250"
+    "dataset_name": "Tabula muris senis (alpha=0.5)",
+    "data_reference": "tabula2020single",
+    "dataset_summary": "Mouse lung cells aggregated from single-cell (Dirichlet alpha=0.5)",
+    "source_dataset_id": "openproblems_v1/tabula_muris_senis_droplet_lung",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/tabula_muris_senis.py"
   },
   "tabula_muris_senis_alpha_1": {
+    "image": "openproblems",
     "task_id": "spatial_decomposition",
-    "method_id": "cell2location_detection_alpha_1",
-    "resources": {
-      "cpu_pct": 1393.3,
-      "disk_read_mb": 310,
-      "duration_sec": 25460,
-      "disk_write_mb": 15.9,
-      "peak_memory_mb": 1300
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://tabula-muris-senis.ds.czbiohub.org/",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "tabula_muris_senis_alpha_1",
-    "mean_score": 0.7629,
-    "code_version": "0.1.3",
-    "metric_values": {
-      "r2": 0.4443
-    },
-    "scaled_scores": {
-      "r2": 0.7629
-    },
-    "submission_time": "2023-02-21 23:21:22.009"
+    "dataset_name": "Tabula muris senis (alpha=1)",
+    "data_reference": "tabula2020single",
+    "dataset_summary": "Mouse lung cells aggregated from single-cell (Dirichlet alpha=1)",
+    "source_dataset_id": "openproblems_v1/tabula_muris_senis_droplet_lung",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/tabula_muris_senis.py"
   },
   "tabula_muris_senis_alpha_5": {
+    "image": "openproblems",
     "task_id": "spatial_decomposition",
-    "method_id": "destvi",
-    "resources": {
-      "cpu_pct": 2293.2,
-      "disk_read_mb": 307.1,
-      "duration_sec": 25819,
-      "disk_write_mb": 7.8,
-      "peak_memory_mb": 16100
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://tabula-muris-senis.ds.czbiohub.org/",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "tabula_muris_senis_alpha_5",
-    "mean_score": 0.7383,
-    "code_version": "0.20.0",
-    "metric_values": {
-      "r2": 0.1826
-    },
-    "scaled_scores": {
-      "r2": 0.7383
-    },
-    "submission_time": "2023-02-21 23:05:22.353"
+    "dataset_name": "Tabula muris senis (alpha=5)",
+    "data_reference": "tabula2020single",
+    "dataset_summary": "Mouse lung cells aggregated from single-cell (Dirichlet alpha=5)",
+    "source_dataset_id": "openproblems_v1/tabula_muris_senis_droplet_lung",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/spatial_decomposition/datasets/tabula_muris_senis.py"
   }
 }

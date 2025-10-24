@@ -1,74 +1,38 @@
 {
   "citeseq_cbmc": {
+    "image": "openproblems",
     "task_id": "matching_modalities",
-    "method_id": "harmonic_alignment_log_scran_pooling",
-    "resources": {
-      "cpu_pct": 140,
-      "disk_read_mb": 278.2,
-      "duration_sec": 1054,
-      "disk_write_mb": 379.9,
-      "peak_memory_mb": 4200
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100866",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "citeseq_cbmc",
-    "mean_score": 0.0037,
-    "code_version": "0.0",
-    "metric_values": {
-      "mse": 0.9997,
-      "knn_auc": 0.0563
-    },
-    "scaled_scores": {
-      "mse": -0.0062,
-      "knn_auc": 0.0137
-    },
-    "submission_time": "2023-02-21 18:02:01.959"
+    "dataset_name": "CITE-seq Cord Blood Mononuclear Cells",
+    "data_reference": "stoeckius2017simultaneous",
+    "dataset_summary": "8k cord blood mononuclear cells sequenced by CITEseq, a multimodal addition to the 10x scRNA-seq platform that allows simultaneous measurement of RNA and protein.",
+    "source_dataset_id": "openproblems_v1/citeseq_cbmc",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/matching_modalities/datasets/citeseq.py"
   },
   "scicar_cell_lines": {
+    "image": "openproblems",
     "task_id": "matching_modalities",
-    "method_id": "harmonic_alignment_log_scran_pooling",
-    "resources": {
-      "cpu_pct": 151.3,
-      "disk_read_mb": 256.9,
-      "duration_sec": 1013,
-      "disk_write_mb": 290.5,
-      "peak_memory_mb": 3300
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117089",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "scicar_cell_lines",
-    "mean_score": 0.0165,
-    "code_version": "0.0",
-    "metric_values": {
-      "mse": 1.0003,
-      "knn_auc": 0.0603
-    },
-    "scaled_scores": {
-      "mse": 0.0154,
-      "knn_auc": 0.0176
-    },
-    "submission_time": "2023-02-21 17:58:21.897"
+    "dataset_name": "sciCAR Cell Lines",
+    "data_reference": "cao2018joint",
+    "dataset_summary": "5k cells from a time-series of dexamethasone treatment sequenced by sci-CAR, a combinatorial indexing-based co-assay that jointly profiles chromatin accessibility and mRNA.",
+    "source_dataset_id": "openproblems_v1/scicar_cell_lines",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/matching_modalities/datasets/scicar.py"
   },
   "scicar_mouse_kidney": {
+    "image": "openproblems",
     "task_id": "matching_modalities",
-    "method_id": "harmonic_alignment_log_scran_pooling",
-    "resources": {
-      "cpu_pct": 120.2,
-      "disk_read_mb": 318.6,
-      "duration_sec": 859,
-      "disk_write_mb": 364.2,
-      "peak_memory_mb": 4200
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117089",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "scicar_mouse_kidney",
-    "mean_score": 0.0202,
-    "code_version": "0.0",
-    "metric_values": {
-      "mse": 1.0001,
-      "knn_auc": 0.0654
-    },
-    "scaled_scores": {
-      "mse": 0.0134,
-      "knn_auc": 0.0269
-    },
-    "submission_time": "2023-02-21 17:57:32.149"
+    "dataset_name": "sciCAR Mouse Kidney",
+    "data_reference": "cao2018joint",
+    "dataset_summary": "11k cells from adult mouse kidney sequenced by sci-CAR, a combinatorial indexing-based co-assay that jointly profiles chromatin accessibility and mRNA.",
+    "source_dataset_id": "openproblems_v1/scicar_mouse_kidney",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/matching_modalities/datasets/scicar.py"
   }
 }

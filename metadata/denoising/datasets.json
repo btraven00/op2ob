@@ -1,74 +1,38 @@
 {
   "pbmc": {
+    "image": "openproblems-python-pytorch",
     "task_id": "denoising",
-    "method_id": "alra_log",
-    "resources": {
-      "cpu_pct": 83.2,
-      "disk_read_mb": 153.1,
-      "duration_sec": 873,
-      "disk_write_mb": 220.8,
-      "peak_memory_mb": 2700
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/36088667",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "pbmc",
-    "mean_score": -0.2671,
-    "code_version": "1.0.0",
-    "metric_values": {
-      "mse": 0.2827,
-      "poisson": 0.4277
-    },
-    "scaled_scores": {
-      "mse": -0.0432,
-      "poisson": -0.491
-    },
-    "submission_time": "2023-02-21 18:02:42.249"
+    "dataset_name": "1k Peripheral blood mononuclear cells",
+    "data_reference": "10x2018pbmc",
+    "dataset_summary": "1k Peripheral Blood Mononuclear Cells (PBMCs) from a healthy donor. Sequenced on 10X v3 chemistry in November 2018 by 10X Genomics.",
+    "source_dataset_id": "openproblems_v1/tenx_1k_pbmc",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/denoising/datasets/pbmc.py"
   },
   "pancreas": {
+    "image": "openproblems-python-pytorch",
     "task_id": "denoising",
-    "method_id": "alra_sqrt",
-    "resources": {
-      "cpu_pct": 95.1,
-      "disk_read_mb": 217,
-      "duration_sec": 669,
-      "disk_write_mb": 402.4,
-      "peak_memory_mb": 3400
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/36086813",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "pancreas",
-    "mean_score": -0.8848,
-    "code_version": "1.0.0",
-    "metric_values": {
-      "mse": 0.31,
-      "poisson": 0.6535
-    },
-    "scaled_scores": {
-      "mse": -0.0173,
-      "poisson": -1.7522
-    },
-    "submission_time": "2023-02-21 17:59:32.166"
+    "dataset_name": "Pancreas (inDrop)",
+    "data_reference": "luecken2022benchmarking",
+    "dataset_summary": "Human pancreatic islet scRNA-seq data from 6 datasets across technologies (CEL-seq, CEL-seq2, Smart-seq2, inDrop, Fluidigm C1, and SMARTER-seq). Here we just use the inDrop1 batch, which includes1937 cells × 15502 genes.",
+    "source_dataset_id": "openproblems_v1/pancreas",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/denoising/datasets/pancreas.py"
   },
   "tabula_muris_senis_lung_random": {
+    "image": "openproblems-python-pytorch",
     "task_id": "denoising",
-    "method_id": "alra_sqrt_reversenorm",
-    "resources": {
-      "cpu_pct": 98.4,
-      "disk_read_mb": 1100,
-      "duration_sec": 6710,
-      "disk_write_mb": 4400,
-      "peak_memory_mb": 39900
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://tabula-muris-senis.ds.czbiohub.org/",
+    "commit_sha": "9d1665076cf6215a31f89ed2be8be20a02502887",
     "dataset_id": "tabula_muris_senis_lung_random",
-    "mean_score": 0.4713,
-    "code_version": "1.0.0",
-    "metric_values": {
-      "mse": 0.2723,
-      "poisson": 0.0299
-    },
-    "scaled_scores": {
-      "mse": -0.0408,
-      "poisson": 0.9835
-    },
-    "submission_time": "2023-02-21 19:46:41.357"
+    "dataset_name": "Tabula Muris Senis Lung",
+    "data_reference": "tabula2020single",
+    "dataset_summary": "All lung cells from Tabula Muris Senis, a 500k cell-atlas from 18 organs and tissues across the mouse lifespan. Here we use just 10x data from lung. 24540 cells × 16160 genes across 3 time points.",
+    "source_dataset_id": "openproblems_v1/tabula_muris_senis_droplet_lung",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/denoising/datasets/tabula_muris_senis.py"
   }
 }

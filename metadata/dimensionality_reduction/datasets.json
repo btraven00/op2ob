@@ -1,150 +1,50 @@
 {
   "tenx_5k_pbmc": {
+    "image": "openproblems",
     "task_id": "dimensionality_reduction",
-    "method_id": "pymde_distances_log_cp10k",
-    "resources": {
-      "cpu_pct": 623.4,
-      "disk_read_mb": 271.7,
-      "duration_sec": 1366,
-      "disk_write_mb": 235,
-      "peak_memory_mb": 16200
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/25555739",
+    "commit_sha": "ff1feaf0b741ec05b10084319a1175dfbf5e6faa",
     "dataset_id": "tenx_5k_pbmc",
-    "mean_score": 0.4417,
-    "code_version": "0.1.18",
-    "metric_values": {
-      "qnn": 0.0333,
-      "lcmc": 0.0274,
-      "qlocal": 0.3509,
-      "qglobal": 0.8105,
-      "qnn_auc": 0.7041,
-      "continuity": 0.8198,
-      "trustworthiness": 0.7855,
-      "density_preservation": 0.5135,
-      "distance_correlation": 0.7842,
-      "distance_correlation_spectral": 0.016
-    },
-    "scaled_scores": {
-      "qnn": 0.0309,
-      "lcmc": 0.0309,
-      "qlocal": 0.349,
-      "qglobal": 0.6281,
-      "qnn_auc": 0.4083,
-      "continuity": 0.7926,
-      "trustworthiness": 0.5712,
-      "density_preservation": 0.5501,
-      "distance_correlation": 0.8211,
-      "distance_correlation_spectral": 0.2346
-    },
-    "submission_time": "2023-02-21 18:07:45.801"
+    "dataset_name": "5k Peripheral blood mononuclear cells",
+    "data_reference": "10x2019pbmc",
+    "dataset_summary": "5k Peripheral Blood Mononuclear Cells (PBMCs) from a healthy donor. Sequenced on 10X v3 chemistry in July 2019 by 10X Genomics. 5247 cells x 20822 features with no cell type labels",
+    "source_dataset_id": "openproblems_v1/tenx_5k_pbmc",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/dimensionality_reduction/datasets/tenx_5k_pbmc.py"
   },
   "mouse_hspc_nestorowa2016": {
+    "image": "openproblems",
     "task_id": "dimensionality_reduction",
-    "method_id": "neuralee_default",
-    "resources": {
-      "cpu_pct": 158.8,
-      "disk_read_mb": 587.8,
-      "duration_sec": 879,
-      "disk_write_mb": 534.4,
-      "peak_memory_mb": 2400
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/36088649",
+    "commit_sha": "ff1feaf0b741ec05b10084319a1175dfbf5e6faa",
     "dataset_id": "mouse_hspc_nestorowa2016",
-    "mean_score": 0.0898,
-    "code_version": "0.1.6",
-    "metric_values": {
-      "qnn": 0.0501,
-      "lcmc": 0.0339,
-      "qlocal": 0.1496,
-      "qglobal": 0.5627,
-      "qnn_auc": 0.5144,
-      "continuity": 0.6856,
-      "trustworthiness": 0.6007,
-      "density_preservation": 0.1174,
-      "distance_correlation": -0.0082,
-      "distance_correlation_spectral": -0.1302
-    },
-    "scaled_scores": {
-      "qnn": 0.0349,
-      "lcmc": 0.0349,
-      "qlocal": 0.147,
-      "qglobal": 0.1267,
-      "qnn_auc": 0.0289,
-      "continuity": 0.3446,
-      "trustworthiness": 0.1994,
-      "density_preservation": 0.1469,
-      "distance_correlation": 0.006,
-      "distance_correlation_spectral": -0.1713
-    },
-    "submission_time": "2023-02-21 17:59:42.378"
+    "dataset_name": "Mouse hematopoietic stem cell differentiation",
+    "data_reference": "nestorowa2016single",
+    "dataset_summary": "1.6k hematopoietic stem and progenitor cells from mouse bone marrow. Sequenced by Smart-seq2. 1920 cells x 43258 features with 3 cell type labels",
+    "source_dataset_id": "openproblems_v1/mouse_hspc_nestorowa2016",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/dimensionality_reduction/datasets/mouse_hspc_nestorowa2016.py"
   },
   "olsson_2016_mouse_blood": {
+    "image": "openproblems",
     "task_id": "dimensionality_reduction",
-    "method_id": "tsne_logCP10k_1kHVG",
-    "resources": {
-      "cpu_pct": 157,
-      "disk_read_mb": 145.2,
-      "duration_sec": 819,
-      "disk_write_mb": 126.6,
-      "peak_memory_mb": 403.5
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://figshare.com/ndownloader/files/36872214",
+    "commit_sha": "ff1feaf0b741ec05b10084319a1175dfbf5e6faa",
     "dataset_id": "olsson_2016_mouse_blood",
-    "mean_score": 0.445,
-    "code_version": "0.1",
-    "metric_values": {
-      "qnn": 0.4872,
-      "lcmc": 0.4401,
-      "qlocal": 0.5032,
-      "qglobal": 0.718,
-      "qnn_auc": 0.6926,
-      "continuity": 0.9722,
-      "trustworthiness": 0.9564,
-      "density_preservation": -0.1737,
-      "distance_correlation": 0.4342,
-      "distance_correlation_spectral": 0.2878
-    },
-    "scaled_scores": {
-      "qnn": 0.4622,
-      "lcmc": 0.4614,
-      "qlocal": 0.4384,
-      "qglobal": 0.2716,
-      "qnn_auc": 0.3824,
-      "continuity": 0.9492,
-      "trustworthiness": 0.9124,
-      "density_preservation": -0.161,
-      "distance_correlation": 0.4455,
-      "distance_correlation_spectral": 0.288
-    },
-    "submission_time": "2023-02-21 17:58:32.509"
+    "dataset_name": "Mouse myeloid lineage differentiation",
+    "data_reference": "olsson2016single",
+    "dataset_summary": "Myeloid lineage differentiation from mouse blood. Sequenced by SMARTseq in 2016 by Olsson et al. 660 cells x 112815 features with 4 cell type labels",
+    "source_dataset_id": "openproblems_v1/mouse_blood_olsson_labelled",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/dimensionality_reduction/datasets/mouse_blood_olsson_labelled.py"
   },
   "zebrafish_labs": {
+    "image": "openproblems",
     "task_id": "dimensionality_reduction",
-    "method_id": "neuralee_logCP10k_1kHVG",
-    "resources": {
-      "cpu_pct": 413.3,
-      "disk_read_mb": 1200,
-      "duration_sec": 1869,
-      "disk_write_mb": 1500,
-      "peak_memory_mb": 1700
-    },
-    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "data_url": "https://ndownloader.figshare.com/files/24566651?private_link=e3921450ec1bd0587870",
+    "commit_sha": "ff1feaf0b741ec05b10084319a1175dfbf5e6faa",
     "dataset_id": "zebrafish_labs",
-    "mean_score": 0.3558,
-    "code_version": "0.1.6",
-    "metric_values": {
-      "trustworthiness": 0.7858,
-      "density_preservation": 0.0638,
-      "distance_correlation": 0.5028,
-      "distance_correlation_spectral": 0.1644
-    },
-    "scaled_scores": {
-      "trustworthiness": 0.572,
-      "density_preservation": 0.0822,
-      "distance_correlation": 0.5834,
-      "distance_correlation_spectral": 0.1856
-    },
-    "submission_time": "2023-02-21 18:36:22.166"
+    "dataset_name": "Zebrafish",
+    "data_reference": "wagner2018single",
+    "dataset_summary": "90k cells from zebrafish embryos throughout the first day of development, with and without a knockout of chordin, an important developmental gene. Dimensions: 26022 cells, 25258 genes. 24 cell types (avg. 1084±1156 cells per cell type).",
+    "source_dataset_id": "openproblems_v1/zebrafish",
+    "implementation_url": "https://github.com/openproblems-bio/openproblems/blob/main/openproblems/tasks/dimensionality_reduction/datasets/zebrafish.py"
   }
 }

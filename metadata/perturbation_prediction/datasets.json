@@ -1,16 +1,1 @@
-{
-  "neurips-2023-data": {
-    "method_id": "zeros",
-    "resources": {
-      "submit": "2024-10-31 05:26:29",
-      "cpu_pct": 249.6,
-      "exit_code": 0,
-      "disk_read_mb": 266,
-      "duration_sec": 12.8,
-      "disk_write_mb": 2,
-      "peak_memory_mb": 3380
-    },
-    "dataset_id": "neurips-2023-data",
-    "metric_component_name": "mean_rowwise_error"
-  }
-}
+{}
