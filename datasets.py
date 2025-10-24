@@ -14,6 +14,7 @@ import asyncio
 import time
 import threading
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 from lxml import etree
 import humanize
@@ -345,7 +346,7 @@ def save_cache(cache_path, datasets):
         pass  # Ignore cache errors
 
 
-def fetch_task(task):
+def fetch_task(task, max_workers=8):
     """Download all datasets for a task with confirmation."""
     # Get list of datasets for the task
     datasets = list_datasets(task)
@@ -397,7 +398,7 @@ def fetch_task(task):
         )
 
         success = fetch_entire_dataset(
-            task, dataset_info["name"], skip_confirmation=True
+            task, dataset_info["name"], skip_confirmation=True, max_workers=max_workers
         )
         if success:
             success_count += 1
@@ -422,14 +423,16 @@ def fetch_task(task):
         return False
 
 
-def fetch_dataset(task, dataset_name, filename=None):
+def fetch_dataset(task, dataset_name, filename=None, max_workers=8):
     """Download and verify files from a dataset."""
     if filename:
         # Download single file
         return fetch_single_file(task, dataset_name, filename)
     else:
         # Download entire dataset (with confirmation)
-        return fetch_entire_dataset(task, dataset_name, skip_confirmation=False)
+        return fetch_entire_dataset(
+            task, dataset_name, skip_confirmation=False, max_workers=max_workers
+        )
 
 
 def fetch_single_file(task, dataset_name, filename):
@@ -475,7 +478,46 @@ def fetch_single_file(task, dataset_name, filename):
     return success
 
 
-def fetch_entire_dataset(task, dataset_name, skip_confirmation=False):
+def download_single_file_worker(args):
+    """Worker function to download a single file. Returns (file_info, success, local_path)."""
+    file_info, dataset_dir, file_index, total_files, lock = args
+
+    local_path = dataset_dir / file_info["name"]
+    download_url = BASE_URL_RAW + file_info["key"]
+
+    # Skip if already exists and has correct size
+    if local_path.exists() and local_path.stat().st_size == file_info["size"]:
+        with lock:
+            print(
+                f"[{file_index}/{total_files}] Skipping {file_info['name']} (already exists)",
+                file=sys.stderr,
+            )
+        return (file_info, True, local_path)
+
+    with lock:
+        print(
+            f"[{file_index}/{total_files}] Downloading {file_info['name']}",
+            file=sys.stderr,
+        )
+
+    # Try aria2c first, fallback to requests
+    if check_aria2():
+        success = fetch_file_aria2(
+            download_url, local_path, file_info["md5"], file_info["size"]
+        )
+    else:
+        success = fetch_file_fallback(
+            download_url, local_path, file_info["md5"], file_info["size"]
+        )
+
+    if not success:
+        with lock:
+            print(f"Failed to download {file_info['name']}", file=sys.stderr)
+
+    return (file_info, success, local_path)
+
+
+def fetch_entire_dataset(task, dataset_name, skip_confirmation=False, max_workers=8):
     """Download all files in a dataset with optional confirmation."""
     # Get file list (use cache if available)
     cache_path = get_cache_path(task, dataset_name)
@@ -537,40 +579,32 @@ def fetch_entire_dataset(task, dataset_name, skip_confirmation=False):
     # Create directory
     dataset_dir.mkdir(parents=True, exist_ok=True)
 
-    # Download files
+    # Download files in parallel
     success_count = 0
     total_files = len(files)
 
-    for i, file_info in enumerate(files, 1):
-        local_path = dataset_dir / file_info["name"]
+    # Create a lock for thread-safe printing
+    print_lock = threading.Lock()
 
-        # Skip if already exists and has correct size
-        if local_path.exists() and local_path.stat().st_size == file_info["size"]:
-            print(
-                f"[{i}/{total_files}] Skipping {file_info['name']} (already exists)",
-                file=sys.stderr,
-            )
-            success_count += 1
-            continue
+    # Prepare arguments for worker function
+    download_args = [
+        (file_info, dataset_dir, i, total_files, print_lock)
+        for i, file_info in enumerate(files, 1)
+    ]
 
-        print(f"[{i}/{total_files}] Downloading {file_info['name']}", file=sys.stderr)
+    # Use ThreadPoolExecutor for parallel downloads
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all download tasks
+        futures = {
+            executor.submit(download_single_file_worker, args): args[0]
+            for args in download_args
+        }
 
-        download_url = BASE_URL_RAW + file_info["key"]
-
-        # Try aria2c first, fallback to requests
-        if check_aria2():
-            success = fetch_file_aria2(
-                download_url, local_path, file_info["md5"], file_info["size"]
-            )
-        else:
-            success = fetch_file_fallback(
-                download_url, local_path, file_info["md5"], file_info["size"]
-            )
-
-        if success:
-            success_count += 1
-        else:
-            print(f"Failed to download {file_info['name']}", file=sys.stderr)
+        # Process completed downloads
+        for future in as_completed(futures):
+            file_info, success, local_path = future.result()
+            if success:
+                success_count += 1
 
     console.print(f"\n[bold]Completed:[/bold] {success_count}/{total_files} files")
 
@@ -591,8 +625,12 @@ def print_usage():
     print("  python datasets.py list [--json]")
     print("  python datasets.py list <task> [--json]")
     print("  python datasets.py list <task> <dataset> [--json]")
-    print("  python datasets.py fetch <task>")
-    print("  python datasets.py fetch <task> <dataset> [<filename>]")
+    print("  python datasets.py fetch <task> [--workers=N]")
+    print("  python datasets.py fetch <task> <dataset> [<filename>] [--workers=N]")
+    print()
+    print("Options:")
+    print("  --json           Output in JSON format (for list command)")
+    print("  --workers=N      Number of parallel download workers (default: 8)")
     print()
     print("Examples:")
     print("  # List all available tasks")
@@ -607,8 +645,10 @@ def print_usage():
     print("  # Download ALL datasets for a task (with confirmation)")
     print("  python datasets.py fetch denoising")
     print()
-    print("  # Download single dataset")
-    print("  python datasets.py fetch denoising cellxgene_census/dkd/log_cp10k")
+    print("  # Download single dataset with 4 parallel workers")
+    print(
+        "  python datasets.py fetch denoising cellxgene_census/dkd/log_cp10k --workers=4"
+    )
     print()
     print("  # Download single file from dataset")
     print(
@@ -715,16 +755,32 @@ if __name__ == "__main__":
             sys.exit(1)
 
     elif command == "fetch":
-        if len(sys.argv) not in [3, 4, 5]:
+        # Parse arguments and check for --workers flag
+        args = [arg for arg in sys.argv[2:] if not arg.startswith("--")]
+
+        # Extract workers count
+        max_workers = 8  # default
+        for arg in sys.argv[2:]:
+            if arg.startswith("--workers="):
+                try:
+                    max_workers = int(arg.split("=")[1])
+                    if max_workers < 1:
+                        print("Error: --workers must be at least 1", file=sys.stderr)
+                        sys.exit(1)
+                except ValueError:
+                    print("Error: --workers must be a number", file=sys.stderr)
+                    sys.exit(1)
+
+        if len(args) not in [1, 2, 3]:
             print(
-                "Usage: python datasets.py fetch <task> [<dataset>] [<filename>]",
+                "Usage: python datasets.py fetch <task> [<dataset>] [<filename>] [--workers=N]",
                 file=sys.stderr,
             )
             sys.exit(1)
 
-        task = sys.argv[2]
-        dataset = sys.argv[3] if len(sys.argv) >= 4 else None
-        filename = sys.argv[4] if len(sys.argv) == 5 else None
+        task = args[0]
+        dataset = args[1] if len(args) >= 2 else None
+        filename = args[2] if len(args) == 3 else None
 
         if task not in TASKS:
             print(f"Error: Unknown task '{task}'", file=sys.stderr)
@@ -734,10 +790,12 @@ if __name__ == "__main__":
         try:
             if dataset is None:
                 # Download entire task
-                success = fetch_task(task)
+                success = fetch_task(task, max_workers=max_workers)
             else:
                 # Download specific dataset/file
-                success = fetch_dataset(task, dataset, filename)
+                success = fetch_dataset(
+                    task, dataset, filename, max_workers=max_workers
+                )
             sys.exit(0 if success else 1)
         except Exception as e:
             print(f"Error: {e}", file=sys.stderr)
