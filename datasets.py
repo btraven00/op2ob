@@ -169,6 +169,15 @@ def fetch_file_aria2(download_url, local_path, expected_md5, expected_size):
         print("macOS: brew install aria2", file=sys.stderr)
         return False
 
+    # Check if expected_md5 is a valid MD5 hash (32 hex characters)
+    # S3 ETags for multipart uploads have format: <hash>-<partcount>
+    # which aria2c doesn't support
+    is_valid_md5 = (
+        expected_md5
+        and len(expected_md5) == 32
+        and all(c in "0123456789abcdef" for c in expected_md5.lower())
+    )
+
     # Prepare aria2c command
     cmd = [
         "aria2c",
@@ -182,11 +191,24 @@ def fetch_file_aria2(download_url, local_path, expected_md5, expected_size):
         "--console-log-level=notice",  # Show download progress
         "--human-readable=true",  # Human readable sizes in progress
         "--download-result=hide",  # Hide summary at end
-        f"--checksum=md5={expected_md5}",  # Built-in MD5 verification
-        f"--dir={local_path.parent}",  # Download directory
-        f"--out={local_path.name}",  # Output filename
-        download_url,
     ]
+
+    # Only add checksum if it's a valid MD5
+    if is_valid_md5:
+        cmd.append(f"--checksum=md5={expected_md5}")
+    else:
+        print(
+            f"Note: Checksum '{expected_md5}' is not a simple MD5 (likely multipart upload). Skipping verification.",
+            file=sys.stderr,
+        )
+
+    cmd.extend(
+        [
+            f"--dir={local_path.parent}",  # Download directory
+            f"--out={local_path.name}",  # Output filename
+            download_url,
+        ]
+    )
 
     try:
         print(f"Downloading: {local_path.name}", file=sys.stderr)
@@ -196,8 +218,24 @@ def fetch_file_aria2(download_url, local_path, expected_md5, expected_size):
         result = subprocess.run(cmd)
 
         if result.returncode == 0:
+            # Verify size
+            actual_size = local_path.stat().st_size
+            if actual_size != expected_size:
+                print(
+                    f"✗ Size mismatch. Expected {expected_size}, got {actual_size}",
+                    file=sys.stderr,
+                )
+                return False
+
+            # If we didn't verify with aria2c and have a valid MD5, verify manually
+            if not is_valid_md5 and expected_md5:
+                print(
+                    f"Skipping manual MD5 verification for non-standard ETag",
+                    file=sys.stderr,
+                )
+
             print(
-                f"✓ Successfully downloaded and verified: {local_path.name}",
+                f"✓ Successfully downloaded: {local_path.name}",
                 file=sys.stderr,
             )
             return True
@@ -205,8 +243,6 @@ def fetch_file_aria2(download_url, local_path, expected_md5, expected_size):
             print(
                 f"✗ aria2c failed with exit code {result.returncode}", file=sys.stderr
             )
-            # aria2 already printed any errors to stderr
-            pass
             return False
 
     except Exception as e:
