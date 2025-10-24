@@ -1,13 +1,13 @@
 #!/usr/bin/env -S deno run --allow-net --allow-write
 
 function getVersionForBenchmark(benchmarkName: string): string {
-  // by default, return v1.0.0
   const versionMap: Record<string, string> = {
     batch_integration: "v2.0.0",
     label_projection: "v2.0.0",
     // Add more benchmark-specific versions here as needed
   };
 
+  // by default, return v1.0.0
   return versionMap[benchmarkName] || "v1.0.0";
 }
 
@@ -31,6 +31,28 @@ function arrayToObject(jsonString: string, keyField: string): string {
       for (const item of parsed) {
         if (item && keyField in item) {
           obj[item[keyField]] = item;
+        }
+      }
+      return JSON.stringify(obj, null, 2);
+    }
+    return JSON.stringify(parsed, null, 2);
+  } catch {
+    return jsonString;
+  }
+}
+
+function arrayToObjectComposite(
+  jsonString: string,
+  keyFields: string[],
+): string {
+  try {
+    const parsed = JSON.parse(jsonString);
+    if (Array.isArray(parsed)) {
+      const obj: Record<string, any> = {};
+      for (const item of parsed) {
+        if (item && keyFields.every((field) => field in item)) {
+          const compositeKey = keyFields.map((field) => item[field]).join(":");
+          obj[compositeKey] = item;
         }
       }
       return JSON.stringify(obj, null, 2);
@@ -139,9 +161,9 @@ async function extractTaskData(benchmarkName: string, version?: string) {
   );
   const datasetsJson = jsToJson(`[${datasetMatches.join(",")}]`);
 
-  // Extract results data (objects with both task_id and method_id)
+  // Extract results data (objects with method_id, dataset_id, and mean_score)
   const resultRegex =
-    /\{(?=(?:[^{}]|\{[^{}]*\})*method_id:"[^"]*")(?=(?:[^{}]|\{[^{}]*\})*resources:\{)(?:[^{}]|\{[^{}]*\})*\}/g;
+    /\{(?=(?:[^{}]|\{[^{}]*\})*method_id:"[^"]*")(?=(?:[^{}]|\{[^{}]*\})*dataset_id:"[^"]*")(?=(?:[^{}]|\{[^{}]*\})*mean_score:)(?:[^{}]|\{[^{}]*\})*\}/g;
   const resultMatches = html.match(resultRegex) || [];
   console.log(
     `Found ${resultMatches.length} result matches:`,
@@ -172,7 +194,7 @@ async function extractTaskData(benchmarkName: string, version?: string) {
   );
   await Deno.writeTextFile(
     `${outputDir}/results.json`,
-    arrayToObject(resultsJson, "method_id"),
+    arrayToObjectComposite(resultsJson, ["method_id", "dataset_id"]),
   );
 
   console.log(`Saved task info to: ${outputDir}/task_info.json`);

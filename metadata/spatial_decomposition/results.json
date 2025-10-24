@@ -1,1 +1,2312 @@
-{}
+{
+  "nnls_scipy:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 58.7,
+      "disk_read_mb": 215.6,
+      "duration_sec": 159,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 267.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.8138,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": 0.6726
+    },
+    "scaled_scores": {
+      "r2": 0.8138
+    },
+    "submission_time": "2023-02-21 17:57:52.527"
+  },
+  "random_proportions:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 29.6,
+      "disk_read_mb": 215.6,
+      "duration_sec": 180,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 137.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -0.7586
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 17:57:52.697"
+  },
+  "nmf:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 278.1,
+      "disk_read_mb": 215.6,
+      "duration_sec": 180,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 658.8
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.2247,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -0.3635
+    },
+    "scaled_scores": {
+      "r2": 0.2247
+    },
+    "submission_time": "2023-02-21 17:57:52.728"
+  },
+  "true_proportions:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 10.8,
+      "disk_read_mb": 215.6,
+      "duration_sec": 279,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 658.8
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 17:57:52.914"
+  },
+  "nmfreg:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 369,
+      "disk_read_mb": 215.7,
+      "duration_sec": 319,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.5063,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": 0.1317
+    },
+    "scaled_scores": {
+      "r2": 0.5063
+    },
+    "submission_time": "2023-02-21 17:57:52.878"
+  },
+  "tangram:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 176.1,
+      "disk_read_mb": 229,
+      "duration_sec": 529,
+      "disk_write_mb": 4.8,
+      "peak_memory_mb": 1000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": -0.1947,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -1.101
+    },
+    "scaled_scores": {
+      "r2": -0.1947
+    },
+    "submission_time": "2023-02-21 17:57:52.875"
+  },
+  "rctd:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 51.2,
+      "disk_read_mb": 644.2,
+      "duration_sec": 538,
+      "disk_write_mb": 4.7,
+      "peak_memory_mb": 2400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.5964,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": 0.2903
+    },
+    "scaled_scores": {
+      "r2": 0.5964
+    },
+    "submission_time": "2023-02-21 17:57:53.052"
+  },
+  "seuratv3:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 114.4,
+      "disk_read_mb": 439.5,
+      "duration_sec": 549,
+      "disk_write_mb": 137.9,
+      "peak_memory_mb": 13500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": -0.6778,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -1.9506
+    },
+    "scaled_scores": {
+      "r2": -0.6778
+    },
+    "submission_time": "2023-02-21 17:57:52.796"
+  },
+  "stereoscope:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 693.1,
+      "disk_read_mb": 237.2,
+      "duration_sec": 1027,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 1200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.5222,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.1597
+    },
+    "scaled_scores": {
+      "r2": 0.5222
+    },
+    "submission_time": "2023-02-21 18:35:14.429"
+  },
+  "cell2location_detection_alpha_20:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1326.8,
+      "disk_read_mb": 240.1,
+      "duration_sec": 3738,
+      "disk_write_mb": 14.9,
+      "peak_memory_mb": 1200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.9008,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8255
+    },
+    "scaled_scores": {
+      "r2": 0.9008
+    },
+    "submission_time": "2023-02-21 23:00:54.269"
+  },
+  "cell2location_detection_alpha_200:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 1272.7,
+      "disk_read_mb": 240.1,
+      "duration_sec": 3959,
+      "disk_write_mb": 15,
+      "peak_memory_mb": 4700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.9009,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8258
+    },
+    "scaled_scores": {
+      "r2": 0.9009
+    },
+    "submission_time": "2023-02-21 23:00:54.042"
+  },
+  "cell2location_detection_alpha_20_nb:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1461.6,
+      "disk_read_mb": 240.1,
+      "duration_sec": 4501,
+      "disk_write_mb": 15.2,
+      "peak_memory_mb": 3200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.9077,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8376
+    },
+    "scaled_scores": {
+      "r2": 0.9077
+    },
+    "submission_time": "2023-02-21 22:56:51.772"
+  },
+  "cell2location_amortised_detection_alpha_20:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1951.5,
+      "disk_read_mb": 240.1,
+      "duration_sec": 4669,
+      "disk_write_mb": 47.5,
+      "peak_memory_mb": 18100
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.9134,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8476
+    },
+    "scaled_scores": {
+      "r2": 0.9134
+    },
+    "submission_time": "2023-02-21 23:00:53.298"
+  },
+  "destvi:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2176.3,
+      "disk_read_mb": 237.2,
+      "duration_sec": 7421,
+      "disk_write_mb": 7.3,
+      "peak_memory_mb": 17500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.6702,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.4201
+    },
+    "scaled_scores": {
+      "r2": 0.6702
+    },
+    "submission_time": "2023-02-21 23:00:51.704"
+  },
+  "cell2location_detection_alpha_1:pancreas_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 1342.5,
+      "disk_read_mb": 240.1,
+      "duration_sec": 9880,
+      "disk_write_mb": 15,
+      "peak_memory_mb": 4900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_1",
+    "mean_score": 0.9004,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8249
+    },
+    "scaled_scores": {
+      "r2": 0.9004
+    },
+    "submission_time": "2023-02-21 23:01:42.511"
+  },
+  "nnls_scipy:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 65.6,
+      "disk_read_mb": 285.5,
+      "duration_sec": 319,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 146.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.5294,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": -0.1026
+    },
+    "scaled_scores": {
+      "r2": 0.5294
+    },
+    "submission_time": "2023-02-21 17:59:33.251"
+  },
+  "random_proportions:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 58.8,
+      "disk_read_mb": 285.5,
+      "duration_sec": 319,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 140.8
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -1.3431
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 17:59:33.312"
+  },
+  "nmf:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 1143.7,
+      "disk_read_mb": 285.5,
+      "duration_sec": 330,
+      "disk_write_mb": 4.5,
+      "peak_memory_mb": 845.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.431,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -0.3334
+    },
+    "scaled_scores": {
+      "r2": 0.431
+    },
+    "submission_time": "2023-02-21 17:59:33.308"
+  },
+  "true_proportions:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 16.7,
+      "disk_read_mb": 285.5,
+      "duration_sec": 448,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 211.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 17:59:33.536"
+  },
+  "tangram:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 358.4,
+      "disk_read_mb": 298.8,
+      "duration_sec": 469,
+      "disk_write_mb": 5.1,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": -0.1776,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -1.7593
+    },
+    "scaled_scores": {
+      "r2": -0.1776
+    },
+    "submission_time": "2023-02-21 17:59:33.483"
+  },
+  "nmfreg:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 350.7,
+      "disk_read_mb": 285.6,
+      "duration_sec": 708,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 3700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": -0.615,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -2.7841
+    },
+    "scaled_scores": {
+      "r2": -0.615
+    },
+    "submission_time": "2023-02-21 17:59:33.423"
+  },
+  "seuratv3:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 121.6,
+      "disk_read_mb": 710.7,
+      "duration_sec": 798,
+      "disk_write_mb": 339.2,
+      "peak_memory_mb": 19300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": -0.1601,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -1.7182
+    },
+    "scaled_scores": {
+      "r2": -0.1601
+    },
+    "submission_time": "2023-02-21 17:59:33.406"
+  },
+  "rctd:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 30.6,
+      "disk_read_mb": 714.6,
+      "duration_sec": 1267,
+      "disk_write_mb": 5.1,
+      "peak_memory_mb": 4300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.6453,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": 0.1689
+    },
+    "scaled_scores": {
+      "r2": 0.6453
+    },
+    "submission_time": "2023-02-21 17:59:33.624"
+  },
+  "stereoscope:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 489.7,
+      "disk_read_mb": 307,
+      "duration_sec": 3048,
+      "disk_write_mb": 4.8,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.5772,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.0094
+    },
+    "scaled_scores": {
+      "r2": 0.5772
+    },
+    "submission_time": "2023-02-21 18:38:33.119"
+  },
+  "cell2location_detection_alpha_20:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1492.4,
+      "disk_read_mb": 310,
+      "duration_sec": 10149,
+      "disk_write_mb": 17.6,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.76,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.4377
+    },
+    "scaled_scores": {
+      "r2": 0.76
+    },
+    "submission_time": "2023-02-21 19:52:22.086"
+  },
+  "destvi:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2321,
+      "disk_read_mb": 307.1,
+      "duration_sec": 14780,
+      "disk_write_mb": 7.8,
+      "peak_memory_mb": 16100
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.7193,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.3423
+    },
+    "scaled_scores": {
+      "r2": 0.7193
+    },
+    "submission_time": "2023-02-21 23:01:11.984"
+  },
+  "cell2location_detection_alpha_200:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 1299.9,
+      "disk_read_mb": 310,
+      "duration_sec": 19539,
+      "disk_write_mb": 16,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.7574,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.4314
+    },
+    "scaled_scores": {
+      "r2": 0.7574
+    },
+    "submission_time": "2023-02-21 23:06:03.049"
+  },
+  "cell2location_detection_alpha_20_nb:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1544.6,
+      "disk_read_mb": 310,
+      "duration_sec": 20899,
+      "disk_write_mb": 16,
+      "peak_memory_mb": 5900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.743,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.3977
+    },
+    "scaled_scores": {
+      "r2": 0.743
+    },
+    "submission_time": "2023-02-21 23:08:03.022"
+  },
+  "cell2location_amortised_detection_alpha_20:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1916.5,
+      "disk_read_mb": 310,
+      "duration_sec": 21339,
+      "disk_write_mb": 51.3,
+      "peak_memory_mb": 16500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.7323,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.3727
+    },
+    "scaled_scores": {
+      "r2": 0.7323
+    },
+    "submission_time": "2023-02-21 23:06:02.573"
+  },
+  "cell2location_detection_alpha_1:tabula_muris_senis_alpha_1": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 1393.3,
+      "disk_read_mb": 310,
+      "duration_sec": 25460,
+      "disk_write_mb": 15.9,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_1",
+    "mean_score": 0.7629,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.4443
+    },
+    "scaled_scores": {
+      "r2": 0.7629
+    },
+    "submission_time": "2023-02-21 23:21:22.009"
+  },
+  "true_proportions:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 30.5,
+      "disk_read_mb": 215.7,
+      "duration_sec": 339,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 635
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 17:59:33.043"
+  },
+  "random_proportions:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 20.7,
+      "disk_read_mb": 215.7,
+      "duration_sec": 359,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 224.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -0.6789
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 17:59:32.749"
+  },
+  "nnls_scipy:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 14.4,
+      "disk_read_mb": 215.7,
+      "duration_sec": 429,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 237
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.8912,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": 0.8174
+    },
+    "scaled_scores": {
+      "r2": 0.8912
+    },
+    "submission_time": "2023-02-21 17:59:32.757"
+  },
+  "nmf:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 87.1,
+      "disk_read_mb": 215.7,
+      "duration_sec": 439,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 658.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.5802,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": 0.2952
+    },
+    "scaled_scores": {
+      "r2": 0.5802
+    },
+    "submission_time": "2023-02-21 17:59:32.856"
+  },
+  "nmfreg:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 372.3,
+      "disk_read_mb": 215.7,
+      "duration_sec": 480,
+      "disk_write_mb": 4.1,
+      "peak_memory_mb": 1500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.3989,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -0.0091
+    },
+    "scaled_scores": {
+      "r2": 0.3989
+    },
+    "submission_time": "2023-02-21 17:59:32.916"
+  },
+  "seuratv3:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 134.7,
+      "disk_read_mb": 439.6,
+      "duration_sec": 679,
+      "disk_write_mb": 138,
+      "peak_memory_mb": 22200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": -0.2671,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -1.1274
+    },
+    "scaled_scores": {
+      "r2": -0.2671
+    },
+    "submission_time": "2023-02-21 17:59:32.890"
+  },
+  "tangram:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 190.6,
+      "disk_read_mb": 229,
+      "duration_sec": 699,
+      "disk_write_mb": 4.8,
+      "peak_memory_mb": 1000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": -0.2072,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -1.0267
+    },
+    "scaled_scores": {
+      "r2": -0.2072
+    },
+    "submission_time": "2023-02-21 17:59:32.981"
+  },
+  "rctd:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 28.4,
+      "disk_read_mb": 644.7,
+      "duration_sec": 1032,
+      "disk_write_mb": 4.7,
+      "peak_memory_mb": 2400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.5742,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": 0.2851
+    },
+    "scaled_scores": {
+      "r2": 0.5742
+    },
+    "submission_time": "2023-02-21 17:59:33.087"
+  },
+  "stereoscope:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 657.4,
+      "disk_read_mb": 237.2,
+      "duration_sec": 1340,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.4942,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.1508
+    },
+    "scaled_scores": {
+      "r2": 0.4942
+    },
+    "submission_time": "2023-02-21 18:37:31.764"
+  },
+  "cell2location_amortised_detection_alpha_20:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1892.2,
+      "disk_read_mb": 240.1,
+      "duration_sec": 6178,
+      "disk_write_mb": 47.5,
+      "peak_memory_mb": 15900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.9297,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8819
+    },
+    "scaled_scores": {
+      "r2": 0.9297
+    },
+    "submission_time": "2023-02-21 23:00:55.365"
+  },
+  "cell2location_detection_alpha_200:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 1242.4,
+      "disk_read_mb": 240.1,
+      "duration_sec": 6733,
+      "disk_write_mb": 14.9,
+      "peak_memory_mb": 1200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.9245,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8733
+    },
+    "scaled_scores": {
+      "r2": 0.9245
+    },
+    "submission_time": "2023-02-21 23:00:59.415"
+  },
+  "cell2location_detection_alpha_20_nb:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1393,
+      "disk_read_mb": 240.1,
+      "duration_sec": 6904,
+      "disk_write_mb": 15.1,
+      "peak_memory_mb": 3200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.9259,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8756
+    },
+    "scaled_scores": {
+      "r2": 0.9259
+    },
+    "submission_time": "2023-02-21 23:00:58.020"
+  },
+  "cell2location_detection_alpha_20:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1369,
+      "disk_read_mb": 240.1,
+      "duration_sec": 11990,
+      "disk_write_mb": 15.2,
+      "peak_memory_mb": 1200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.9256,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.875
+    },
+    "scaled_scores": {
+      "r2": 0.9256
+    },
+    "submission_time": "2023-02-21 23:04:21.791"
+  },
+  "destvi:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2171.5,
+      "disk_read_mb": 237.3,
+      "duration_sec": 16729,
+      "disk_write_mb": 7.4,
+      "peak_memory_mb": 17100
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.6573,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.4247
+    },
+    "scaled_scores": {
+      "r2": 0.6573
+    },
+    "submission_time": "2023-02-21 23:01:02.654"
+  },
+  "cell2location_detection_alpha_1:pancreas_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 1345.2,
+      "disk_read_mb": 240.1,
+      "duration_sec": 21590,
+      "disk_write_mb": 15,
+      "peak_memory_mb": 3400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_0_5",
+    "mean_score": 0.9241,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8725
+    },
+    "scaled_scores": {
+      "r2": 0.9241
+    },
+    "submission_time": "2023-02-21 23:16:32.009"
+  },
+  "true_proportions:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 41.8,
+      "disk_read_mb": 285.4,
+      "duration_sec": 310,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 844.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 18:01:22.575"
+  },
+  "random_proportions:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 19.3,
+      "disk_read_mb": 285.4,
+      "duration_sec": 390,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 233.1
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -1.6998
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 18:01:22.240"
+  },
+  "nnls_scipy:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 28.3,
+      "disk_read_mb": 285.4,
+      "duration_sec": 420,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 844.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.7095,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": 0.2157
+    },
+    "scaled_scores": {
+      "r2": 0.7095
+    },
+    "submission_time": "2023-02-21 18:01:22.219"
+  },
+  "tangram:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 219.5,
+      "disk_read_mb": 298.7,
+      "duration_sec": 439,
+      "disk_write_mb": 5,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": -0.1965,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -2.2302
+    },
+    "scaled_scores": {
+      "r2": -0.1965
+    },
+    "submission_time": "2023-02-21 18:01:22.500"
+  },
+  "nmf:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 139.7,
+      "disk_read_mb": 285.4,
+      "duration_sec": 450,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 845.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.6481,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": 0.0499
+    },
+    "scaled_scores": {
+      "r2": 0.6481
+    },
+    "submission_time": "2023-02-21 18:01:22.396"
+  },
+  "nmfreg:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 274.4,
+      "disk_read_mb": 285.5,
+      "duration_sec": 669,
+      "disk_write_mb": 4.4,
+      "peak_memory_mb": 3700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.0714,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -1.507
+    },
+    "scaled_scores": {
+      "r2": 0.0714
+    },
+    "submission_time": "2023-02-21 18:01:22.443"
+  },
+  "seuratv3:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 135.2,
+      "disk_read_mb": 710.5,
+      "duration_sec": 699,
+      "disk_write_mb": 338.9,
+      "peak_memory_mb": 24900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.091,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -1.454
+    },
+    "scaled_scores": {
+      "r2": 0.091
+    },
+    "submission_time": "2023-02-21 18:01:23.022"
+  },
+  "rctd:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 41.4,
+      "disk_read_mb": 714.1,
+      "duration_sec": 987,
+      "disk_write_mb": 4.9,
+      "peak_memory_mb": 4300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.7116,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": 0.2213
+    },
+    "scaled_scores": {
+      "r2": 0.7116
+    },
+    "submission_time": "2023-02-21 18:01:22.701"
+  },
+  "stereoscope:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 424.2,
+      "disk_read_mb": 306.9,
+      "duration_sec": 3807,
+      "disk_write_mb": 4.8,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.632,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.0066
+    },
+    "scaled_scores": {
+      "r2": 0.632
+    },
+    "submission_time": "2023-02-21 18:38:54.230"
+  },
+  "cell2location_detection_alpha_200:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 1480.7,
+      "disk_read_mb": 309.9,
+      "duration_sec": 8338,
+      "disk_write_mb": 17.4,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.8409,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.5704
+    },
+    "scaled_scores": {
+      "r2": 0.8409
+    },
+    "submission_time": "2023-02-21 19:51:33.305"
+  },
+  "cell2location_detection_alpha_1:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 1241.7,
+      "disk_read_mb": 309.9,
+      "duration_sec": 9040,
+      "disk_write_mb": 15.8,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.8418,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.5729
+    },
+    "scaled_scores": {
+      "r2": 0.8418
+    },
+    "submission_time": "2023-02-21 23:01:42.179"
+  },
+  "cell2location_detection_alpha_20:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1297.2,
+      "disk_read_mb": 309.9,
+      "duration_sec": 9709,
+      "disk_write_mb": 15.8,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.8419,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.5731
+    },
+    "scaled_scores": {
+      "r2": 0.8419
+    },
+    "submission_time": "2023-02-21 23:01:42.960"
+  },
+  "cell2location_detection_alpha_20_nb:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1549.1,
+      "disk_read_mb": 309.9,
+      "duration_sec": 11129,
+      "disk_write_mb": 15.9,
+      "peak_memory_mb": 6200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.8302,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.5415
+    },
+    "scaled_scores": {
+      "r2": 0.8302
+    },
+    "submission_time": "2023-02-21 23:01:42.736"
+  },
+  "cell2location_amortised_detection_alpha_20:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1889.6,
+      "disk_read_mb": 309.9,
+      "duration_sec": 11930,
+      "disk_write_mb": 51.2,
+      "peak_memory_mb": 17600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.8284,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.5366
+    },
+    "scaled_scores": {
+      "r2": 0.8284
+    },
+    "submission_time": "2023-02-21 23:01:52.214"
+  },
+  "destvi:tabula_muris_senis_alpha_0_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2316.3,
+      "disk_read_mb": 307,
+      "duration_sec": 13145,
+      "disk_write_mb": 7.7,
+      "peak_memory_mb": 16400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_0_5",
+    "mean_score": 0.8065,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.4776
+    },
+    "scaled_scores": {
+      "r2": 0.8065
+    },
+    "submission_time": "2023-02-21 23:00:57.250"
+  },
+  "random_proportions:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 36.2,
+      "disk_read_mb": 285.5,
+      "duration_sec": 489,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 224.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -2.1236
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 18:02:12.617"
+  },
+  "true_proportions:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 8.4,
+      "disk_read_mb": 285.5,
+      "duration_sec": 509,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 233.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 18:02:12.928"
+  },
+  "tangram:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 524.4,
+      "disk_read_mb": 298.9,
+      "duration_sec": 529,
+      "disk_write_mb": 5.1,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": -0.1631,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -2.633
+    },
+    "scaled_scores": {
+      "r2": -0.1631
+    },
+    "submission_time": "2023-02-21 18:02:12.776"
+  },
+  "nnls_scipy:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 17,
+      "disk_read_mb": 285.5,
+      "duration_sec": 569,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 845.8
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.5165,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": -0.5101
+    },
+    "scaled_scores": {
+      "r2": 0.5165
+    },
+    "submission_time": "2023-02-21 18:02:12.654"
+  },
+  "nmf:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 382.4,
+      "disk_read_mb": 285.5,
+      "duration_sec": 579,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 844.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.5606,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -0.3725
+    },
+    "scaled_scores": {
+      "r2": 0.5606
+    },
+    "submission_time": "2023-02-21 18:02:12.707"
+  },
+  "nmfreg:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 369.1,
+      "disk_read_mb": 285.6,
+      "duration_sec": 759,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 3700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": -0.2078,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -2.7727
+    },
+    "scaled_scores": {
+      "r2": -0.2078
+    },
+    "submission_time": "2023-02-21 18:02:12.738"
+  },
+  "seuratv3:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 136.9,
+      "disk_read_mb": 710.8,
+      "duration_sec": 923,
+      "disk_write_mb": 339.3,
+      "peak_memory_mb": 26500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.0671,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -1.9141
+    },
+    "scaled_scores": {
+      "r2": 0.0671
+    },
+    "submission_time": "2023-02-21 18:02:12.745"
+  },
+  "rctd:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 39.8,
+      "disk_read_mb": 714.3,
+      "duration_sec": 1138,
+      "disk_write_mb": 5.1,
+      "peak_memory_mb": 4300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.6327,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": -0.1473
+    },
+    "scaled_scores": {
+      "r2": 0.6327
+    },
+    "submission_time": "2023-02-21 18:02:12.853"
+  },
+  "stereoscope:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 729.8,
+      "disk_read_mb": 307.1,
+      "duration_sec": 1258,
+      "disk_write_mb": 4.8,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.6838,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.0124
+    },
+    "scaled_scores": {
+      "r2": 0.6838
+    },
+    "submission_time": "2023-02-21 18:02:12.978"
+  },
+  "cell2location_amortised_detection_alpha_20:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1920.5,
+      "disk_read_mb": 310,
+      "duration_sec": 8942,
+      "disk_write_mb": 51.3,
+      "peak_memory_mb": 16800
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.7337,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.1682
+    },
+    "scaled_scores": {
+      "r2": 0.7337
+    },
+    "submission_time": "2023-02-21 23:01:00.157"
+  },
+  "cell2location_detection_alpha_200:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 1263.7,
+      "disk_read_mb": 310,
+      "duration_sec": 10238,
+      "disk_write_mb": 15.9,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.7648,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.2652
+    },
+    "scaled_scores": {
+      "r2": 0.7648
+    },
+    "submission_time": "2023-02-21 23:01:43.999"
+  },
+  "cell2location_detection_alpha_20_nb:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1565.6,
+      "disk_read_mb": 310,
+      "duration_sec": 15177,
+      "disk_write_mb": 16.1,
+      "peak_memory_mb": 6000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.7486,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.2148
+    },
+    "scaled_scores": {
+      "r2": 0.7486
+    },
+    "submission_time": "2023-02-21 23:01:14.713"
+  },
+  "cell2location_detection_alpha_20:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1315,
+      "disk_read_mb": 310,
+      "duration_sec": 18869,
+      "disk_write_mb": 15.9,
+      "peak_memory_mb": 1500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.7654,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.2673
+    },
+    "scaled_scores": {
+      "r2": 0.7654
+    },
+    "submission_time": "2023-02-21 23:05:22.783"
+  },
+  "cell2location_detection_alpha_1:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 1319.4,
+      "disk_read_mb": 310,
+      "duration_sec": 19360,
+      "disk_write_mb": 16,
+      "peak_memory_mb": 1600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.7646,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.2646
+    },
+    "scaled_scores": {
+      "r2": 0.7646
+    },
+    "submission_time": "2023-02-21 23:08:02.230"
+  },
+  "destvi:tabula_muris_senis_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2293.2,
+      "disk_read_mb": 307.1,
+      "duration_sec": 25819,
+      "disk_write_mb": 7.8,
+      "peak_memory_mb": 16100
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tabula_muris_senis_alpha_5",
+    "mean_score": 0.7383,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.1826
+    },
+    "scaled_scores": {
+      "r2": 0.7383
+    },
+    "submission_time": "2023-02-21 23:05:22.353"
+  },
+  "random_proportions:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 11.7,
+      "disk_read_mb": 215.6,
+      "duration_sec": 460,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 225.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -1.5049
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 18:02:42.599"
+  },
+  "nnls_scipy:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 10.6,
+      "disk_read_mb": 215.6,
+      "duration_sec": 460,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 226.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.7148,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": 0.2855
+    },
+    "scaled_scores": {
+      "r2": 0.7148
+    },
+    "submission_time": "2023-02-21 18:02:42.606"
+  },
+  "true_proportions:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 11.9,
+      "disk_read_mb": 215.6,
+      "duration_sec": 460,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 225.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 18:02:42.780"
+  },
+  "nmf:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 112.1,
+      "disk_read_mb": 215.6,
+      "duration_sec": 470,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 658.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.1682,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -1.0834
+    },
+    "scaled_scores": {
+      "r2": 0.1682
+    },
+    "submission_time": "2023-02-21 18:02:42.733"
+  },
+  "nmfreg:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 581.8,
+      "disk_read_mb": 215.6,
+      "duration_sec": 540,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.4658,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": -0.3382
+    },
+    "scaled_scores": {
+      "r2": 0.4658
+    },
+    "submission_time": "2023-02-21 18:02:42.727"
+  },
+  "tangram:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 491.3,
+      "disk_read_mb": 229,
+      "duration_sec": 591,
+      "disk_write_mb": 4.7,
+      "peak_memory_mb": 1000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": -0.1428,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -1.8625
+    },
+    "scaled_scores": {
+      "r2": -0.1428
+    },
+    "submission_time": "2023-02-21 18:02:42.761"
+  },
+  "seuratv3:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 144.8,
+      "disk_read_mb": 440.3,
+      "duration_sec": 649,
+      "disk_write_mb": 137.9,
+      "peak_memory_mb": 72000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": -0.5085,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -2.7787
+    },
+    "scaled_scores": {
+      "r2": -0.5085
+    },
+    "submission_time": "2023-02-21 18:02:42.703"
+  },
+  "stereoscope:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 588.1,
+      "disk_read_mb": 237.1,
+      "duration_sec": 1460,
+      "disk_write_mb": 4.3,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.6702,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.1739
+    },
+    "scaled_scores": {
+      "r2": 0.6702
+    },
+    "submission_time": "2023-02-21 18:40:21.584"
+  },
+  "rctd:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 26,
+      "disk_read_mb": 644.6,
+      "duration_sec": 2619,
+      "disk_write_mb": 4.6,
+      "peak_memory_mb": 2400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.6833,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": 0.2066
+    },
+    "scaled_scores": {
+      "r2": 0.6833
+    },
+    "submission_time": "2023-02-21 18:43:42.576"
+  },
+  "cell2location_detection_alpha_1:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 1312.7,
+      "disk_read_mb": 240,
+      "duration_sec": 6605,
+      "disk_write_mb": 15.9,
+      "peak_memory_mb": 1900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.8708,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.6764
+    },
+    "scaled_scores": {
+      "r2": 0.8708
+    },
+    "submission_time": "2023-02-21 23:00:57.524"
+  },
+  "destvi:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2164.3,
+      "disk_read_mb": 237.2,
+      "duration_sec": 12289,
+      "disk_write_mb": 7.3,
+      "peak_memory_mb": 17200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.7204,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.2996
+    },
+    "scaled_scores": {
+      "r2": 0.7204
+    },
+    "submission_time": "2023-02-21 23:01:13.035"
+  },
+  "cell2location_detection_alpha_20:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1367.1,
+      "disk_read_mb": 240,
+      "duration_sec": 16090,
+      "disk_write_mb": 15,
+      "peak_memory_mb": 1200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.8694,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.6728
+    },
+    "scaled_scores": {
+      "r2": 0.8694
+    },
+    "submission_time": "2023-02-21 23:04:22.066"
+  },
+  "cell2location_detection_alpha_20_nb:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1502,
+      "disk_read_mb": 240,
+      "duration_sec": 17769,
+      "disk_write_mb": 15,
+      "peak_memory_mb": 3200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.8693,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.6727
+    },
+    "scaled_scores": {
+      "r2": 0.8693
+    },
+    "submission_time": "2023-02-21 23:05:13.136"
+  },
+  "cell2location_detection_alpha_200:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 1287,
+      "disk_read_mb": 240,
+      "duration_sec": 19219,
+      "disk_write_mb": 14.9,
+      "peak_memory_mb": 3500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.8665,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.6656
+    },
+    "scaled_scores": {
+      "r2": 0.8665
+    },
+    "submission_time": "2023-02-21 23:06:03.346"
+  },
+  "cell2location_amortised_detection_alpha_20:pancreas_alpha_5": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1904.8,
+      "disk_read_mb": 240,
+      "duration_sec": 25550,
+      "disk_write_mb": 47.5,
+      "peak_memory_mb": 17900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "pancreas_alpha_5",
+    "mean_score": 0.8584,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.6453
+    },
+    "scaled_scores": {
+      "r2": 0.8584
+    },
+    "submission_time": "2023-02-21 23:18:32.401"
+  },
+  "nnls_scipy:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nnls_scipy",
+    "resources": {
+      "cpu_pct": 72.3,
+      "disk_read_mb": 472.2,
+      "duration_sec": 530,
+      "disk_write_mb": 25.1,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.5091,
+    "code_version": "1.9.3",
+    "metric_values": {
+      "r2": 0.3956
+    },
+    "scaled_scores": {
+      "r2": 0.5091
+    },
+    "submission_time": "2023-02-21 18:05:42.655"
+  },
+  "random_proportions:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "random_proportions",
+    "resources": {
+      "cpu_pct": 67.8,
+      "disk_read_mb": 472.2,
+      "duration_sec": 540,
+      "disk_write_mb": 25.1,
+      "peak_memory_mb": 235.1
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": -0.2313
+    },
+    "scaled_scores": {
+      "r2": 0
+    },
+    "submission_time": "2023-02-21 18:05:42.713"
+  },
+  "nmf:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmf",
+    "resources": {
+      "cpu_pct": 185.5,
+      "disk_read_mb": 472.2,
+      "duration_sec": 540,
+      "disk_write_mb": 25.1,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.3344,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": 0.1804
+    },
+    "scaled_scores": {
+      "r2": 0.3344
+    },
+    "submission_time": "2023-02-21 18:05:42.767"
+  },
+  "nmfreg:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "nmfreg",
+    "resources": {
+      "cpu_pct": 336.6,
+      "disk_read_mb": 472.2,
+      "duration_sec": 644,
+      "disk_write_mb": 25.1,
+      "peak_memory_mb": 2300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.643,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "r2": 0.5604
+    },
+    "scaled_scores": {
+      "r2": 0.643
+    },
+    "submission_time": "2023-02-21 18:05:42.880"
+  },
+  "true_proportions:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "true_proportions",
+    "resources": {
+      "cpu_pct": 14,
+      "disk_read_mb": 472.2,
+      "duration_sec": 644,
+      "disk_write_mb": 25.1,
+      "peak_memory_mb": 232.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 1,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "r2": 1
+    },
+    "scaled_scores": {
+      "r2": 1
+    },
+    "submission_time": "2023-02-21 18:05:42.896"
+  },
+  "seuratv3:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "seuratv3",
+    "resources": {
+      "cpu_pct": 117.6,
+      "disk_read_mb": 1200,
+      "duration_sec": 939,
+      "disk_write_mb": 784.9,
+      "peak_memory_mb": 68800
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": -4.8477,
+    "code_version": "4.3.0",
+    "metric_values": {
+      "r2": -6.2003
+    },
+    "scaled_scores": {
+      "r2": -4.8477
+    },
+    "submission_time": "2023-02-21 18:05:42.829"
+  },
+  "rctd:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "rctd",
+    "resources": {
+      "cpu_pct": 50,
+      "disk_read_mb": 900.8,
+      "duration_sec": 1039,
+      "disk_write_mb": 31.3,
+      "peak_memory_mb": 4300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.1138,
+    "code_version": "2.1.7",
+    "metric_values": {
+      "r2": -0.0912
+    },
+    "scaled_scores": {
+      "r2": 0.1138
+    },
+    "submission_time": "2023-02-21 18:05:43.049"
+  },
+  "stereoscope:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "stereoscope",
+    "resources": {
+      "cpu_pct": 186.3,
+      "disk_read_mb": 493.6,
+      "duration_sec": 1990,
+      "disk_write_mb": 25.4,
+      "peak_memory_mb": 1600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.3384,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.1854
+    },
+    "scaled_scores": {
+      "r2": 0.3384
+    },
+    "submission_time": "2023-02-21 18:05:43.061"
+  },
+  "tangram:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "tangram",
+    "resources": {
+      "cpu_pct": 475.6,
+      "disk_read_mb": 485.4,
+      "duration_sec": 3349,
+      "disk_write_mb": 25.3,
+      "peak_memory_mb": 3200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": -2.6383,
+    "code_version": "1.0.4",
+    "metric_values": {
+      "r2": -3.4799
+    },
+    "scaled_scores": {
+      "r2": -2.6383
+    },
+    "submission_time": "2023-02-21 18:44:22.224"
+  },
+  "cell2location_detection_alpha_20:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 2072,
+      "disk_read_mb": 496.4,
+      "duration_sec": 22909,
+      "disk_write_mb": 38.7,
+      "peak_memory_mb": 5200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.9122,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8919
+    },
+    "scaled_scores": {
+      "r2": 0.9122
+    },
+    "submission_time": "2023-02-21 23:14:32.681"
+  },
+  "cell2location_detection_alpha_200:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_200",
+    "resources": {
+      "cpu_pct": 2039.5,
+      "disk_read_mb": 496.4,
+      "duration_sec": 23159,
+      "disk_write_mb": 38.7,
+      "peak_memory_mb": 5200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.9122,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8919
+    },
+    "scaled_scores": {
+      "r2": 0.9122
+    },
+    "submission_time": "2023-02-21 23:15:03.305"
+  },
+  "cell2location_detection_alpha_20_nb:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_20_nb",
+    "resources": {
+      "cpu_pct": 1887.7,
+      "disk_read_mb": 496.4,
+      "duration_sec": 24710,
+      "disk_write_mb": 38.9,
+      "peak_memory_mb": 5200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.9126,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8924
+    },
+    "scaled_scores": {
+      "r2": 0.9126
+    },
+    "submission_time": "2023-02-21 23:15:01.890"
+  },
+  "cell2location_amortised_detection_alpha_20:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_amortised_detection_alpha_20",
+    "resources": {
+      "cpu_pct": 1909,
+      "disk_read_mb": 496.4,
+      "duration_sec": 26560,
+      "disk_write_mb": 65.2,
+      "peak_memory_mb": 41300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.9129,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.8927
+    },
+    "scaled_scores": {
+      "r2": 0.9129
+    },
+    "submission_time": "2023-02-21 23:08:51.873"
+  },
+  "cell2location_detection_alpha_1:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "cell2location_detection_alpha_1",
+    "resources": {
+      "cpu_pct": 2009.5,
+      "disk_read_mb": 496.4,
+      "duration_sec": 28349,
+      "disk_write_mb": 38.7,
+      "peak_memory_mb": 5300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.9123,
+    "code_version": "0.1.3",
+    "metric_values": {
+      "r2": 0.892
+    },
+    "scaled_scores": {
+      "r2": 0.9123
+    },
+    "submission_time": "2023-02-21 23:22:03.329"
+  },
+  "destvi:destvi": {
+    "task_id": "spatial_decomposition",
+    "method_id": "destvi",
+    "resources": {
+      "cpu_pct": 2259.9,
+      "disk_read_mb": 493.8,
+      "duration_sec": 23700,
+      "disk_write_mb": 28.4,
+      "peak_memory_mb": 22200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "destvi",
+    "mean_score": 0.9109,
+    "code_version": "0.20.0",
+    "metric_values": {
+      "r2": 0.8903
+    },
+    "scaled_scores": {
+      "r2": 0.9109
+    },
+    "submission_time": "2023-02-22 08:08:32.187"
+  }
+}

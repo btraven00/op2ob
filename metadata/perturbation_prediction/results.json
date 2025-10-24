@@ -1,1 +1,338 @@
-{}
+{
+  "ground_truth:neurips-2023-data": {
+    "method_id": "ground_truth",
+    "resources": {
+      "submit": "2024-10-31 05:21:23",
+      "cpu_pct": 206.8,
+      "exit_code": 0,
+      "disk_read_mb": 135,
+      "duration_sec": 9,
+      "disk_write_mb": 6,
+      "peak_memory_mb": 3482
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 1,
+    "metric_values": {
+      "mean_rowwise_mae": 0,
+      "mean_rowwise_rmse": 0,
+      "mean_rowwise_cosine": 1,
+      "mean_rowwise_pearson": 1,
+      "mean_rowwise_spearman": 1
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 1,
+      "mean_rowwise_rmse": 1,
+      "mean_rowwise_cosine": 1,
+      "mean_rowwise_pearson": 1,
+      "mean_rowwise_spearman": 1
+    }
+  },
+  "jn_ap_op2:neurips-2023-data": {
+    "method_id": "jn_ap_op2",
+    "resources": {
+      "submit": "2024-10-31 05:21:22",
+      "cpu_pct": 100,
+      "exit_code": 0,
+      "disk_read_mb": 228,
+      "duration_sec": 3061,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 16077
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.3254,
+    "metric_values": {
+      "mean_rowwise_mae": 0.6518,
+      "mean_rowwise_rmse": 0.8965,
+      "mean_rowwise_cosine": 0.3289,
+      "mean_rowwise_pearson": 0.3267,
+      "mean_rowwise_spearman": 0.3054
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.3233,
+      "mean_rowwise_rmse": 0.3425,
+      "mean_rowwise_cosine": 0.3289,
+      "mean_rowwise_pearson": 0.3267,
+      "mean_rowwise_spearman": 0.3054
+    }
+  },
+  "lgc_ensemble:neurips-2023-data": {
+    "method_id": "lgc_ensemble",
+    "resources": {
+      "submit": "2024-10-31 05:21:24",
+      "cpu_pct": 134.5855,
+      "exit_code": 0,
+      "disk_read_mb": 12449,
+      "duration_sec": 6026,
+      "disk_write_mb": 3592,
+      "peak_memory_mb": 50279
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.4306,
+    "metric_values": {
+      "mean_rowwise_mae": 0.5756,
+      "mean_rowwise_rmse": 0.7921,
+      "mean_rowwise_cosine": 0.4552,
+      "mean_rowwise_pearson": 0.4514,
+      "mean_rowwise_spearman": 0.4247
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.4024,
+      "mean_rowwise_rmse": 0.4191,
+      "mean_rowwise_cosine": 0.4552,
+      "mean_rowwise_pearson": 0.4514,
+      "mean_rowwise_spearman": 0.4247
+    }
+  },
+  "mean_across_celltypes:neurips-2023-data": {
+    "method_id": "mean_across_celltypes",
+    "resources": {
+      "submit": "2024-10-31 05:21:22",
+      "cpu_pct": 472.1,
+      "exit_code": 0,
+      "disk_read_mb": 193,
+      "duration_sec": 3,
+      "disk_write_mb": 2,
+      "peak_memory_mb": 5735
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.3113,
+    "metric_values": {
+      "mean_rowwise_mae": 0.6437,
+      "mean_rowwise_rmse": 0.8925,
+      "mean_rowwise_cosine": 0.3017,
+      "mean_rowwise_pearson": 0.2972,
+      "mean_rowwise_spearman": 0.2806
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.3318,
+      "mean_rowwise_rmse": 0.3455,
+      "mean_rowwise_cosine": 0.3017,
+      "mean_rowwise_pearson": 0.2972,
+      "mean_rowwise_spearman": 0.2806
+    }
+  },
+  "mean_across_compounds:neurips-2023-data": {
+    "method_id": "mean_across_compounds",
+    "resources": {
+      "submit": "2024-10-31 05:21:23",
+      "cpu_pct": 213.1,
+      "exit_code": 0,
+      "disk_read_mb": 193,
+      "duration_sec": 6.4,
+      "disk_write_mb": 4,
+      "peak_memory_mb": 5940
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.2698,
+    "metric_values": {
+      "mean_rowwise_mae": 0.6979,
+      "mean_rowwise_rmse": 0.9428,
+      "mean_rowwise_cosine": 0.2628,
+      "mean_rowwise_pearson": 0.2594,
+      "mean_rowwise_spearman": 0.2425
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.2755,
+      "mean_rowwise_rmse": 0.3086,
+      "mean_rowwise_cosine": 0.2628,
+      "mean_rowwise_pearson": 0.2594,
+      "mean_rowwise_spearman": 0.2425
+    }
+  },
+  "mean_outcome:neurips-2023-data": {
+    "method_id": "mean_outcome",
+    "resources": {
+      "submit": "2024-10-31 05:21:21",
+      "cpu_pct": 265.6,
+      "exit_code": 0,
+      "disk_read_mb": 193,
+      "duration_sec": 5.3,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5632
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.2677,
+    "metric_values": {
+      "mean_rowwise_mae": 0.6356,
+      "mean_rowwise_rmse": 0.8992,
+      "mean_rowwise_cosine": 0.2264,
+      "mean_rowwise_pearson": 0.2198,
+      "mean_rowwise_spearman": 0.2117
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.3401,
+      "mean_rowwise_rmse": 0.3405,
+      "mean_rowwise_cosine": 0.2264,
+      "mean_rowwise_pearson": 0.2198,
+      "mean_rowwise_spearman": 0.2117
+    }
+  },
+  "nn_retraining_with_pseudolabels:neurips-2023-data": {
+    "method_id": "nn_retraining_with_pseudolabels",
+    "resources": {
+      "submit": "2024-10-31 05:21:21",
+      "cpu_pct": 1293.7,
+      "exit_code": 0,
+      "disk_read_mb": 247,
+      "duration_sec": 2546,
+      "disk_write_mb": 8,
+      "peak_memory_mb": 52736
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.4652,
+    "metric_values": {
+      "mean_rowwise_mae": 0.5464,
+      "mean_rowwise_rmse": 0.7562,
+      "mean_rowwise_cosine": 0.4941,
+      "mean_rowwise_pearson": 0.4909,
+      "mean_rowwise_spearman": 0.4627
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.4328,
+      "mean_rowwise_rmse": 0.4455,
+      "mean_rowwise_cosine": 0.4941,
+      "mean_rowwise_pearson": 0.4909,
+      "mean_rowwise_spearman": 0.4627
+    }
+  },
+  "pyboost:neurips-2023-data": {
+    "method_id": "pyboost",
+    "resources": {
+      "submit": "2024-10-31 05:21:21",
+      "cpu_pct": 154.1,
+      "exit_code": 0,
+      "disk_read_mb": 261,
+      "duration_sec": 151,
+      "disk_write_mb": 13,
+      "peak_memory_mb": 22221
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.4395,
+    "metric_values": {
+      "mean_rowwise_mae": 0.5609,
+      "mean_rowwise_rmse": 0.7957,
+      "mean_rowwise_cosine": 0.4638,
+      "mean_rowwise_pearson": 0.4607,
+      "mean_rowwise_spearman": 0.439
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.4178,
+      "mean_rowwise_rmse": 0.4165,
+      "mean_rowwise_cosine": 0.4638,
+      "mean_rowwise_pearson": 0.4607,
+      "mean_rowwise_spearman": 0.439
+    }
+  },
+  "sample:neurips-2023-data": {
+    "method_id": "sample",
+    "resources": {
+      "submit": "2024-10-31 05:21:22",
+      "cpu_pct": 216.6,
+      "exit_code": 0,
+      "disk_read_mb": 203,
+      "duration_sec": 8.9,
+      "disk_write_mb": 6,
+      "peak_memory_mb": 3584
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.0326,
+    "metric_values": {
+      "mean_rowwise_mae": 0.9633,
+      "mean_rowwise_rmse": 1.3636,
+      "mean_rowwise_cosine": 0.0547,
+      "mean_rowwise_pearson": 0.0524,
+      "mean_rowwise_spearman": 0.0562
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0,
+      "mean_rowwise_rmse": 0,
+      "mean_rowwise_cosine": 0.0547,
+      "mean_rowwise_pearson": 0.0524,
+      "mean_rowwise_spearman": 0.0562
+    }
+  },
+  "scape:neurips-2023-data": {
+    "method_id": "scape",
+    "resources": {
+      "submit": "2024-10-31 05:21:22",
+      "cpu_pct": 737.4,
+      "exit_code": 0,
+      "disk_read_mb": 228,
+      "duration_sec": 8392,
+      "disk_write_mb": 25088,
+      "peak_memory_mb": 44237
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.4456,
+    "metric_values": {
+      "mean_rowwise_mae": 0.5722,
+      "mean_rowwise_rmse": 0.7748,
+      "mean_rowwise_cosine": 0.4758,
+      "mean_rowwise_pearson": 0.4728,
+      "mean_rowwise_spearman": 0.4417
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.406,
+      "mean_rowwise_rmse": 0.4318,
+      "mean_rowwise_cosine": 0.4758,
+      "mean_rowwise_pearson": 0.4728,
+      "mean_rowwise_spearman": 0.4417
+    }
+  },
+  "transformer_ensemble:neurips-2023-data": {
+    "method_id": "transformer_ensemble",
+    "resources": {
+      "submit": "2024-10-31 05:21:21",
+      "cpu_pct": 216.4,
+      "exit_code": 0,
+      "disk_read_mb": 227,
+      "duration_sec": 3933,
+      "disk_write_mb": 6,
+      "peak_memory_mb": 18944
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.2694,
+    "metric_values": {
+      "mean_rowwise_mae": 0.6339,
+      "mean_rowwise_rmse": 0.8988,
+      "mean_rowwise_cosine": 0.2267,
+      "mean_rowwise_pearson": 0.2212,
+      "mean_rowwise_spearman": 0.2164
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.342,
+      "mean_rowwise_rmse": 0.3408,
+      "mean_rowwise_cosine": 0.2267,
+      "mean_rowwise_pearson": 0.2212,
+      "mean_rowwise_spearman": 0.2164
+    }
+  },
+  "zeros:neurips-2023-data": {
+    "method_id": "zeros",
+    "resources": {
+      "submit": "2024-10-31 05:21:23",
+      "cpu_pct": 234.9,
+      "exit_code": 0,
+      "disk_read_mb": 193,
+      "duration_sec": 5.8,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5837
+    },
+    "dataset_id": "neurips-2023-data",
+    "mean_score": 0.1335,
+    "metric_values": {
+      "mean_rowwise_mae": 0.6351,
+      "mean_rowwise_rmse": 0.9179,
+      "mean_rowwise_cosine": 0,
+      "mean_rowwise_pearson": 0,
+      "mean_rowwise_spearman": 0
+    },
+    "scaled_scores": {
+      "mean_rowwise_mae": 0.3407,
+      "mean_rowwise_rmse": 0.3268,
+      "mean_rowwise_cosine": 0,
+      "mean_rowwise_pearson": 0,
+      "mean_rowwise_spearman": 0
+    }
+  }
+}

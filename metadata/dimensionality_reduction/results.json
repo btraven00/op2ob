@@ -1,1 +1,3850 @@
-{}
+{
+  "pca_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k",
+    "resources": {
+      "cpu_pct": 118.9,
+      "disk_read_mb": 1200,
+      "duration_sec": 280,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 1700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3534,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "trustworthiness": 0.7913,
+      "density_preservation": -0.0365,
+      "distance_correlation": 0.7266,
+      "distance_correlation_spectral": -0.0159
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.583,
+      "density_preservation": -0.0161,
+      "distance_correlation": 0.8463,
+      "distance_correlation_spectral": 0.0005
+    },
+    "submission_time": "2023-02-21 17:59:03.360"
+  },
+  "pca_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 37.8,
+      "disk_read_mb": 1200,
+      "duration_sec": 348,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.2988,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "trustworthiness": 0.7043,
+      "density_preservation": 0.0671,
+      "distance_correlation": 0.4386,
+      "distance_correlation_spectral": 0.171
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.4093,
+      "density_preservation": 0.0854,
+      "distance_correlation": 0.5081,
+      "distance_correlation_spectral": 0.1924
+    },
+    "submission_time": "2023-02-21 17:59:03.727"
+  },
+  "umap_pca_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 165.4,
+      "disk_read_mb": 1200,
+      "duration_sec": 360,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 1800
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3404,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.9056,
+      "density_preservation": -0.0816,
+      "distance_correlation": 0.53,
+      "distance_correlation_spectral": -0.0212
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.8114,
+      "density_preservation": -0.0604,
+      "distance_correlation": 0.6154,
+      "distance_correlation_spectral": -0.005
+    },
+    "submission_time": "2023-02-21 17:59:02.609"
+  },
+  "true_features:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "true_features",
+    "resources": {
+      "cpu_pct": 13.2,
+      "disk_read_mb": 1200,
+      "duration_sec": 399,
+      "disk_write_mb": 3600,
+      "peak_memory_mb": 3400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.75,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 0.8575,
+      "distance_correlation_spectral": -0.0163
+    },
+    "scaled_scores": {
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 1,
+      "distance_correlation_spectral": 0
+    },
+    "submission_time": "2023-02-21 17:59:02.707"
+  },
+  "random_features:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "random_features",
+    "resources": {
+      "cpu_pct": 8.6,
+      "disk_read_mb": 1200,
+      "duration_sec": 409,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.0098,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "trustworthiness": 0.4994,
+      "density_preservation": -0.0023,
+      "distance_correlation": 0.006,
+      "distance_correlation_spectral": 0.005
+    },
+    "scaled_scores": {
+      "trustworthiness": 0,
+      "density_preservation": 0.0174,
+      "distance_correlation": 0,
+      "distance_correlation_spectral": 0.0219
+    },
+    "submission_time": "2023-02-21 17:59:02.620"
+  },
+  "phate_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k",
+    "resources": {
+      "cpu_pct": 248.3,
+      "disk_read_mb": 1200,
+      "duration_sec": 498,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.4038,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "trustworthiness": 0.8427,
+      "density_preservation": 0.0322,
+      "distance_correlation": 0.5919,
+      "distance_correlation_spectral": 0.1687
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.6859,
+      "density_preservation": 0.0512,
+      "distance_correlation": 0.688,
+      "distance_correlation_spectral": 0.19
+    },
+    "submission_time": "2023-02-21 17:59:03.664"
+  },
+  "umap_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 174.4,
+      "disk_read_mb": 1200,
+      "duration_sec": 510,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.36,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8658,
+      "density_preservation": -0.0202,
+      "distance_correlation": 0.49,
+      "distance_correlation_spectral": 0.1199
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7319,
+      "density_preservation": -0.0001,
+      "distance_correlation": 0.5685,
+      "distance_correlation_spectral": 0.1399
+    },
+    "submission_time": "2023-02-21 17:59:12.065"
+  },
+  "densmap_pca_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 112.7,
+      "disk_read_mb": 1200,
+      "duration_sec": 579,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.4561,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8537,
+      "density_preservation": 0.2526,
+      "distance_correlation": 0.5711,
+      "distance_correlation_spectral": 0.1647
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7077,
+      "density_preservation": 0.2673,
+      "distance_correlation": 0.6636,
+      "distance_correlation_spectral": 0.1859
+    },
+    "submission_time": "2023-02-21 17:59:02.916"
+  },
+  "umap_pca_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 128.6,
+      "disk_read_mb": 1200,
+      "duration_sec": 609,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3725,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8871,
+      "density_preservation": -0.0626,
+      "distance_correlation": 0.5202,
+      "distance_correlation_spectral": 0.1329
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7744,
+      "density_preservation": -0.0417,
+      "distance_correlation": 0.6039,
+      "distance_correlation_spectral": 0.1533
+    },
+    "submission_time": "2023-02-21 17:59:02.569"
+  },
+  "phate_default:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_default",
+    "resources": {
+      "cpu_pct": 178.2,
+      "disk_read_mb": 1200,
+      "duration_sec": 648,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3571,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "trustworthiness": 0.8806,
+      "density_preservation": 0.0626,
+      "distance_correlation": 0.4828,
+      "distance_correlation_spectral": 0.009
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7615,
+      "density_preservation": 0.0811,
+      "distance_correlation": 0.56,
+      "distance_correlation_spectral": 0.026
+    },
+    "submission_time": "2023-02-21 17:59:03.566"
+  },
+  "densmap_pca_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 110,
+      "disk_read_mb": 1200,
+      "duration_sec": 972,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 1800
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.4476,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8818,
+      "density_preservation": 0.411,
+      "distance_correlation": 0.4737,
+      "distance_correlation_spectral": 0.0369
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7639,
+      "density_preservation": 0.4225,
+      "distance_correlation": 0.5493,
+      "distance_correlation_spectral": 0.0546
+    },
+    "submission_time": "2023-02-21 17:59:03.072"
+  },
+  "densmap_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 123.5,
+      "disk_read_mb": 1200,
+      "duration_sec": 982,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.4321,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8303,
+      "density_preservation": 0.3084,
+      "distance_correlation": 0.5212,
+      "distance_correlation_spectral": 0.1203
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.6611,
+      "density_preservation": 0.322,
+      "distance_correlation": 0.605,
+      "distance_correlation_spectral": 0.1403
+    },
+    "submission_time": "2023-02-21 17:59:02.852"
+  },
+  "phate_sqrt:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_sqrt",
+    "resources": {
+      "cpu_pct": 297.6,
+      "disk_read_mb": 1200,
+      "duration_sec": 1053,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3865,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "trustworthiness": 0.8843,
+      "density_preservation": 0.0857,
+      "distance_correlation": 0.4894,
+      "distance_correlation_spectral": 0.0868
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7688,
+      "density_preservation": 0.1036,
+      "distance_correlation": 0.5677,
+      "distance_correlation_spectral": 0.1059
+    },
+    "submission_time": "2023-02-21 17:59:02.361"
+  },
+  "phate_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 304.2,
+      "disk_read_mb": 1200,
+      "duration_sec": 1073,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 1500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3012,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "trustworthiness": 0.8655,
+      "density_preservation": -0.0378,
+      "distance_correlation": 0.4609,
+      "distance_correlation_spectral": -0.0585
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7312,
+      "density_preservation": -0.0174,
+      "distance_correlation": 0.5342,
+      "distance_correlation_spectral": -0.0433
+    },
+    "submission_time": "2023-02-21 17:59:02.224"
+  },
+  "tsne_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 181.4,
+      "disk_read_mb": 1200,
+      "duration_sec": 1092,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 2600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3575,
+    "code_version": "0.1",
+    "metric_values": {
+      "trustworthiness": 0.8976,
+      "density_preservation": 0.0119,
+      "distance_correlation": 0.4275,
+      "distance_correlation_spectral": 0.0889
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7955,
+      "density_preservation": 0.0314,
+      "distance_correlation": 0.4951,
+      "distance_correlation_spectral": 0.108
+    },
+    "submission_time": "2023-02-21 17:59:02.529"
+  },
+  "diffusion_map:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "diffusion_map",
+    "resources": {
+      "cpu_pct": 343.1,
+      "disk_read_mb": 1200,
+      "duration_sec": 1136,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 5500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3361,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "trustworthiness": 0.7648,
+      "density_preservation": -0.031,
+      "distance_correlation": 0.483,
+      "distance_correlation_spectral": 0.2416
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.5302,
+      "density_preservation": -0.0107,
+      "distance_correlation": 0.5602,
+      "distance_correlation_spectral": 0.2649
+    },
+    "submission_time": "2023-02-21 17:59:03.398"
+  },
+  "tsne_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k",
+    "resources": {
+      "cpu_pct": 192.3,
+      "disk_read_mb": 1200,
+      "duration_sec": 1199,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 2600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.383,
+    "code_version": "0.1",
+    "metric_values": {
+      "trustworthiness": 0.9203,
+      "density_preservation": 0.0022,
+      "distance_correlation": 0.4728,
+      "distance_correlation_spectral": 0.1015
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.8409,
+      "density_preservation": 0.0218,
+      "distance_correlation": 0.5482,
+      "distance_correlation_spectral": 0.121
+    },
+    "submission_time": "2023-02-21 17:59:02.532"
+  },
+  "umap_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k",
+    "resources": {
+      "cpu_pct": 270.2,
+      "disk_read_mb": 1200,
+      "duration_sec": 1437,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 5500
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3295,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8343,
+      "density_preservation": 0.0861,
+      "distance_correlation": 0.4947,
+      "distance_correlation_spectral": -0.0445
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.6691,
+      "density_preservation": 0.1041,
+      "distance_correlation": 0.5739,
+      "distance_correlation_spectral": -0.0289
+    },
+    "submission_time": "2023-02-21 17:59:04.009"
+  },
+  "densmap_logCP10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k",
+    "resources": {
+      "cpu_pct": 239.8,
+      "disk_read_mb": 1200,
+      "duration_sec": 1928,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 5700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.545,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "trustworthiness": 0.8143,
+      "density_preservation": 0.7826,
+      "distance_correlation": 0.6623,
+      "distance_correlation_spectral": -0.0226
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.6291,
+      "density_preservation": 0.7869,
+      "distance_correlation": 0.7707,
+      "distance_correlation_spectral": -0.0065
+    },
+    "submission_time": "2023-02-21 17:59:03.194"
+  },
+  "spectral_features:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "spectral_features",
+    "resources": {
+      "cpu_pct": 340.6,
+      "disk_read_mb": 1200,
+      "duration_sec": 1987,
+      "disk_write_mb": 1300,
+      "peak_memory_mb": 5600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.4688,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "trustworthiness": 0.865,
+      "density_preservation": -0.0201,
+      "distance_correlation": 0.1293,
+      "distance_correlation_spectral": 0.9574
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7304,
+      "density_preservation": 0,
+      "distance_correlation": 0.1448,
+      "distance_correlation_spectral": 1
+    },
+    "submission_time": "2023-02-21 17:59:03.872"
+  },
+  "pymde_distances_log_cp10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k",
+    "resources": {
+      "cpu_pct": 461.8,
+      "disk_read_mb": 1200,
+      "duration_sec": 1690,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 57800
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.458,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "trustworthiness": 0.8195,
+      "density_preservation": 0.0811,
+      "distance_correlation": 0.8238,
+      "distance_correlation_spectral": 0.113
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.6394,
+      "density_preservation": 0.0992,
+      "distance_correlation": 0.9604,
+      "distance_correlation_spectral": 0.1328
+    },
+    "submission_time": "2023-02-21 18:10:12.060"
+  },
+  "pymde_distances_log_cp10k_hvg:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 470.5,
+      "disk_read_mb": 1200,
+      "duration_sec": 1640,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 57900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3407,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "trustworthiness": 0.7216,
+      "density_preservation": 0.0816,
+      "distance_correlation": 0.4913,
+      "distance_correlation_spectral": 0.2264
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.4438,
+      "density_preservation": 0.0996,
+      "distance_correlation": 0.57,
+      "distance_correlation_spectral": 0.2493
+    },
+    "submission_time": "2023-02-21 18:11:33.905"
+  },
+  "pymde_neighbors_log_cp10k_hvg:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 268.3,
+      "disk_read_mb": 1200,
+      "duration_sec": 1098,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1600
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3775,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "trustworthiness": 0.8805,
+      "density_preservation": -0.054,
+      "distance_correlation": 0.5319,
+      "distance_correlation_spectral": 0.1438
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.7612,
+      "density_preservation": -0.0333,
+      "distance_correlation": 0.6176,
+      "distance_correlation_spectral": 0.1645
+    },
+    "submission_time": "2023-02-21 18:36:22.956"
+  },
+  "neuralee_default:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_default",
+    "resources": {
+      "cpu_pct": 321.7,
+      "disk_read_mb": 1200,
+      "duration_sec": 1159,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 14000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.2787,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "trustworthiness": 0.8134,
+      "density_preservation": -0.1209,
+      "distance_correlation": 0.5167,
+      "distance_correlation_spectral": -0.0293
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.6272,
+      "density_preservation": -0.0988,
+      "distance_correlation": 0.5997,
+      "distance_correlation_spectral": -0.0133
+    },
+    "submission_time": "2023-02-21 18:36:21.915"
+  },
+  "pymde_neighbors_log_cp10k:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k",
+    "resources": {
+      "cpu_pct": 308.4,
+      "disk_read_mb": 1200,
+      "duration_sec": 1228,
+      "disk_write_mb": 1100,
+      "peak_memory_mb": 1900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.351,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "trustworthiness": 0.9017,
+      "density_preservation": -0.0703,
+      "distance_correlation": 0.5546,
+      "distance_correlation_spectral": -0.0111
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.8036,
+      "density_preservation": -0.0492,
+      "distance_correlation": 0.6443,
+      "distance_correlation_spectral": 0.0054
+    },
+    "submission_time": "2023-02-21 18:36:23.432"
+  },
+  "neuralee_logCP10k_1kHVG:zebrafish_labs": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 413.3,
+      "disk_read_mb": 1200,
+      "duration_sec": 1869,
+      "disk_write_mb": 1500,
+      "peak_memory_mb": 1700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "zebrafish_labs",
+    "mean_score": 0.3558,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "trustworthiness": 0.7858,
+      "density_preservation": 0.0638,
+      "distance_correlation": 0.5028,
+      "distance_correlation_spectral": 0.1644
+    },
+    "scaled_scores": {
+      "trustworthiness": 0.572,
+      "density_preservation": 0.0822,
+      "distance_correlation": 0.5834,
+      "distance_correlation_spectral": 0.1856
+    },
+    "submission_time": "2023-02-21 18:36:22.166"
+  },
+  "phate_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 144.7,
+      "disk_read_mb": 144.3,
+      "duration_sec": 348,
+      "disk_write_mb": 98.1,
+      "peak_memory_mb": 496
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4007,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.436,
+      "lcmc": 0.3889,
+      "qlocal": 0.4781,
+      "qglobal": 0.6851,
+      "qnn_auc": 0.6607,
+      "continuity": 0.9705,
+      "trustworthiness": 0.9545,
+      "density_preservation": 0.1678,
+      "distance_correlation": 0.317,
+      "distance_correlation_spectral": -0.0788
+    },
+    "scaled_scores": {
+      "qnn": 0.4085,
+      "lcmc": 0.4078,
+      "qlocal": 0.4102,
+      "qglobal": 0.1873,
+      "qnn_auc": 0.3183,
+      "continuity": 0.9461,
+      "trustworthiness": 0.9087,
+      "density_preservation": 0.1768,
+      "distance_correlation": 0.3222,
+      "distance_correlation_spectral": -0.0785
+    },
+    "submission_time": "2023-02-21 17:58:03.278"
+  },
+  "phate_sqrt:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_sqrt",
+    "resources": {
+      "cpu_pct": 158,
+      "disk_read_mb": 144.3,
+      "duration_sec": 358,
+      "disk_write_mb": 124.2,
+      "peak_memory_mb": 549.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4016,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.4258,
+      "lcmc": 0.3787,
+      "qlocal": 0.4732,
+      "qglobal": 0.708,
+      "qnn_auc": 0.6802,
+      "continuity": 0.9708,
+      "trustworthiness": 0.9537,
+      "density_preservation": 0.0427,
+      "distance_correlation": 0.3568,
+      "distance_correlation_spectral": -0.058
+    },
+    "scaled_scores": {
+      "qnn": 0.3978,
+      "lcmc": 0.3972,
+      "qlocal": 0.4046,
+      "qglobal": 0.2459,
+      "qnn_auc": 0.3574,
+      "continuity": 0.9466,
+      "trustworthiness": 0.907,
+      "density_preservation": 0.053,
+      "distance_correlation": 0.3641,
+      "distance_correlation_spectral": -0.0577
+    },
+    "submission_time": "2023-02-21 17:58:03.399"
+  },
+  "neuralee_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 142.5,
+      "disk_read_mb": 151.4,
+      "duration_sec": 368,
+      "disk_write_mb": 126.6,
+      "peak_memory_mb": 578.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4734,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "qnn": 0.4593,
+      "lcmc": 0.4122,
+      "qlocal": 0.4647,
+      "qglobal": 0.7303,
+      "qnn_auc": 0.7006,
+      "continuity": 0.9593,
+      "trustworthiness": 0.9488,
+      "density_preservation": 0.0662,
+      "distance_correlation": 0.5338,
+      "distance_correlation_spectral": 0.3226
+    },
+    "scaled_scores": {
+      "qnn": 0.4329,
+      "lcmc": 0.4323,
+      "qlocal": 0.3951,
+      "qglobal": 0.3035,
+      "qnn_auc": 0.3984,
+      "continuity": 0.9256,
+      "trustworthiness": 0.8972,
+      "density_preservation": 0.0762,
+      "distance_correlation": 0.5503,
+      "distance_correlation_spectral": 0.3228
+    },
+    "submission_time": "2023-02-21 17:58:03.268"
+  },
+  "phate_default:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_default",
+    "resources": {
+      "cpu_pct": 153.9,
+      "disk_read_mb": 144.3,
+      "duration_sec": 329,
+      "disk_write_mb": 124.2,
+      "peak_memory_mb": 549.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.3974,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.4209,
+      "lcmc": 0.3738,
+      "qlocal": 0.4695,
+      "qglobal": 0.6954,
+      "qnn_auc": 0.6687,
+      "continuity": 0.9693,
+      "trustworthiness": 0.9531,
+      "density_preservation": 0.2176,
+      "distance_correlation": 0.3213,
+      "distance_correlation_spectral": -0.1618
+    },
+    "scaled_scores": {
+      "qnn": 0.3926,
+      "lcmc": 0.392,
+      "qlocal": 0.4005,
+      "qglobal": 0.2136,
+      "qnn_auc": 0.3344,
+      "continuity": 0.9438,
+      "trustworthiness": 0.9058,
+      "density_preservation": 0.226,
+      "distance_correlation": 0.3267,
+      "distance_correlation_spectral": -0.1614
+    },
+    "submission_time": "2023-02-21 17:59:03.462"
+  },
+  "phate_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k",
+    "resources": {
+      "cpu_pct": 190.9,
+      "disk_read_mb": 145.9,
+      "duration_sec": 329,
+      "disk_write_mb": 126.6,
+      "peak_memory_mb": 404.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4291,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.4361,
+      "lcmc": 0.389,
+      "qlocal": 0.4804,
+      "qglobal": 0.6919,
+      "qnn_auc": 0.6663,
+      "continuity": 0.9684,
+      "trustworthiness": 0.9525,
+      "density_preservation": 0.0995,
+      "distance_correlation": 0.3877,
+      "distance_correlation_spectral": 0.1743
+    },
+    "scaled_scores": {
+      "qnn": 0.4086,
+      "lcmc": 0.408,
+      "qlocal": 0.4128,
+      "qglobal": 0.2046,
+      "qnn_auc": 0.3295,
+      "continuity": 0.9423,
+      "trustworthiness": 0.9047,
+      "density_preservation": 0.1092,
+      "distance_correlation": 0.3966,
+      "distance_correlation_spectral": 0.1745
+    },
+    "submission_time": "2023-02-21 17:59:03.579"
+  },
+  "neuralee_default:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_default",
+    "resources": {
+      "cpu_pct": 152,
+      "disk_read_mb": 151.3,
+      "duration_sec": 409,
+      "disk_write_mb": 98.1,
+      "peak_memory_mb": 2100
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4179,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "qnn": 0.5219,
+      "lcmc": 0.4748,
+      "qlocal": 0.4839,
+      "qglobal": 0.713,
+      "qnn_auc": 0.6914,
+      "continuity": 0.9815,
+      "trustworthiness": 0.9568,
+      "density_preservation": -0.2119,
+      "distance_correlation": 0.4061,
+      "distance_correlation_spectral": 0.0299
+    },
+    "scaled_scores": {
+      "qnn": 0.4986,
+      "lcmc": 0.4978,
+      "qlocal": 0.4167,
+      "qglobal": 0.2589,
+      "qnn_auc": 0.3801,
+      "continuity": 0.9662,
+      "trustworthiness": 0.9133,
+      "density_preservation": -0.1989,
+      "distance_correlation": 0.416,
+      "distance_correlation_spectral": 0.0302
+    },
+    "submission_time": "2023-02-21 17:58:03.177"
+  },
+  "pca_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k",
+    "resources": {
+      "cpu_pct": 36.5,
+      "disk_read_mb": 145.5,
+      "duration_sec": 359,
+      "disk_write_mb": 98.2,
+      "peak_memory_mb": 420.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.2847,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "qnn": 0.4146,
+      "lcmc": 0.3675,
+      "qlocal": 0.4592,
+      "qglobal": 0.6469,
+      "qnn_auc": 0.6242,
+      "continuity": 0.962,
+      "trustworthiness": 0.8993,
+      "density_preservation": -0.15,
+      "distance_correlation": 0.0865,
+      "distance_correlation_spectral": -0.318
+    },
+    "scaled_scores": {
+      "qnn": 0.386,
+      "lcmc": 0.3854,
+      "qlocal": 0.389,
+      "qglobal": 0.089,
+      "qnn_auc": 0.245,
+      "continuity": 0.9306,
+      "trustworthiness": 0.7978,
+      "density_preservation": -0.1377,
+      "distance_correlation": 0.0796,
+      "distance_correlation_spectral": -0.3176
+    },
+    "submission_time": "2023-02-21 17:59:03.275"
+  },
+  "umap_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k",
+    "resources": {
+      "cpu_pct": 61.7,
+      "disk_read_mb": 146.7,
+      "duration_sec": 388,
+      "disk_write_mb": 99,
+      "peak_memory_mb": 469.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.426,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.5058,
+      "lcmc": 0.4587,
+      "qlocal": 0.5237,
+      "qglobal": 0.7099,
+      "qnn_auc": 0.6879,
+      "continuity": 0.9779,
+      "trustworthiness": 0.9611,
+      "density_preservation": -0.0715,
+      "distance_correlation": 0.3774,
+      "distance_correlation_spectral": 0.0047
+    },
+    "scaled_scores": {
+      "qnn": 0.4817,
+      "lcmc": 0.4809,
+      "qlocal": 0.4616,
+      "qglobal": 0.2509,
+      "qnn_auc": 0.373,
+      "continuity": 0.9596,
+      "trustworthiness": 0.9219,
+      "density_preservation": -0.06,
+      "distance_correlation": 0.3858,
+      "distance_correlation_spectral": 0.005
+    },
+    "submission_time": "2023-02-21 17:59:03.955"
+  },
+  "true_features:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "true_features",
+    "resources": {
+      "cpu_pct": 8.2,
+      "disk_read_mb": 144,
+      "duration_sec": 419,
+      "disk_write_mb": 392.5,
+      "peak_memory_mb": 377.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.903,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 1,
+      "lcmc": 0.9544,
+      "qlocal": 1.0015,
+      "qglobal": 1.0015,
+      "qnn_auc": 1,
+      "continuity": 1,
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 0.9611,
+      "distance_correlation_spectral": 0.0295
+    },
+    "scaled_scores": {
+      "qnn": 1,
+      "lcmc": 1,
+      "qlocal": 1,
+      "qglobal": 1,
+      "qnn_auc": 1,
+      "continuity": 1,
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 1,
+      "distance_correlation_spectral": 0.0299
+    },
+    "submission_time": "2023-02-21 17:58:42.373"
+  },
+  "pca_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 22,
+      "disk_read_mb": 145.5,
+      "duration_sec": 409,
+      "disk_write_mb": 126.6,
+      "peak_memory_mb": 363.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4816,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "qnn": 0.4673,
+      "lcmc": 0.4202,
+      "qlocal": 0.4846,
+      "qglobal": 0.7042,
+      "qnn_auc": 0.6786,
+      "continuity": 0.9645,
+      "trustworthiness": 0.9468,
+      "density_preservation": 0.3515,
+      "distance_correlation": 0.3461,
+      "distance_correlation_spectral": 0.3862
+    },
+    "scaled_scores": {
+      "qnn": 0.4413,
+      "lcmc": 0.4406,
+      "qlocal": 0.4175,
+      "qglobal": 0.2362,
+      "qnn_auc": 0.3542,
+      "continuity": 0.9352,
+      "trustworthiness": 0.8932,
+      "density_preservation": 0.3585,
+      "distance_correlation": 0.3528,
+      "distance_correlation_spectral": 0.3864
+    },
+    "submission_time": "2023-02-21 17:59:03.677"
+  },
+  "umap_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 61.9,
+      "disk_read_mb": 146.8,
+      "duration_sec": 400,
+      "disk_write_mb": 127.5,
+      "peak_memory_mb": 425.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.3284,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.4466,
+      "lcmc": 0.3995,
+      "qlocal": 0.4296,
+      "qglobal": 0.6573,
+      "qnn_auc": 0.635,
+      "continuity": 0.9568,
+      "trustworthiness": 0.9433,
+      "density_preservation": -0.2252,
+      "distance_correlation": 0.195,
+      "distance_correlation_spectral": -0.0824
+    },
+    "scaled_scores": {
+      "qnn": 0.4196,
+      "lcmc": 0.4189,
+      "qlocal": 0.3555,
+      "qglobal": 0.1159,
+      "qnn_auc": 0.2667,
+      "continuity": 0.9211,
+      "trustworthiness": 0.8862,
+      "density_preservation": -0.212,
+      "distance_correlation": 0.1939,
+      "distance_correlation_spectral": -0.082
+    },
+    "submission_time": "2023-02-21 17:59:12.031"
+  },
+  "pymde_distances_log_cp10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k",
+    "resources": {
+      "cpu_pct": 263.3,
+      "disk_read_mb": 153.1,
+      "duration_sec": 419,
+      "disk_write_mb": 187.5,
+      "peak_memory_mb": 925.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.2923,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.2867,
+      "lcmc": 0.2396,
+      "qlocal": 0.2945,
+      "qglobal": 0.6456,
+      "qnn_auc": 0.6075,
+      "continuity": 0.856,
+      "trustworthiness": 0.7726,
+      "density_preservation": 0.2608,
+      "distance_correlation": 0.2681,
+      "distance_correlation_spectral": 0.0988
+    },
+    "scaled_scores": {
+      "qnn": 0.2519,
+      "lcmc": 0.2515,
+      "qlocal": 0.2033,
+      "qglobal": 0.0857,
+      "qnn_auc": 0.2114,
+      "continuity": 0.7368,
+      "trustworthiness": 0.5435,
+      "density_preservation": 0.2687,
+      "distance_correlation": 0.2708,
+      "distance_correlation_spectral": 0.0991
+    },
+    "submission_time": "2023-02-21 17:59:03.808"
+  },
+  "spectral_features:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "spectral_features",
+    "resources": {
+      "cpu_pct": 68.3,
+      "disk_read_mb": 146.7,
+      "duration_sec": 419,
+      "disk_write_mb": 102.3,
+      "peak_memory_mb": 448.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.2292,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0868,
+      "lcmc": 0.0397,
+      "qlocal": 0.228,
+      "qglobal": 0.6533,
+      "qnn_auc": 0.5315,
+      "continuity": 0.4529,
+      "trustworthiness": 0.8489,
+      "density_preservation": 0.1487,
+      "distance_correlation": 0.0675,
+      "distance_correlation_spectral": 1
+    },
+    "scaled_scores": {
+      "qnn": 0.0423,
+      "lcmc": 0.0422,
+      "qlocal": 0.1283,
+      "qglobal": 0.1057,
+      "qnn_auc": 0.0588,
+      "continuity": 0,
+      "trustworthiness": 0.6967,
+      "density_preservation": 0.1578,
+      "distance_correlation": 0.0597,
+      "distance_correlation_spectral": 1
+    },
+    "submission_time": "2023-02-21 17:59:03.869"
+  },
+  "densmap_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k",
+    "resources": {
+      "cpu_pct": 32.6,
+      "disk_read_mb": 146.1,
+      "duration_sec": 439,
+      "disk_write_mb": 99,
+      "peak_memory_mb": 468.1
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.5065,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.5541,
+      "lcmc": 0.507,
+      "qlocal": 0.5301,
+      "qglobal": 0.734,
+      "qnn_auc": 0.7133,
+      "continuity": 0.9817,
+      "trustworthiness": 0.9644,
+      "density_preservation": 0.2879,
+      "distance_correlation": 0.516,
+      "distance_correlation_spectral": 0.0727
+    },
+    "scaled_scores": {
+      "qnn": 0.5323,
+      "lcmc": 0.5314,
+      "qlocal": 0.4688,
+      "qglobal": 0.313,
+      "qnn_auc": 0.424,
+      "continuity": 0.9666,
+      "trustworthiness": 0.9286,
+      "density_preservation": 0.2955,
+      "distance_correlation": 0.5316,
+      "distance_correlation_spectral": 0.073
+    },
+    "submission_time": "2023-02-21 17:59:03.171"
+  },
+  "random_features:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "random_features",
+    "resources": {
+      "cpu_pct": 7.4,
+      "disk_read_mb": 144,
+      "duration_sec": 490,
+      "disk_write_mb": 98.1,
+      "peak_memory_mb": 232.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.0154,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0466,
+      "lcmc": -0.0006,
+      "qlocal": 0.1141,
+      "qglobal": 0.6122,
+      "qnn_auc": 0.5023,
+      "continuity": 0.5373,
+      "trustworthiness": 0.5018,
+      "density_preservation": -0.0109,
+      "distance_correlation": 0.0108,
+      "distance_correlation_spectral": -0.0003
+    },
+    "scaled_scores": {
+      "qnn": 0,
+      "lcmc": 0,
+      "qlocal": 0,
+      "qglobal": 0,
+      "qnn_auc": 0,
+      "continuity": 0.1542,
+      "trustworthiness": 0,
+      "density_preservation": 0,
+      "distance_correlation": 0,
+      "distance_correlation_spectral": 0
+    },
+    "submission_time": "2023-02-21 17:58:32.097"
+  },
+  "densmap_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 35,
+      "disk_read_mb": 146.2,
+      "duration_sec": 459,
+      "disk_write_mb": 127.5,
+      "peak_memory_mb": 428.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.3709,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.452,
+      "lcmc": 0.4048,
+      "qlocal": 0.435,
+      "qglobal": 0.6556,
+      "qnn_auc": 0.634,
+      "continuity": 0.9602,
+      "trustworthiness": 0.9449,
+      "density_preservation": 0.2317,
+      "distance_correlation": 0.1896,
+      "distance_correlation_spectral": -0.1238
+    },
+    "scaled_scores": {
+      "qnn": 0.4252,
+      "lcmc": 0.4245,
+      "qlocal": 0.3616,
+      "qglobal": 0.1114,
+      "qnn_auc": 0.2646,
+      "continuity": 0.9272,
+      "trustworthiness": 0.8895,
+      "density_preservation": 0.2399,
+      "distance_correlation": 0.1881,
+      "distance_correlation_spectral": -0.1234
+    },
+    "submission_time": "2023-02-21 17:59:02.783"
+  },
+  "densmap_pca_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 36.8,
+      "disk_read_mb": 146.2,
+      "duration_sec": 469,
+      "disk_write_mb": 127.5,
+      "peak_memory_mb": 433.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4436,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.4805,
+      "lcmc": 0.4334,
+      "qlocal": 0.4966,
+      "qglobal": 0.684,
+      "qnn_auc": 0.6619,
+      "continuity": 0.9719,
+      "trustworthiness": 0.9561,
+      "density_preservation": 0.2471,
+      "distance_correlation": 0.3171,
+      "distance_correlation_spectral": 0.1522
+    },
+    "scaled_scores": {
+      "qnn": 0.4551,
+      "lcmc": 0.4544,
+      "qlocal": 0.4311,
+      "qglobal": 0.1844,
+      "qnn_auc": 0.3208,
+      "continuity": 0.9487,
+      "trustworthiness": 0.912,
+      "density_preservation": 0.2552,
+      "distance_correlation": 0.3223,
+      "distance_correlation_spectral": 0.1524
+    },
+    "submission_time": "2023-02-21 17:59:02.879"
+  },
+  "umap_pca_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 28.1,
+      "disk_read_mb": 146.8,
+      "duration_sec": 540,
+      "disk_write_mb": 127.5,
+      "peak_memory_mb": 426.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4187,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.4455,
+      "lcmc": 0.3984,
+      "qlocal": 0.4886,
+      "qglobal": 0.7051,
+      "qnn_auc": 0.6786,
+      "continuity": 0.9702,
+      "trustworthiness": 0.9527,
+      "density_preservation": -0.1532,
+      "distance_correlation": 0.4344,
+      "distance_correlation_spectral": 0.1793
+    },
+    "scaled_scores": {
+      "qnn": 0.4185,
+      "lcmc": 0.4178,
+      "qlocal": 0.4221,
+      "qglobal": 0.2386,
+      "qnn_auc": 0.3542,
+      "continuity": 0.9456,
+      "trustworthiness": 0.9051,
+      "density_preservation": -0.1408,
+      "distance_correlation": 0.4458,
+      "distance_correlation_spectral": 0.1796
+    },
+    "submission_time": "2023-02-21 17:58:32.645"
+  },
+  "diffusion_map:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "diffusion_map",
+    "resources": {
+      "cpu_pct": 314.5,
+      "disk_read_mb": 146.7,
+      "duration_sec": 509,
+      "disk_write_mb": 99,
+      "peak_memory_mb": 451.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.3219,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.2581,
+      "lcmc": 0.211,
+      "qlocal": 0.3514,
+      "qglobal": 0.6804,
+      "qnn_auc": 0.6365,
+      "continuity": 0.7921,
+      "trustworthiness": 0.9024,
+      "density_preservation": 0.1983,
+      "distance_correlation": 0.3131,
+      "distance_correlation_spectral": 0.1137
+    },
+    "scaled_scores": {
+      "qnn": 0.2218,
+      "lcmc": 0.2215,
+      "qlocal": 0.2674,
+      "qglobal": 0.1751,
+      "qnn_auc": 0.2698,
+      "continuity": 0.62,
+      "trustworthiness": 0.8041,
+      "density_preservation": 0.2069,
+      "distance_correlation": 0.3181,
+      "distance_correlation_spectral": 0.114
+    },
+    "submission_time": "2023-02-21 17:59:03.338"
+  },
+  "densmap_pca_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 194,
+      "disk_read_mb": 146.2,
+      "duration_sec": 519,
+      "disk_write_mb": 143.6,
+      "peak_memory_mb": 568.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4028,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.5238,
+      "lcmc": 0.4767,
+      "qlocal": 0.5112,
+      "qglobal": 0.6747,
+      "qnn_auc": 0.6572,
+      "continuity": 0.9775,
+      "trustworthiness": 0.9602,
+      "density_preservation": 0.096,
+      "distance_correlation": 0.2217,
+      "distance_correlation_spectral": -0.0986
+    },
+    "scaled_scores": {
+      "qnn": 0.5005,
+      "lcmc": 0.4997,
+      "qlocal": 0.4474,
+      "qglobal": 0.1604,
+      "qnn_auc": 0.3112,
+      "continuity": 0.9589,
+      "trustworthiness": 0.9201,
+      "density_preservation": 0.1057,
+      "distance_correlation": 0.222,
+      "distance_correlation_spectral": -0.0983
+    },
+    "submission_time": "2023-02-21 17:59:02.994"
+  },
+  "umap_pca_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 233.4,
+      "disk_read_mb": 146.8,
+      "duration_sec": 569,
+      "disk_write_mb": 143.6,
+      "peak_memory_mb": 573.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4147,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.498,
+      "lcmc": 0.4509,
+      "qlocal": 0.5082,
+      "qglobal": 0.6873,
+      "qnn_auc": 0.6663,
+      "continuity": 0.9731,
+      "trustworthiness": 0.9621,
+      "density_preservation": 0.0954,
+      "distance_correlation": 0.2892,
+      "distance_correlation_spectral": -0.0388
+    },
+    "scaled_scores": {
+      "qnn": 0.4735,
+      "lcmc": 0.4727,
+      "qlocal": 0.4441,
+      "qglobal": 0.193,
+      "qnn_auc": 0.3295,
+      "continuity": 0.9509,
+      "trustworthiness": 0.924,
+      "density_preservation": 0.1052,
+      "distance_correlation": 0.293,
+      "distance_correlation_spectral": -0.0385
+    },
+    "submission_time": "2023-02-21 17:58:32.565"
+  },
+  "pymde_neighbors_log_cp10k_hvg:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 65.7,
+      "disk_read_mb": 153.8,
+      "duration_sec": 589,
+      "disk_write_mb": 127.5,
+      "peak_memory_mb": 598.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4243,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.4663,
+      "lcmc": 0.4192,
+      "qlocal": 0.489,
+      "qglobal": 0.7076,
+      "qnn_auc": 0.6818,
+      "continuity": 0.9714,
+      "trustworthiness": 0.9542,
+      "density_preservation": -0.2419,
+      "distance_correlation": 0.43,
+      "distance_correlation_spectral": 0.2663
+    },
+    "scaled_scores": {
+      "qnn": 0.4402,
+      "lcmc": 0.4395,
+      "qlocal": 0.4225,
+      "qglobal": 0.2449,
+      "qnn_auc": 0.3606,
+      "continuity": 0.9477,
+      "trustworthiness": 0.9081,
+      "density_preservation": -0.2285,
+      "distance_correlation": 0.4412,
+      "distance_correlation_spectral": 0.2666
+    },
+    "submission_time": "2023-02-21 17:58:32.341"
+  },
+  "pymde_distances_log_cp10k_hvg:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 156.6,
+      "disk_read_mb": 153.3,
+      "duration_sec": 619,
+      "disk_write_mb": 126.6,
+      "peak_memory_mb": 793.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.3506,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.2789,
+      "lcmc": 0.2318,
+      "qlocal": 0.3118,
+      "qglobal": 0.6836,
+      "qnn_auc": 0.6403,
+      "continuity": 0.7448,
+      "trustworthiness": 0.8396,
+      "density_preservation": 0.3689,
+      "distance_correlation": 0.3099,
+      "distance_correlation_spectral": 0.4333
+    },
+    "scaled_scores": {
+      "qnn": 0.2437,
+      "lcmc": 0.2433,
+      "qlocal": 0.2228,
+      "qglobal": 0.1834,
+      "qnn_auc": 0.2774,
+      "continuity": 0.5336,
+      "trustworthiness": 0.678,
+      "density_preservation": 0.3757,
+      "distance_correlation": 0.3148,
+      "distance_correlation_spectral": 0.4335
+    },
+    "submission_time": "2023-02-21 17:58:32.159"
+  },
+  "tsne_logCP10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k",
+    "resources": {
+      "cpu_pct": 379,
+      "disk_read_mb": 145.1,
+      "duration_sec": 649,
+      "disk_write_mb": 98.2,
+      "peak_memory_mb": 533.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4184,
+    "code_version": "0.1",
+    "metric_values": {
+      "qnn": 0.5403,
+      "lcmc": 0.4931,
+      "qlocal": 0.5297,
+      "qglobal": 0.6883,
+      "qnn_auc": 0.671,
+      "continuity": 0.9798,
+      "trustworthiness": 0.9659,
+      "density_preservation": -0.036,
+      "distance_correlation": 0.2594,
+      "distance_correlation_spectral": 0.0148
+    },
+    "scaled_scores": {
+      "qnn": 0.5178,
+      "lcmc": 0.517,
+      "qlocal": 0.4683,
+      "qglobal": 0.1954,
+      "qnn_auc": 0.3391,
+      "continuity": 0.963,
+      "trustworthiness": 0.9316,
+      "density_preservation": -0.0248,
+      "distance_correlation": 0.2616,
+      "distance_correlation_spectral": 0.0151
+    },
+    "submission_time": "2023-02-21 17:58:32.368"
+  },
+  "pymde_neighbors_log_cp10k:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k",
+    "resources": {
+      "cpu_pct": 208,
+      "disk_read_mb": 153.7,
+      "duration_sec": 759,
+      "disk_write_mb": 188.3,
+      "peak_memory_mb": 834.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.4274,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.5075,
+      "lcmc": 0.4604,
+      "qlocal": 0.5088,
+      "qglobal": 0.7143,
+      "qnn_auc": 0.6916,
+      "continuity": 0.9775,
+      "trustworthiness": 0.962,
+      "density_preservation": -0.1349,
+      "distance_correlation": 0.4229,
+      "distance_correlation_spectral": 0.0264
+    },
+    "scaled_scores": {
+      "qnn": 0.4834,
+      "lcmc": 0.4826,
+      "qlocal": 0.4448,
+      "qglobal": 0.2623,
+      "qnn_auc": 0.3804,
+      "continuity": 0.9589,
+      "trustworthiness": 0.9237,
+      "density_preservation": -0.1227,
+      "distance_correlation": 0.4336,
+      "distance_correlation_spectral": 0.0267
+    },
+    "submission_time": "2023-02-21 17:58:42.108"
+  },
+  "tsne_logCP10k_1kHVG:olsson_2016_mouse_blood": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 157,
+      "disk_read_mb": 145.2,
+      "duration_sec": 819,
+      "disk_write_mb": 126.6,
+      "peak_memory_mb": 403.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "olsson_2016_mouse_blood",
+    "mean_score": 0.445,
+    "code_version": "0.1",
+    "metric_values": {
+      "qnn": 0.4872,
+      "lcmc": 0.4401,
+      "qlocal": 0.5032,
+      "qglobal": 0.718,
+      "qnn_auc": 0.6926,
+      "continuity": 0.9722,
+      "trustworthiness": 0.9564,
+      "density_preservation": -0.1737,
+      "distance_correlation": 0.4342,
+      "distance_correlation_spectral": 0.2878
+    },
+    "scaled_scores": {
+      "qnn": 0.4622,
+      "lcmc": 0.4614,
+      "qlocal": 0.4384,
+      "qglobal": 0.2716,
+      "qnn_auc": 0.3824,
+      "continuity": 0.9492,
+      "trustworthiness": 0.9124,
+      "density_preservation": -0.161,
+      "distance_correlation": 0.4455,
+      "distance_correlation_spectral": 0.288
+    },
+    "submission_time": "2023-02-21 17:58:32.509"
+  },
+  "neuralee_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 281,
+      "disk_read_mb": 270,
+      "duration_sec": 358,
+      "disk_write_mb": 288.2,
+      "peak_memory_mb": 758.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3686,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "qnn": 0.0379,
+      "lcmc": 0.032,
+      "qlocal": 0.3713,
+      "qglobal": 0.7557,
+      "qnn_auc": 0.6552,
+      "continuity": 0.8341,
+      "trustworthiness": 0.7774,
+      "density_preservation": 0.2937,
+      "distance_correlation": 0.3437,
+      "distance_correlation_spectral": 0.064
+    },
+    "scaled_scores": {
+      "qnn": 0.0355,
+      "lcmc": 0.0355,
+      "qlocal": 0.3695,
+      "qglobal": 0.5206,
+      "qnn_auc": 0.3103,
+      "continuity": 0.8092,
+      "trustworthiness": 0.5549,
+      "density_preservation": 0.3469,
+      "distance_correlation": 0.3908,
+      "distance_correlation_spectral": 0.3128
+    },
+    "submission_time": "2023-02-21 17:58:03.283"
+  },
+  "pca_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 78.9,
+      "disk_read_mb": 264.1,
+      "duration_sec": 309,
+      "disk_write_mb": 288.2,
+      "peak_memory_mb": 472.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3323,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "qnn": 0.0291,
+      "lcmc": 0.0232,
+      "qlocal": 0.3396,
+      "qglobal": 0.7432,
+      "qnn_auc": 0.6328,
+      "continuity": 0.7995,
+      "trustworthiness": 0.7266,
+      "density_preservation": 0.2002,
+      "distance_correlation": 0.3584,
+      "distance_correlation_spectral": 0.045
+    },
+    "scaled_scores": {
+      "qnn": 0.0267,
+      "lcmc": 0.0267,
+      "qlocal": 0.3377,
+      "qglobal": 0.4961,
+      "qnn_auc": 0.2656,
+      "continuity": 0.7693,
+      "trustworthiness": 0.4534,
+      "density_preservation": 0.2604,
+      "distance_correlation": 0.4051,
+      "distance_correlation_spectral": 0.2818
+    },
+    "submission_time": "2023-02-21 17:59:03.650"
+  },
+  "phate_sqrt:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_sqrt",
+    "resources": {
+      "cpu_pct": 247.9,
+      "disk_read_mb": 262.8,
+      "duration_sec": 388,
+      "disk_write_mb": 287.8,
+      "peak_memory_mb": 775.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3708,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.0417,
+      "lcmc": 0.0358,
+      "qlocal": 0.3719,
+      "qglobal": 0.746,
+      "qnn_auc": 0.6479,
+      "continuity": 0.8442,
+      "trustworthiness": 0.8046,
+      "density_preservation": 0.2364,
+      "distance_correlation": 0.3649,
+      "distance_correlation_spectral": 0.0728
+    },
+    "scaled_scores": {
+      "qnn": 0.0393,
+      "lcmc": 0.0393,
+      "qlocal": 0.37,
+      "qglobal": 0.5017,
+      "qnn_auc": 0.2958,
+      "continuity": 0.8207,
+      "trustworthiness": 0.6094,
+      "density_preservation": 0.2938,
+      "distance_correlation": 0.4114,
+      "distance_correlation_spectral": 0.3271
+    },
+    "submission_time": "2023-02-21 17:58:03.291"
+  },
+  "phate_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 239.5,
+      "disk_read_mb": 262.8,
+      "duration_sec": 398,
+      "disk_write_mb": 217.2,
+      "peak_memory_mb": 727.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3709,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.0454,
+      "lcmc": 0.0395,
+      "qlocal": 0.4013,
+      "qglobal": 0.7523,
+      "qnn_auc": 0.6543,
+      "continuity": 0.8564,
+      "trustworthiness": 0.8082,
+      "density_preservation": 0.1286,
+      "distance_correlation": 0.4203,
+      "distance_correlation_spectral": 0.05
+    },
+    "scaled_scores": {
+      "qnn": 0.0431,
+      "lcmc": 0.043,
+      "qlocal": 0.3995,
+      "qglobal": 0.5141,
+      "qnn_auc": 0.3086,
+      "continuity": 0.8348,
+      "trustworthiness": 0.6166,
+      "density_preservation": 0.1941,
+      "distance_correlation": 0.4656,
+      "distance_correlation_spectral": 0.29
+    },
+    "submission_time": "2023-02-21 17:58:03.324"
+  },
+  "pca_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k",
+    "resources": {
+      "cpu_pct": 100,
+      "disk_read_mb": 264,
+      "duration_sec": 359,
+      "disk_write_mb": 217.2,
+      "peak_memory_mb": 545.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.4239,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "qnn": 0.0292,
+      "lcmc": 0.0233,
+      "qlocal": 0.3573,
+      "qglobal": 0.7983,
+      "qnn_auc": 0.6892,
+      "continuity": 0.8163,
+      "trustworthiness": 0.7764,
+      "density_preservation": 0.465,
+      "distance_correlation": 0.7679,
+      "distance_correlation_spectral": -0.0081
+    },
+    "scaled_scores": {
+      "qnn": 0.0268,
+      "lcmc": 0.0268,
+      "qlocal": 0.3554,
+      "qglobal": 0.6042,
+      "qnn_auc": 0.3784,
+      "continuity": 0.7887,
+      "trustworthiness": 0.553,
+      "density_preservation": 0.5053,
+      "distance_correlation": 0.8052,
+      "distance_correlation_spectral": 0.1952
+    },
+    "submission_time": "2023-02-21 17:59:03.211"
+  },
+  "true_features:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "true_features",
+    "resources": {
+      "cpu_pct": 8.1,
+      "disk_read_mb": 262.5,
+      "duration_sec": 419,
+      "disk_write_mb": 633.8,
+      "peak_memory_mb": 819.1
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.9,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 1,
+      "lcmc": 0.9943,
+      "qlocal": 1.0002,
+      "qglobal": 1.0002,
+      "qnn_auc": 1,
+      "continuity": 1,
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 0.9673,
+      "distance_correlation_spectral": -0.128
+    },
+    "scaled_scores": {
+      "qnn": 1,
+      "lcmc": 1,
+      "qlocal": 1,
+      "qglobal": 1,
+      "qnn_auc": 1,
+      "continuity": 1,
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 1,
+      "distance_correlation_spectral": 0
+    },
+    "submission_time": "2023-02-21 17:58:42.373"
+  },
+  "phate_default:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_default",
+    "resources": {
+      "cpu_pct": 198.9,
+      "disk_read_mb": 262.8,
+      "duration_sec": 409,
+      "disk_write_mb": 287.8,
+      "peak_memory_mb": 777.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3466,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.042,
+      "lcmc": 0.0361,
+      "qlocal": 0.3461,
+      "qglobal": 0.7065,
+      "qnn_auc": 0.6183,
+      "continuity": 0.8239,
+      "trustworthiness": 0.8018,
+      "density_preservation": 0.2607,
+      "distance_correlation": 0.3264,
+      "distance_correlation_spectral": 0.0502
+    },
+    "scaled_scores": {
+      "qnn": 0.0396,
+      "lcmc": 0.0396,
+      "qlocal": 0.3441,
+      "qglobal": 0.4242,
+      "qnn_auc": 0.2366,
+      "continuity": 0.7974,
+      "trustworthiness": 0.6038,
+      "density_preservation": 0.3163,
+      "distance_correlation": 0.3738,
+      "distance_correlation_spectral": 0.2903
+    },
+    "submission_time": "2023-02-21 17:59:03.532"
+  },
+  "densmap_pca_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 150.8,
+      "disk_read_mb": 264.9,
+      "duration_sec": 419,
+      "disk_write_mb": 227.8,
+      "peak_memory_mb": 589.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.4395,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0507,
+      "lcmc": 0.0448,
+      "qlocal": 0.4047,
+      "qglobal": 0.7587,
+      "qnn_auc": 0.6677,
+      "continuity": 0.8615,
+      "trustworthiness": 0.8172,
+      "density_preservation": 0.6919,
+      "distance_correlation": 0.4592,
+      "distance_correlation_spectral": 0.0803
+    },
+    "scaled_scores": {
+      "qnn": 0.0483,
+      "lcmc": 0.0483,
+      "qlocal": 0.4029,
+      "qglobal": 0.5265,
+      "qnn_auc": 0.3353,
+      "continuity": 0.8406,
+      "trustworthiness": 0.6345,
+      "density_preservation": 0.7151,
+      "distance_correlation": 0.5036,
+      "distance_correlation_spectral": 0.3393
+    },
+    "submission_time": "2023-02-21 17:59:03.165"
+  },
+  "neuralee_default:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_default",
+    "resources": {
+      "cpu_pct": 164.1,
+      "disk_read_mb": 269.8,
+      "duration_sec": 498,
+      "disk_write_mb": 217.1,
+      "peak_memory_mb": 2700
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3424,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "qnn": 0.0268,
+      "lcmc": 0.0209,
+      "qlocal": 0.361,
+      "qglobal": 0.7477,
+      "qnn_auc": 0.6557,
+      "continuity": 0.7456,
+      "trustworthiness": 0.7944,
+      "density_preservation": -0.0358,
+      "distance_correlation": 0.486,
+      "distance_correlation_spectral": 0.0757
+    },
+    "scaled_scores": {
+      "qnn": 0.0244,
+      "lcmc": 0.0244,
+      "qlocal": 0.3591,
+      "qglobal": 0.5049,
+      "qnn_auc": 0.3114,
+      "continuity": 0.7073,
+      "trustworthiness": 0.5889,
+      "density_preservation": 0.0421,
+      "distance_correlation": 0.5298,
+      "distance_correlation_spectral": 0.3318
+    },
+    "submission_time": "2023-02-21 17:58:03.181"
+  },
+  "random_features:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "random_features",
+    "resources": {
+      "cpu_pct": 6.8,
+      "disk_read_mb": 262.5,
+      "duration_sec": 490,
+      "disk_write_mb": 217.1,
+      "peak_memory_mb": 234.8
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.1571,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.006,
+      "lcmc": 0.0001,
+      "qlocal": 0.2625,
+      "qglobal": 0.7622,
+      "qnn_auc": 0.5005,
+      "continuity": 0.5145,
+      "trustworthiness": 0.4999,
+      "density_preservation": 0.0022,
+      "distance_correlation": -0.0003,
+      "distance_correlation_spectral": -0.008
+    },
+    "scaled_scores": {
+      "qnn": 0.0035,
+      "lcmc": 0.0035,
+      "qlocal": 0.2604,
+      "qglobal": 0.5334,
+      "qnn_auc": 0.0011,
+      "continuity": 0.4414,
+      "trustworthiness": 0,
+      "density_preservation": 0.0772,
+      "distance_correlation": 0.0547,
+      "distance_correlation_spectral": 0.1954
+    },
+    "submission_time": "2023-02-21 17:58:32.134"
+  },
+  "diffusion_map:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "diffusion_map",
+    "resources": {
+      "cpu_pct": 223.4,
+      "disk_read_mb": 265.3,
+      "duration_sec": 459,
+      "disk_write_mb": 219.5,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3357,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0111,
+      "lcmc": 0.0052,
+      "qlocal": 0.3573,
+      "qglobal": 0.8011,
+      "qnn_auc": 0.6829,
+      "continuity": 0.278,
+      "trustworthiness": 0.766,
+      "density_preservation": 0.14,
+      "distance_correlation": 0.6999,
+      "distance_correlation_spectral": 0.0957
+    },
+    "scaled_scores": {
+      "qnn": 0.0086,
+      "lcmc": 0.0086,
+      "qlocal": 0.3554,
+      "qglobal": 0.6097,
+      "qnn_auc": 0.3658,
+      "continuity": 0.1692,
+      "trustworthiness": 0.5322,
+      "density_preservation": 0.2047,
+      "distance_correlation": 0.7388,
+      "distance_correlation_spectral": 0.3644
+    },
+    "submission_time": "2023-02-21 17:59:03.276"
+  },
+  "umap_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 92.9,
+      "disk_read_mb": 265.5,
+      "duration_sec": 460,
+      "disk_write_mb": 290.5,
+      "peak_memory_mb": 602.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3484,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0424,
+      "lcmc": 0.0365,
+      "qlocal": 0.3574,
+      "qglobal": 0.7593,
+      "qnn_auc": 0.6532,
+      "continuity": 0.8172,
+      "trustworthiness": 0.7697,
+      "density_preservation": 0.0416,
+      "distance_correlation": 0.43,
+      "distance_correlation_spectral": 0.0539
+    },
+    "scaled_scores": {
+      "qnn": 0.04,
+      "lcmc": 0.04,
+      "qlocal": 0.3555,
+      "qglobal": 0.5277,
+      "qnn_auc": 0.3065,
+      "continuity": 0.7896,
+      "trustworthiness": 0.5396,
+      "density_preservation": 0.1137,
+      "distance_correlation": 0.4751,
+      "distance_correlation_spectral": 0.2964
+    },
+    "submission_time": "2023-02-21 17:59:12.019"
+  },
+  "phate_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k",
+    "resources": {
+      "cpu_pct": 315.8,
+      "disk_read_mb": 264.5,
+      "duration_sec": 509,
+      "disk_write_mb": 288.3,
+      "peak_memory_mb": 760.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3506,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.0386,
+      "lcmc": 0.0326,
+      "qlocal": 0.382,
+      "qglobal": 0.7558,
+      "qnn_auc": 0.6514,
+      "continuity": 0.8015,
+      "trustworthiness": 0.7741,
+      "density_preservation": 0.106,
+      "distance_correlation": 0.3617,
+      "distance_correlation_spectral": 0.0736
+    },
+    "scaled_scores": {
+      "qnn": 0.0362,
+      "lcmc": 0.0362,
+      "qlocal": 0.3802,
+      "qglobal": 0.5208,
+      "qnn_auc": 0.3028,
+      "continuity": 0.7716,
+      "trustworthiness": 0.5482,
+      "density_preservation": 0.1732,
+      "distance_correlation": 0.4083,
+      "distance_correlation_spectral": 0.3284
+    },
+    "submission_time": "2023-02-21 17:59:03.562"
+  },
+  "densmap_pca_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 69.5,
+      "disk_read_mb": 265,
+      "duration_sec": 529,
+      "disk_write_mb": 289.9,
+      "peak_memory_mb": 588.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3771,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0444,
+      "lcmc": 0.0385,
+      "qlocal": 0.364,
+      "qglobal": 0.7263,
+      "qnn_auc": 0.6342,
+      "continuity": 0.8261,
+      "trustworthiness": 0.7919,
+      "density_preservation": 0.5164,
+      "distance_correlation": 0.2892,
+      "distance_correlation_spectral": 0.0683
+    },
+    "scaled_scores": {
+      "qnn": 0.042,
+      "lcmc": 0.042,
+      "qlocal": 0.3621,
+      "qglobal": 0.4631,
+      "qnn_auc": 0.2684,
+      "continuity": 0.7998,
+      "trustworthiness": 0.5839,
+      "density_preservation": 0.5528,
+      "distance_correlation": 0.3375,
+      "distance_correlation_spectral": 0.3199
+    },
+    "submission_time": "2023-02-21 17:59:02.836"
+  },
+  "densmap_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 75.6,
+      "disk_read_mb": 264.9,
+      "duration_sec": 549,
+      "disk_write_mb": 290.5,
+      "peak_memory_mb": 630.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.4101,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0443,
+      "lcmc": 0.0384,
+      "qlocal": 0.3809,
+      "qglobal": 0.7409,
+      "qnn_auc": 0.6469,
+      "continuity": 0.8391,
+      "trustworthiness": 0.7937,
+      "density_preservation": 0.6319,
+      "distance_correlation": 0.382,
+      "distance_correlation_spectral": 0.0946
+    },
+    "scaled_scores": {
+      "qnn": 0.042,
+      "lcmc": 0.042,
+      "qlocal": 0.379,
+      "qglobal": 0.4916,
+      "qnn_auc": 0.2937,
+      "continuity": 0.8149,
+      "trustworthiness": 0.5875,
+      "density_preservation": 0.6596,
+      "distance_correlation": 0.4282,
+      "distance_correlation_spectral": 0.3626
+    },
+    "submission_time": "2023-02-21 17:59:02.792"
+  },
+  "densmap_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k",
+    "resources": {
+      "cpu_pct": 206,
+      "disk_read_mb": 264.7,
+      "duration_sec": 549,
+      "disk_write_mb": 219.4,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.4652,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0289,
+      "lcmc": 0.023,
+      "qlocal": 0.3925,
+      "qglobal": 0.7965,
+      "qnn_auc": 0.7021,
+      "continuity": 0.8608,
+      "trustworthiness": 0.7718,
+      "density_preservation": 0.85,
+      "distance_correlation": 0.753,
+      "distance_correlation_spectral": -0.0245
+    },
+    "scaled_scores": {
+      "qnn": 0.0264,
+      "lcmc": 0.0264,
+      "qlocal": 0.3907,
+      "qglobal": 0.6005,
+      "qnn_auc": 0.4042,
+      "continuity": 0.8398,
+      "trustworthiness": 0.5436,
+      "density_preservation": 0.8613,
+      "distance_correlation": 0.7907,
+      "distance_correlation_spectral": 0.1686
+    },
+    "submission_time": "2023-02-21 17:59:03.117"
+  },
+  "umap_pca_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 74.4,
+      "disk_read_mb": 265.6,
+      "duration_sec": 599,
+      "disk_write_mb": 289.9,
+      "peak_memory_mb": 566.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3286,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0433,
+      "lcmc": 0.0374,
+      "qlocal": 0.3442,
+      "qglobal": 0.7173,
+      "qnn_auc": 0.6263,
+      "continuity": 0.8199,
+      "trustworthiness": 0.7848,
+      "density_preservation": 0.0797,
+      "distance_correlation": 0.2973,
+      "distance_correlation_spectral": 0.0605
+    },
+    "scaled_scores": {
+      "qnn": 0.0409,
+      "lcmc": 0.0409,
+      "qlocal": 0.3423,
+      "qglobal": 0.4454,
+      "qnn_auc": 0.2526,
+      "continuity": 0.7928,
+      "trustworthiness": 0.5696,
+      "density_preservation": 0.1489,
+      "distance_correlation": 0.3454,
+      "distance_correlation_spectral": 0.307
+    },
+    "submission_time": "2023-02-21 17:58:32.464"
+  },
+  "spectral_features:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "spectral_features",
+    "resources": {
+      "cpu_pct": 282.6,
+      "disk_read_mb": 265.3,
+      "duration_sec": 628,
+      "disk_write_mb": 259.4,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.1073,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0025,
+      "lcmc": -0.0034,
+      "qlocal": 0.0028,
+      "qglobal": 0.4901,
+      "qnn_auc": 0.5,
+      "continuity": 0.1309,
+      "trustworthiness": 0.5366,
+      "density_preservation": -0.0813,
+      "distance_correlation": -0.0562,
+      "distance_correlation_spectral": 0.4858
+    },
+    "scaled_scores": {
+      "qnn": 0,
+      "lcmc": 0,
+      "qlocal": 0,
+      "qglobal": 0,
+      "qnn_auc": 0,
+      "continuity": 0,
+      "trustworthiness": 0.0734,
+      "density_preservation": 0,
+      "distance_correlation": 0,
+      "distance_correlation_spectral": 1
+    },
+    "submission_time": "2023-02-21 17:59:03.826"
+  },
+  "pymde_neighbors_log_cp10k_hvg:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 262.4,
+      "disk_read_mb": 272.4,
+      "duration_sec": 669,
+      "disk_write_mb": 289,
+      "peak_memory_mb": 972.1
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3549,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0449,
+      "lcmc": 0.039,
+      "qlocal": 0.3665,
+      "qglobal": 0.7579,
+      "qnn_auc": 0.6557,
+      "continuity": 0.8337,
+      "trustworthiness": 0.7797,
+      "density_preservation": 0.1093,
+      "distance_correlation": 0.3561,
+      "distance_correlation_spectral": 0.0658
+    },
+    "scaled_scores": {
+      "qnn": 0.0425,
+      "lcmc": 0.0425,
+      "qlocal": 0.3647,
+      "qglobal": 0.525,
+      "qnn_auc": 0.3114,
+      "continuity": 0.8087,
+      "trustworthiness": 0.5596,
+      "density_preservation": 0.1763,
+      "distance_correlation": 0.4029,
+      "distance_correlation_spectral": 0.3157
+    },
+    "submission_time": "2023-02-21 17:58:32.154"
+  },
+  "tsne_logCP10k_1kHVG:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 284.5,
+      "disk_read_mb": 263.7,
+      "duration_sec": 669,
+      "disk_write_mb": 289.2,
+      "peak_memory_mb": 784
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3381,
+    "code_version": "0.1",
+    "metric_values": {
+      "qnn": 0.048,
+      "lcmc": 0.0421,
+      "qlocal": 0.3373,
+      "qglobal": 0.707,
+      "qnn_auc": 0.6214,
+      "continuity": 0.8209,
+      "trustworthiness": 0.7953,
+      "density_preservation": 0.2314,
+      "distance_correlation": 0.2364,
+      "distance_correlation_spectral": 0.0723
+    },
+    "scaled_scores": {
+      "qnn": 0.0456,
+      "lcmc": 0.0456,
+      "qlocal": 0.3354,
+      "qglobal": 0.4251,
+      "qnn_auc": 0.2429,
+      "continuity": 0.7939,
+      "trustworthiness": 0.5907,
+      "density_preservation": 0.2892,
+      "distance_correlation": 0.2859,
+      "distance_correlation_spectral": 0.3262
+    },
+    "submission_time": "2023-02-21 17:58:32.410"
+  },
+  "umap_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k",
+    "resources": {
+      "cpu_pct": 181.7,
+      "disk_read_mb": 265.3,
+      "duration_sec": 659,
+      "disk_write_mb": 219.4,
+      "peak_memory_mb": 1300
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3738,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.031,
+      "lcmc": 0.0251,
+      "qlocal": 0.3544,
+      "qglobal": 0.8112,
+      "qnn_auc": 0.6811,
+      "continuity": 0.8686,
+      "trustworthiness": 0.7659,
+      "density_preservation": -0.0356,
+      "distance_correlation": 0.7397,
+      "distance_correlation_spectral": -0.0447
+    },
+    "scaled_scores": {
+      "qnn": 0.0286,
+      "lcmc": 0.0286,
+      "qlocal": 0.3525,
+      "qglobal": 0.6294,
+      "qnn_auc": 0.3621,
+      "continuity": 0.8489,
+      "trustworthiness": 0.532,
+      "density_preservation": 0.0423,
+      "distance_correlation": 0.7776,
+      "distance_correlation_spectral": 0.1356
+    },
+    "submission_time": "2023-02-21 17:59:03.922"
+  },
+  "umap_pca_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 238.9,
+      "disk_read_mb": 265.5,
+      "duration_sec": 699,
+      "disk_write_mb": 227.8,
+      "peak_memory_mb": 593.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3806,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0489,
+      "lcmc": 0.043,
+      "qlocal": 0.4106,
+      "qglobal": 0.7702,
+      "qnn_auc": 0.6676,
+      "continuity": 0.8543,
+      "trustworthiness": 0.8188,
+      "density_preservation": 0.105,
+      "distance_correlation": 0.4754,
+      "distance_correlation_spectral": 0.0306
+    },
+    "scaled_scores": {
+      "qnn": 0.0465,
+      "lcmc": 0.0465,
+      "qlocal": 0.4088,
+      "qglobal": 0.5491,
+      "qnn_auc": 0.3351,
+      "continuity": 0.8324,
+      "trustworthiness": 0.6377,
+      "density_preservation": 0.1724,
+      "distance_correlation": 0.5194,
+      "distance_correlation_spectral": 0.2583
+    },
+    "submission_time": "2023-02-21 17:58:32.594"
+  },
+  "pymde_neighbors_log_cp10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k",
+    "resources": {
+      "cpu_pct": 214.1,
+      "disk_read_mb": 272.2,
+      "duration_sec": 810,
+      "disk_write_mb": 235.8,
+      "peak_memory_mb": 978.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3647,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0487,
+      "lcmc": 0.0428,
+      "qlocal": 0.3929,
+      "qglobal": 0.7418,
+      "qnn_auc": 0.6507,
+      "continuity": 0.8604,
+      "trustworthiness": 0.8162,
+      "density_preservation": 0.0806,
+      "distance_correlation": 0.3481,
+      "distance_correlation_spectral": 0.0878
+    },
+    "scaled_scores": {
+      "qnn": 0.0463,
+      "lcmc": 0.0463,
+      "qlocal": 0.3911,
+      "qglobal": 0.4934,
+      "qnn_auc": 0.3013,
+      "continuity": 0.8393,
+      "trustworthiness": 0.6326,
+      "density_preservation": 0.1498,
+      "distance_correlation": 0.395,
+      "distance_correlation_spectral": 0.3515
+    },
+    "submission_time": "2023-02-21 17:58:42.202"
+  },
+  "tsne_logCP10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k",
+    "resources": {
+      "cpu_pct": 213.9,
+      "disk_read_mb": 263.7,
+      "duration_sec": 1082,
+      "disk_write_mb": 218.1,
+      "peak_memory_mb": 773
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3925,
+    "code_version": "0.1",
+    "metric_values": {
+      "qnn": 0.0531,
+      "lcmc": 0.0472,
+      "qlocal": 0.3515,
+      "qglobal": 0.7813,
+      "qnn_auc": 0.6791,
+      "continuity": 0.8394,
+      "trustworthiness": 0.8291,
+      "density_preservation": 0.1213,
+      "distance_correlation": 0.5533,
+      "distance_correlation_spectral": 0.0492
+    },
+    "scaled_scores": {
+      "qnn": 0.0507,
+      "lcmc": 0.0507,
+      "qlocal": 0.3496,
+      "qglobal": 0.5708,
+      "qnn_auc": 0.3581,
+      "continuity": 0.8152,
+      "trustworthiness": 0.6584,
+      "density_preservation": 0.1874,
+      "distance_correlation": 0.5955,
+      "distance_correlation_spectral": 0.2886
+    },
+    "submission_time": "2023-02-21 17:58:32.415"
+  },
+  "pymde_distances_log_cp10k_hvg:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 315.2,
+      "disk_read_mb": 271.8,
+      "duration_sec": 996,
+      "disk_write_mb": 288.2,
+      "peak_memory_mb": 16200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.3494,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0288,
+      "lcmc": 0.0229,
+      "qlocal": 0.329,
+      "qglobal": 0.7552,
+      "qnn_auc": 0.6436,
+      "continuity": 0.7808,
+      "trustworthiness": 0.7413,
+      "density_preservation": 0.2895,
+      "distance_correlation": 0.3984,
+      "distance_correlation_spectral": 0.05
+    },
+    "scaled_scores": {
+      "qnn": 0.0264,
+      "lcmc": 0.0264,
+      "qlocal": 0.3271,
+      "qglobal": 0.5196,
+      "qnn_auc": 0.2873,
+      "continuity": 0.7478,
+      "trustworthiness": 0.4827,
+      "density_preservation": 0.3429,
+      "distance_correlation": 0.4442,
+      "distance_correlation_spectral": 0.2899
+    },
+    "submission_time": "2023-02-21 18:08:15.295"
+  },
+  "pymde_distances_log_cp10k:tenx_5k_pbmc": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k",
+    "resources": {
+      "cpu_pct": 623.4,
+      "disk_read_mb": 271.7,
+      "duration_sec": 1366,
+      "disk_write_mb": 235,
+      "peak_memory_mb": 16200
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "tenx_5k_pbmc",
+    "mean_score": 0.4417,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0333,
+      "lcmc": 0.0274,
+      "qlocal": 0.3509,
+      "qglobal": 0.8105,
+      "qnn_auc": 0.7041,
+      "continuity": 0.8198,
+      "trustworthiness": 0.7855,
+      "density_preservation": 0.5135,
+      "distance_correlation": 0.7842,
+      "distance_correlation_spectral": 0.016
+    },
+    "scaled_scores": {
+      "qnn": 0.0309,
+      "lcmc": 0.0309,
+      "qlocal": 0.349,
+      "qglobal": 0.6281,
+      "qnn_auc": 0.4083,
+      "continuity": 0.7926,
+      "trustworthiness": 0.5712,
+      "density_preservation": 0.5501,
+      "distance_correlation": 0.8211,
+      "distance_correlation_spectral": 0.2346
+    },
+    "submission_time": "2023-02-21 18:07:45.801"
+  },
+  "random_features:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "random_features",
+    "resources": {
+      "cpu_pct": 59.5,
+      "disk_read_mb": 580.4,
+      "duration_sec": 391,
+      "disk_write_mb": 534.4,
+      "peak_memory_mb": 798
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0002,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0158,
+      "lcmc": -0.0004,
+      "qlocal": 0.0029,
+      "qglobal": 0.4992,
+      "qnn_auc": 0.5,
+      "continuity": 0.5203,
+      "trustworthiness": 0.5022,
+      "density_preservation": -0.0346,
+      "distance_correlation": -0.0141,
+      "distance_correlation_spectral": -0.0009
+    },
+    "scaled_scores": {
+      "qnn": 0,
+      "lcmc": 0,
+      "qlocal": 0,
+      "qglobal": 0,
+      "qnn_auc": 0,
+      "continuity": 0,
+      "trustworthiness": 0.002,
+      "density_preservation": 0,
+      "distance_correlation": 0,
+      "distance_correlation_spectral": 0
+    },
+    "submission_time": "2023-02-21 17:59:42.700"
+  },
+  "true_features:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "true_features",
+    "resources": {
+      "cpu_pct": 41.9,
+      "disk_read_mb": 580.4,
+      "duration_sec": 399,
+      "disk_write_mb": 851.2,
+      "peak_memory_mb": 946.2
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.9411,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 1,
+      "lcmc": 0.9844,
+      "qlocal": 1.0005,
+      "qglobal": 1.0005,
+      "qnn_auc": 1,
+      "continuity": 1,
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 0.9548,
+      "distance_correlation_spectral": 0.309
+    },
+    "scaled_scores": {
+      "qnn": 1,
+      "lcmc": 1,
+      "qlocal": 1,
+      "qglobal": 1,
+      "qnn_auc": 1,
+      "continuity": 1,
+      "trustworthiness": 1,
+      "density_preservation": 1,
+      "distance_correlation": 1,
+      "distance_correlation_spectral": 0.4106
+    },
+    "submission_time": "2023-02-21 17:59:42.929"
+  },
+  "pca_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k",
+    "resources": {
+      "cpu_pct": 104.9,
+      "disk_read_mb": 581.9,
+      "duration_sec": 399,
+      "disk_write_mb": 534.4,
+      "peak_memory_mb": 972.5
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.057,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "qnn": 0.0706,
+      "lcmc": 0.0545,
+      "qlocal": 0.1472,
+      "qglobal": 0.5646,
+      "qnn_auc": 0.5243,
+      "continuity": 0.6108,
+      "trustworthiness": 0.6196,
+      "density_preservation": -0.1722,
+      "distance_correlation": 0.126,
+      "distance_correlation_spectral": -0.2294
+    },
+    "scaled_scores": {
+      "qnn": 0.0557,
+      "lcmc": 0.0557,
+      "qlocal": 0.1447,
+      "qglobal": 0.1304,
+      "qnn_auc": 0.0486,
+      "continuity": 0.1886,
+      "trustworthiness": 0.2375,
+      "density_preservation": -0.133,
+      "distance_correlation": 0.1446,
+      "distance_correlation_spectral": -0.3028
+    },
+    "submission_time": "2023-02-21 17:59:43.157"
+  },
+  "neuralee_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 145.9,
+      "disk_read_mb": 587.9,
+      "duration_sec": 409,
+      "disk_write_mb": 707,
+      "peak_memory_mb": 915.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1145,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "qnn": 0.0677,
+      "lcmc": 0.0515,
+      "qlocal": 0.1586,
+      "qglobal": 0.5817,
+      "qnn_auc": 0.5336,
+      "continuity": 0.6734,
+      "trustworthiness": 0.6276,
+      "density_preservation": 0.1808,
+      "distance_correlation": 0.0594,
+      "distance_correlation_spectral": -0.1559
+    },
+    "scaled_scores": {
+      "qnn": 0.0528,
+      "lcmc": 0.0527,
+      "qlocal": 0.1561,
+      "qglobal": 0.1646,
+      "qnn_auc": 0.0672,
+      "continuity": 0.3191,
+      "trustworthiness": 0.2534,
+      "density_preservation": 0.2082,
+      "distance_correlation": 0.0759,
+      "distance_correlation_spectral": -0.2053
+    },
+    "submission_time": "2023-02-21 17:59:42.394"
+  },
+  "pymde_neighbors_log_cp10k_hvg:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 75.2,
+      "disk_read_mb": 590.2,
+      "duration_sec": 409,
+      "disk_write_mb": 707.8,
+      "peak_memory_mb": 924.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.118,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0722,
+      "lcmc": 0.0561,
+      "qlocal": 0.1661,
+      "qglobal": 0.5742,
+      "qnn_auc": 0.5272,
+      "continuity": 0.6543,
+      "trustworthiness": 0.6414,
+      "density_preservation": 0.2218,
+      "distance_correlation": 0.0544,
+      "distance_correlation_spectral": -0.1378
+    },
+    "scaled_scores": {
+      "qnn": 0.0574,
+      "lcmc": 0.0573,
+      "qlocal": 0.1636,
+      "qglobal": 0.1497,
+      "qnn_auc": 0.0544,
+      "continuity": 0.2792,
+      "trustworthiness": 0.281,
+      "density_preservation": 0.2478,
+      "distance_correlation": 0.0707,
+      "distance_correlation_spectral": -0.1814
+    },
+    "submission_time": "2023-02-21 17:59:42.792"
+  },
+  "umap_pca_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 86.8,
+      "disk_read_mb": 583.3,
+      "duration_sec": 419,
+      "disk_write_mb": 707.8,
+      "peak_memory_mb": 798.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1045,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0727,
+      "lcmc": 0.0565,
+      "qlocal": 0.1688,
+      "qglobal": 0.5685,
+      "qnn_auc": 0.5222,
+      "continuity": 0.6434,
+      "trustworthiness": 0.6428,
+      "density_preservation": 0.1282,
+      "distance_correlation": 0.0238,
+      "distance_correlation_spectral": -0.119
+    },
+    "scaled_scores": {
+      "qnn": 0.0578,
+      "lcmc": 0.0578,
+      "qlocal": 0.1664,
+      "qglobal": 0.1382,
+      "qnn_auc": 0.0444,
+      "continuity": 0.2566,
+      "trustworthiness": 0.284,
+      "density_preservation": 0.1574,
+      "distance_correlation": 0.0391,
+      "distance_correlation_spectral": -0.1565
+    },
+    "submission_time": "2023-02-21 17:59:42.816"
+  },
+  "tsne_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 146.4,
+      "disk_read_mb": 581.6,
+      "duration_sec": 420,
+      "disk_write_mb": 707.4,
+      "peak_memory_mb": 796.4
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1325,
+    "code_version": "0.1",
+    "metric_values": {
+      "qnn": 0.0735,
+      "lcmc": 0.0573,
+      "qlocal": 0.1671,
+      "qglobal": 0.5861,
+      "qnn_auc": 0.5389,
+      "continuity": 0.6584,
+      "trustworthiness": 0.649,
+      "density_preservation": 0.1948,
+      "distance_correlation": 0.0729,
+      "distance_correlation_spectral": -0.0794
+    },
+    "scaled_scores": {
+      "qnn": 0.0586,
+      "lcmc": 0.0586,
+      "qlocal": 0.1646,
+      "qglobal": 0.1734,
+      "qnn_auc": 0.0778,
+      "continuity": 0.2878,
+      "trustworthiness": 0.2963,
+      "density_preservation": 0.2218,
+      "distance_correlation": 0.0898,
+      "distance_correlation_spectral": -0.104
+    },
+    "submission_time": "2023-02-21 17:59:42.848"
+  },
+  "pca_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 27.9,
+      "disk_read_mb": 582,
+      "duration_sec": 419,
+      "disk_write_mb": 707,
+      "peak_memory_mb": 797.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0465,
+    "code_version": "1.1.3",
+    "metric_values": {
+      "qnn": 0.0573,
+      "lcmc": 0.0411,
+      "qlocal": 0.1543,
+      "qglobal": 0.5612,
+      "qnn_auc": 0.5041,
+      "continuity": 0.6117,
+      "trustworthiness": 0.5998,
+      "density_preservation": 0.0337,
+      "distance_correlation": -0.0527,
+      "distance_correlation_spectral": -0.2404
+    },
+    "scaled_scores": {
+      "qnn": 0.0422,
+      "lcmc": 0.0422,
+      "qlocal": 0.1518,
+      "qglobal": 0.1237,
+      "qnn_auc": 0.0082,
+      "continuity": 0.1906,
+      "trustworthiness": 0.1978,
+      "density_preservation": 0.066,
+      "distance_correlation": -0.0399,
+      "distance_correlation_spectral": -0.3173
+    },
+    "submission_time": "2023-02-21 17:59:43.326"
+  },
+  "pymde_distances_log_cp10k_hvg:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k_hvg",
+    "resources": {
+      "cpu_pct": 393.4,
+      "disk_read_mb": 589.7,
+      "duration_sec": 430,
+      "disk_write_mb": 707,
+      "peak_memory_mb": 2900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0939,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0601,
+      "lcmc": 0.0439,
+      "qlocal": 0.1676,
+      "qglobal": 0.5935,
+      "qnn_auc": 0.5324,
+      "continuity": 0.6024,
+      "trustworthiness": 0.6188,
+      "density_preservation": 0.1593,
+      "distance_correlation": 0.1018,
+      "distance_correlation_spectral": -0.2141
+    },
+    "scaled_scores": {
+      "qnn": 0.045,
+      "lcmc": 0.045,
+      "qlocal": 0.1651,
+      "qglobal": 0.1882,
+      "qnn_auc": 0.0648,
+      "continuity": 0.171,
+      "trustworthiness": 0.2358,
+      "density_preservation": 0.1874,
+      "distance_correlation": 0.1196,
+      "distance_correlation_spectral": -0.2825
+    },
+    "submission_time": "2023-02-21 17:59:42.696"
+  },
+  "phate_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 120.7,
+      "disk_read_mb": 580.7,
+      "duration_sec": 440,
+      "disk_write_mb": 534.4,
+      "peak_memory_mb": 868
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0267,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.0881,
+      "lcmc": 0.072,
+      "qlocal": 0.163,
+      "qglobal": 0.5581,
+      "qnn_auc": 0.5218,
+      "continuity": 0.648,
+      "trustworthiness": 0.6621,
+      "density_preservation": -0.5312,
+      "distance_correlation": -0.0175,
+      "distance_correlation_spectral": -0.2328
+    },
+    "scaled_scores": {
+      "qnn": 0.0735,
+      "lcmc": 0.0735,
+      "qlocal": 0.1605,
+      "qglobal": 0.1174,
+      "qnn_auc": 0.0436,
+      "continuity": 0.2663,
+      "trustworthiness": 0.3227,
+      "density_preservation": -0.48,
+      "distance_correlation": -0.0036,
+      "distance_correlation_spectral": -0.3073
+    },
+    "submission_time": "2023-02-21 17:59:42.414"
+  },
+  "phate_sqrt:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_sqrt",
+    "resources": {
+      "cpu_pct": 350.5,
+      "disk_read_mb": 580.7,
+      "duration_sec": 439,
+      "disk_write_mb": 706.2,
+      "peak_memory_mb": 1000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0335,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.0842,
+      "lcmc": 0.068,
+      "qlocal": 0.1492,
+      "qglobal": 0.5507,
+      "qnn_auc": 0.5195,
+      "continuity": 0.603,
+      "trustworthiness": 0.6609,
+      "density_preservation": -0.2533,
+      "distance_correlation": -0.0244,
+      "distance_correlation_spectral": -0.2752
+    },
+    "scaled_scores": {
+      "qnn": 0.0695,
+      "lcmc": 0.0695,
+      "qlocal": 0.1467,
+      "qglobal": 0.1028,
+      "qnn_auc": 0.0391,
+      "continuity": 0.1722,
+      "trustworthiness": 0.3203,
+      "density_preservation": -0.2114,
+      "distance_correlation": -0.0106,
+      "distance_correlation_spectral": -0.3635
+    },
+    "submission_time": "2023-02-21 17:59:42.615"
+  },
+  "densmap_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 83.7,
+      "disk_read_mb": 582.6,
+      "duration_sec": 449,
+      "disk_write_mb": 707.8,
+      "peak_memory_mb": 796.6
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1093,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0657,
+      "lcmc": 0.0495,
+      "qlocal": 0.1605,
+      "qglobal": 0.5717,
+      "qnn_auc": 0.5239,
+      "continuity": 0.619,
+      "trustworthiness": 0.6363,
+      "density_preservation": 0.3452,
+      "distance_correlation": 0.0143,
+      "distance_correlation_spectral": -0.176
+    },
+    "scaled_scores": {
+      "qnn": 0.0507,
+      "lcmc": 0.0506,
+      "qlocal": 0.158,
+      "qglobal": 0.1447,
+      "qnn_auc": 0.0477,
+      "continuity": 0.2056,
+      "trustworthiness": 0.2708,
+      "density_preservation": 0.3671,
+      "distance_correlation": 0.0293,
+      "distance_correlation_spectral": -0.232
+    },
+    "submission_time": "2023-02-21 17:59:42.967"
+  },
+  "umap_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 49.9,
+      "disk_read_mb": 583.2,
+      "duration_sec": 449,
+      "disk_write_mb": 707.8,
+      "peak_memory_mb": 798.1
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1006,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0708,
+      "lcmc": 0.0546,
+      "qlocal": 0.1631,
+      "qglobal": 0.5658,
+      "qnn_auc": 0.52,
+      "continuity": 0.649,
+      "trustworthiness": 0.6428,
+      "density_preservation": 0.1354,
+      "distance_correlation": -0.0058,
+      "distance_correlation_spectral": -0.1251
+    },
+    "scaled_scores": {
+      "qnn": 0.0559,
+      "lcmc": 0.0559,
+      "qlocal": 0.1606,
+      "qglobal": 0.1329,
+      "qnn_auc": 0.0401,
+      "continuity": 0.2682,
+      "trustworthiness": 0.284,
+      "density_preservation": 0.1643,
+      "distance_correlation": 0.0085,
+      "distance_correlation_spectral": -0.1646
+    },
+    "submission_time": "2023-02-21 17:59:43.428"
+  },
+  "densmap_pca_logCP10k_1kHVG:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k_1kHVG",
+    "resources": {
+      "cpu_pct": 94.1,
+      "disk_read_mb": 582.7,
+      "duration_sec": 460,
+      "disk_write_mb": 707.8,
+      "peak_memory_mb": 795.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0951,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0624,
+      "lcmc": 0.0462,
+      "qlocal": 0.1641,
+      "qglobal": 0.5679,
+      "qnn_auc": 0.5212,
+      "continuity": 0.6034,
+      "trustworthiness": 0.6357,
+      "density_preservation": 0.2845,
+      "distance_correlation": -0.0062,
+      "distance_correlation_spectral": -0.1853
+    },
+    "scaled_scores": {
+      "qnn": 0.0474,
+      "lcmc": 0.0473,
+      "qlocal": 0.1616,
+      "qglobal": 0.1371,
+      "qnn_auc": 0.0423,
+      "continuity": 0.1731,
+      "trustworthiness": 0.2697,
+      "density_preservation": 0.3084,
+      "distance_correlation": 0.0082,
+      "distance_correlation_spectral": -0.2443
+    },
+    "submission_time": "2023-02-21 17:59:43.018"
+  },
+  "spectral_features:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "spectral_features",
+    "resources": {
+      "cpu_pct": 179.1,
+      "disk_read_mb": 583.1,
+      "duration_sec": 478,
+      "disk_write_mb": 549.8,
+      "peak_memory_mb": 998.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.3194,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0261,
+      "lcmc": 0.0099,
+      "qlocal": 0.2665,
+      "qglobal": 0.6795,
+      "qnn_auc": 0.6133,
+      "continuity": 0.9166,
+      "trustworthiness": 0.5012,
+      "density_preservation": 0.275,
+      "distance_correlation": 0.1774,
+      "distance_correlation_spectral": 0.7538
+    },
+    "scaled_scores": {
+      "qnn": 0.0105,
+      "lcmc": 0.0104,
+      "qlocal": 0.2642,
+      "qglobal": 0.3596,
+      "qnn_auc": 0.2265,
+      "continuity": 0.8262,
+      "trustworthiness": 0,
+      "density_preservation": 0.2993,
+      "distance_correlation": 0.1976,
+      "distance_correlation_spectral": 1
+    },
+    "submission_time": "2023-02-21 17:59:43.536"
+  },
+  "densmap_pca_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 192.1,
+      "disk_read_mb": 582.6,
+      "duration_sec": 489,
+      "disk_write_mb": 552.1,
+      "peak_memory_mb": 1015.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.2081,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.1024,
+      "lcmc": 0.0862,
+      "qlocal": 0.1924,
+      "qglobal": 0.6026,
+      "qnn_auc": 0.5643,
+      "continuity": 0.6435,
+      "trustworthiness": 0.6879,
+      "density_preservation": 0.6675,
+      "distance_correlation": 0.2348,
+      "distance_correlation_spectral": -0.1415
+    },
+    "scaled_scores": {
+      "qnn": 0.088,
+      "lcmc": 0.0879,
+      "qlocal": 0.19,
+      "qglobal": 0.2063,
+      "qnn_auc": 0.1286,
+      "continuity": 0.2568,
+      "trustworthiness": 0.3744,
+      "density_preservation": 0.6787,
+      "distance_correlation": 0.2569,
+      "distance_correlation_spectral": -0.1863
+    },
+    "submission_time": "2023-02-21 17:59:43.084"
+  },
+  "phate_default:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_default",
+    "resources": {
+      "cpu_pct": 162.9,
+      "disk_read_mb": 580.7,
+      "duration_sec": 499,
+      "disk_write_mb": 706.2,
+      "peak_memory_mb": 1000
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0154,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.083,
+      "lcmc": 0.0669,
+      "qlocal": 0.1454,
+      "qglobal": 0.5465,
+      "qnn_auc": 0.515,
+      "continuity": 0.6087,
+      "trustworthiness": 0.6595,
+      "density_preservation": -0.4127,
+      "distance_correlation": -0.0373,
+      "distance_correlation_spectral": -0.2742
+    },
+    "scaled_scores": {
+      "qnn": 0.0683,
+      "lcmc": 0.0683,
+      "qlocal": 0.1428,
+      "qglobal": 0.0944,
+      "qnn_auc": 0.0299,
+      "continuity": 0.1842,
+      "trustworthiness": 0.3173,
+      "density_preservation": -0.3654,
+      "distance_correlation": -0.024,
+      "distance_correlation_spectral": -0.3621
+    },
+    "submission_time": "2023-02-21 17:59:43.383"
+  },
+  "phate_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "phate_logCP10k",
+    "resources": {
+      "cpu_pct": 267.7,
+      "disk_read_mb": 582.3,
+      "duration_sec": 509,
+      "disk_write_mb": 707,
+      "peak_memory_mb": 847.7
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0514,
+    "code_version": "1.0.10",
+    "metric_values": {
+      "qnn": 0.061,
+      "lcmc": 0.0448,
+      "qlocal": 0.1704,
+      "qglobal": 0.5813,
+      "qnn_auc": 0.5247,
+      "continuity": 0.6474,
+      "trustworthiness": 0.6246,
+      "density_preservation": -0.3125,
+      "distance_correlation": -0.0221,
+      "distance_correlation_spectral": -0.1477
+    },
+    "scaled_scores": {
+      "qnn": 0.0459,
+      "lcmc": 0.0459,
+      "qlocal": 0.1679,
+      "qglobal": 0.1638,
+      "qnn_auc": 0.0494,
+      "continuity": 0.2649,
+      "trustworthiness": 0.2474,
+      "density_preservation": -0.2686,
+      "distance_correlation": -0.0083,
+      "distance_correlation_spectral": -0.1946
+    },
+    "submission_time": "2023-02-21 17:59:43.309"
+  },
+  "umap_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_logCP10k",
+    "resources": {
+      "cpu_pct": 65.8,
+      "disk_read_mb": 583.1,
+      "duration_sec": 509,
+      "disk_write_mb": 535.2,
+      "peak_memory_mb": 998.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1401,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0878,
+      "lcmc": 0.0717,
+      "qlocal": 0.1747,
+      "qglobal": 0.5585,
+      "qnn_auc": 0.5157,
+      "continuity": 0.7441,
+      "trustworthiness": 0.6018,
+      "density_preservation": 0.3868,
+      "distance_correlation": 0.0553,
+      "distance_correlation_spectral": -0.1629
+    },
+    "scaled_scores": {
+      "qnn": 0.0732,
+      "lcmc": 0.0731,
+      "qlocal": 0.1722,
+      "qglobal": 0.1183,
+      "qnn_auc": 0.0314,
+      "continuity": 0.4665,
+      "trustworthiness": 0.2018,
+      "density_preservation": 0.4073,
+      "distance_correlation": 0.0716,
+      "distance_correlation_spectral": -0.2147
+    },
+    "submission_time": "2023-02-21 17:59:43.481"
+  },
+  "tsne_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "tsne_logCP10k",
+    "resources": {
+      "cpu_pct": 385.2,
+      "disk_read_mb": 581.6,
+      "duration_sec": 519,
+      "disk_write_mb": 534.8,
+      "peak_memory_mb": 970.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1674,
+    "code_version": "0.1",
+    "metric_values": {
+      "qnn": 0.1107,
+      "lcmc": 0.0946,
+      "qlocal": 0.1748,
+      "qglobal": 0.5833,
+      "qnn_auc": 0.5503,
+      "continuity": 0.6556,
+      "trustworthiness": 0.703,
+      "density_preservation": 0.3889,
+      "distance_correlation": 0.1745,
+      "distance_correlation_spectral": -0.19
+    },
+    "scaled_scores": {
+      "qnn": 0.0965,
+      "lcmc": 0.0964,
+      "qlocal": 0.1724,
+      "qglobal": 0.1678,
+      "qnn_auc": 0.1006,
+      "continuity": 0.282,
+      "trustworthiness": 0.4045,
+      "density_preservation": 0.4094,
+      "distance_correlation": 0.1947,
+      "distance_correlation_spectral": -0.2505
+    },
+    "submission_time": "2023-02-21 17:59:42.830"
+  },
+  "densmap_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "densmap_logCP10k",
+    "resources": {
+      "cpu_pct": 96.7,
+      "disk_read_mb": 582.5,
+      "duration_sec": 519,
+      "disk_write_mb": 535.2,
+      "peak_memory_mb": 994
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.2104,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.0879,
+      "lcmc": 0.0717,
+      "qlocal": 0.1735,
+      "qglobal": 0.5902,
+      "qnn_auc": 0.5519,
+      "continuity": 0.7483,
+      "trustworthiness": 0.614,
+      "density_preservation": 0.6804,
+      "distance_correlation": 0.2941,
+      "distance_correlation_spectral": -0.1591
+    },
+    "scaled_scores": {
+      "qnn": 0.0733,
+      "lcmc": 0.0732,
+      "qlocal": 0.171,
+      "qglobal": 0.1816,
+      "qnn_auc": 0.1039,
+      "continuity": 0.4753,
+      "trustworthiness": 0.2262,
+      "density_preservation": 0.6911,
+      "distance_correlation": 0.3181,
+      "distance_correlation_spectral": -0.2097
+    },
+    "submission_time": "2023-02-21 17:59:43.135"
+  },
+  "diffusion_map:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "diffusion_map",
+    "resources": {
+      "cpu_pct": 87.7,
+      "disk_read_mb": 583.1,
+      "duration_sec": 519,
+      "disk_write_mb": 535.2,
+      "peak_memory_mb": 1000.9
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": -0.0807,
+    "code_version": "0.7.0",
+    "metric_values": {
+      "qnn": 0.0416,
+      "lcmc": 0.0254,
+      "qlocal": 0.1288,
+      "qglobal": 0.54,
+      "qnn_auc": 0.5,
+      "continuity": 0.3799,
+      "trustworthiness": 0.5819,
+      "density_preservation": -0.5478,
+      "distance_correlation": -0.0806,
+      "distance_correlation_spectral": -0.2812
+    },
+    "scaled_scores": {
+      "qnn": 0.0262,
+      "lcmc": 0.0262,
+      "qlocal": 0.1262,
+      "qglobal": 0.0813,
+      "qnn_auc": 0,
+      "continuity": -0.2929,
+      "trustworthiness": 0.1619,
+      "density_preservation": -0.4961,
+      "distance_correlation": -0.0687,
+      "distance_correlation_spectral": -0.3714
+    },
+    "submission_time": "2023-02-21 17:59:43.252"
+  },
+  "umap_pca_logCP10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "umap_pca_logCP10k",
+    "resources": {
+      "cpu_pct": 146.5,
+      "disk_read_mb": 583.2,
+      "duration_sec": 559,
+      "disk_write_mb": 552.1,
+      "peak_memory_mb": 1017.3
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1115,
+    "code_version": "0.5.3",
+    "metric_values": {
+      "qnn": 0.1065,
+      "lcmc": 0.0903,
+      "qlocal": 0.1805,
+      "qglobal": 0.5854,
+      "qnn_auc": 0.5491,
+      "continuity": 0.579,
+      "trustworthiness": 0.6929,
+      "density_preservation": 0.0826,
+      "distance_correlation": 0.1346,
+      "distance_correlation_spectral": -0.22
+    },
+    "scaled_scores": {
+      "qnn": 0.0922,
+      "lcmc": 0.0921,
+      "qlocal": 0.178,
+      "qglobal": 0.172,
+      "qnn_auc": 0.0981,
+      "continuity": 0.1222,
+      "trustworthiness": 0.3843,
+      "density_preservation": 0.1133,
+      "distance_correlation": 0.1534,
+      "distance_correlation_spectral": -0.2903
+    },
+    "submission_time": "2023-02-21 17:59:42.874"
+  },
+  "pymde_neighbors_log_cp10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_neighbors_log_cp10k",
+    "resources": {
+      "cpu_pct": 188.8,
+      "disk_read_mb": 590.1,
+      "duration_sec": 609,
+      "disk_write_mb": 569,
+      "peak_memory_mb": 1100
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1277,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.1041,
+      "lcmc": 0.0879,
+      "qlocal": 0.1719,
+      "qglobal": 0.5763,
+      "qnn_auc": 0.5427,
+      "continuity": 0.6335,
+      "trustworthiness": 0.6855,
+      "density_preservation": 0.1791,
+      "distance_correlation": 0.1191,
+      "distance_correlation_spectral": -0.1974
+    },
+    "scaled_scores": {
+      "qnn": 0.0897,
+      "lcmc": 0.0897,
+      "qlocal": 0.1694,
+      "qglobal": 0.1538,
+      "qnn_auc": 0.0855,
+      "continuity": 0.2359,
+      "trustworthiness": 0.3695,
+      "density_preservation": 0.2065,
+      "distance_correlation": 0.1374,
+      "distance_correlation_spectral": -0.2603
+    },
+    "submission_time": "2023-02-21 17:59:42.930"
+  },
+  "pymde_distances_log_cp10k:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "pymde_distances_log_cp10k",
+    "resources": {
+      "cpu_pct": 248.2,
+      "disk_read_mb": 589.6,
+      "duration_sec": 828,
+      "disk_write_mb": 568.2,
+      "peak_memory_mb": 2900
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.1912,
+    "code_version": "0.1.18",
+    "metric_values": {
+      "qnn": 0.0606,
+      "lcmc": 0.0444,
+      "qlocal": 0.1496,
+      "qglobal": 0.6357,
+      "qnn_auc": 0.5804,
+      "continuity": 0.6869,
+      "trustworthiness": 0.6144,
+      "density_preservation": 0.3134,
+      "distance_correlation": 0.464,
+      "distance_correlation_spectral": -0.1242
+    },
+    "scaled_scores": {
+      "qnn": 0.0455,
+      "lcmc": 0.0455,
+      "qlocal": 0.1471,
+      "qglobal": 0.2723,
+      "qnn_auc": 0.1607,
+      "continuity": 0.3473,
+      "trustworthiness": 0.2269,
+      "density_preservation": 0.3364,
+      "distance_correlation": 0.4935,
+      "distance_correlation_spectral": -0.1634
+    },
+    "submission_time": "2023-02-21 17:59:43.382"
+  },
+  "neuralee_default:mouse_hspc_nestorowa2016": {
+    "task_id": "dimensionality_reduction",
+    "method_id": "neuralee_default",
+    "resources": {
+      "cpu_pct": 158.8,
+      "disk_read_mb": 587.8,
+      "duration_sec": 879,
+      "disk_write_mb": 534.4,
+      "peak_memory_mb": 2400
+    },
+    "commit_sha": "65efdc87e3f4048b94b98c6f9fbfe10dae8d5ab0",
+    "dataset_id": "mouse_hspc_nestorowa2016",
+    "mean_score": 0.0898,
+    "code_version": "0.1.6",
+    "metric_values": {
+      "qnn": 0.0501,
+      "lcmc": 0.0339,
+      "qlocal": 0.1496,
+      "qglobal": 0.5627,
+      "qnn_auc": 0.5144,
+      "continuity": 0.6856,
+      "trustworthiness": 0.6007,
+      "density_preservation": 0.1174,
+      "distance_correlation": -0.0082,
+      "distance_correlation_spectral": -0.1302
+    },
+    "scaled_scores": {
+      "qnn": 0.0349,
+      "lcmc": 0.0349,
+      "qlocal": 0.147,
+      "qglobal": 0.1267,
+      "qnn_auc": 0.0289,
+      "continuity": 0.3446,
+      "trustworthiness": 0.1994,
+      "density_preservation": 0.1469,
+      "distance_correlation": 0.006,
+      "distance_correlation_spectral": -0.1713
+    },
+    "submission_time": "2023-02-21 17:59:42.378"
+  }
+}

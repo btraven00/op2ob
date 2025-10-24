@@ -1,1 +1,2966 @@
-{}
+{
+  "knn:cellxgene_census/dkd": {
+    "method_id": "knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 157.2,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 14.4,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5530
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9356,
+    "metric_values": {
+      "accuracy": 0.949,
+      "f1_macro": 0.9286,
+      "f1_micro": 0.949,
+      "f1_weighted": 0.9487
+    },
+    "scaled_scores": {
+      "accuracy": 0.9378,
+      "f1_macro": 0.926,
+      "f1_micro": 0.9378,
+      "f1_weighted": 0.9407
+    }
+  },
+  "logistic_regression:cellxgene_census/dkd": {
+    "method_id": "logistic_regression",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 2179.4,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 16.2,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 6964
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9462,
+    "metric_values": {
+      "accuracy": 0.9572,
+      "f1_macro": 0.9413,
+      "f1_micro": 0.9572,
+      "f1_weighted": 0.9567
+    },
+    "scaled_scores": {
+      "accuracy": 0.9477,
+      "f1_macro": 0.9392,
+      "f1_micro": 0.9477,
+      "f1_weighted": 0.95
+    }
+  },
+  "majority_vote:cellxgene_census/dkd": {
+    "method_id": "majority_vote",
+    "resources": {
+      "submit": "2025-01-23 17:12:28",
+      "cpu_pct": 148.1,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 9.9,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 6861
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.07,
+    "metric_values": {
+      "accuracy": 0.2954,
+      "f1_macro": 0.0351,
+      "f1_micro": 0.2954,
+      "f1_weighted": 0.1347
+    },
+    "scaled_scores": {
+      "accuracy": 0.1399,
+      "f1_macro": 0,
+      "f1_micro": 0.1399,
+      "f1_weighted": 0
+    }
+  },
+  "mlp:cellxgene_census/dkd": {
+    "method_id": "mlp",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 603.7,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 29,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 2970
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9387,
+    "metric_values": {
+      "accuracy": 0.954,
+      "f1_macro": 0.9245,
+      "f1_micro": 0.954,
+      "f1_weighted": 0.9529
+    },
+    "scaled_scores": {
+      "accuracy": 0.9438,
+      "f1_macro": 0.9218,
+      "f1_micro": 0.9438,
+      "f1_weighted": 0.9455
+    }
+  },
+  "naive_bayes:cellxgene_census/dkd": {
+    "method_id": "naive_bayes",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 125.8,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 13.3,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5530
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9138,
+    "metric_values": {
+      "accuracy": 0.9269,
+      "f1_macro": 0.9181,
+      "f1_micro": 0.9269,
+      "f1_weighted": 0.9296
+    },
+    "scaled_scores": {
+      "accuracy": 0.9107,
+      "f1_macro": 0.9151,
+      "f1_micro": 0.9107,
+      "f1_weighted": 0.9186
+    }
+  },
+  "random_labels:cellxgene_census/dkd": {
+    "method_id": "random_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 160.3,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 9.7,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 6144
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.0241,
+    "metric_values": {
+      "accuracy": 0.1808,
+      "f1_macro": 0.0774,
+      "f1_micro": 0.1808,
+      "f1_weighted": 0.1801
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0.0438,
+      "f1_micro": 0,
+      "f1_weighted": 0.0524
+    }
+  },
+  "scanvi:cellxgene_census/dkd": {
+    "method_id": "scanvi",
+    "resources": {
+      "submit": "2025-01-23 17:12:28",
+      "cpu_pct": 102.8,
+      "exit_code": 0,
+      "disk_read_mb": 1434,
+      "duration_sec": 146,
+      "disk_write_mb": 2,
+      "peak_memory_mb": 25191
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.945,
+    "metric_values": {
+      "accuracy": 0.957,
+      "f1_macro": 0.936,
+      "f1_micro": 0.957,
+      "f1_weighted": 0.9579
+    },
+    "scaled_scores": {
+      "accuracy": 0.9475,
+      "f1_macro": 0.9336,
+      "f1_micro": 0.9475,
+      "f1_weighted": 0.9513
+    }
+  },
+  "scanvi_scarches:cellxgene_census/dkd": {
+    "method_id": "scanvi_scarches",
+    "resources": {
+      "submit": "2025-01-23 17:12:28",
+      "cpu_pct": 97.4,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 1055,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 22016
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9448,
+    "metric_values": {
+      "accuracy": 0.957,
+      "f1_macro": 0.9366,
+      "f1_micro": 0.957,
+      "f1_weighted": 0.9567
+    },
+    "scaled_scores": {
+      "accuracy": 0.9475,
+      "f1_macro": 0.9342,
+      "f1_micro": 0.9475,
+      "f1_weighted": 0.95
+    }
+  },
+  "scgpt_zeroshot:cellxgene_census/dkd": {
+    "method_id": "scgpt_zeroshot",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 105.9,
+      "exit_code": 0,
+      "disk_read_mb": 1946,
+      "duration_sec": 383,
+      "disk_write_mb": 200,
+      "peak_memory_mb": 1572864
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.7363,
+    "metric_values": {
+      "accuracy": 0.8486,
+      "f1_macro": 0.5239,
+      "f1_micro": 0.8486,
+      "f1_weighted": 0.8339
+    },
+    "scaled_scores": {
+      "accuracy": 0.8152,
+      "f1_macro": 0.5065,
+      "f1_micro": 0.8152,
+      "f1_weighted": 0.8081
+    }
+  },
+  "scimilarity:cellxgene_census/dkd": {
+    "method_id": "scimilarity",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 150,
+      "exit_code": 0,
+      "disk_read_mb": 40141,
+      "duration_sec": 465,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 31847
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.7945,
+    "metric_values": {
+      "accuracy": 0.8869,
+      "f1_macro": 0.6233,
+      "f1_micro": 0.8869,
+      "f1_weighted": 0.8655
+    },
+    "scaled_scores": {
+      "accuracy": 0.8619,
+      "f1_macro": 0.6096,
+      "f1_micro": 0.8619,
+      "f1_weighted": 0.8446
+    }
+  },
+  "scimilarity_knn:cellxgene_census/dkd": {
+    "method_id": "scimilarity_knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:28",
+      "cpu_pct": 123.8,
+      "exit_code": 0,
+      "disk_read_mb": 40141,
+      "duration_sec": 522,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 29184
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9415,
+    "metric_values": {
+      "accuracy": 0.9553,
+      "f1_macro": 0.9292,
+      "f1_micro": 0.9553,
+      "f1_weighted": 0.9556
+    },
+    "scaled_scores": {
+      "accuracy": 0.9454,
+      "f1_macro": 0.9266,
+      "f1_micro": 0.9454,
+      "f1_weighted": 0.9487
+    }
+  },
+  "seurat_transferdata:cellxgene_census/dkd": {
+    "method_id": "seurat_transferdata",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 108.8,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 130,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 11981
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9419,
+    "metric_values": {
+      "accuracy": 0.9541,
+      "f1_macro": 0.9344,
+      "f1_micro": 0.9541,
+      "f1_weighted": 0.9544
+    },
+    "scaled_scores": {
+      "accuracy": 0.944,
+      "f1_macro": 0.9321,
+      "f1_micro": 0.944,
+      "f1_weighted": 0.9473
+    }
+  },
+  "singler:cellxgene_census/dkd": {
+    "method_id": "singler",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 101.5,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 620,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 7578
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.8994,
+    "metric_values": {
+      "accuracy": 0.9147,
+      "f1_macro": 0.9027,
+      "f1_micro": 0.9147,
+      "f1_weighted": 0.9192
+    },
+    "scaled_scores": {
+      "accuracy": 0.8959,
+      "f1_macro": 0.8992,
+      "f1_micro": 0.8959,
+      "f1_weighted": 0.9066
+    }
+  },
+  "true_labels:cellxgene_census/dkd": {
+    "method_id": "true_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 156.4,
+      "exit_code": 0,
+      "disk_read_mb": 321,
+      "duration_sec": 9.1,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5632
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 1,
+    "metric_values": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    },
+    "scaled_scores": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    }
+  },
+  "uce:cellxgene_census/dkd": {
+    "method_id": "uce",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 564.2,
+      "exit_code": 0,
+      "disk_read_mb": 42292,
+      "duration_sec": 1764,
+      "disk_write_mb": 22733,
+      "peak_memory_mb": 476775
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.0233,
+    "metric_values": {
+      "accuracy": 0.1813,
+      "f1_macro": 0.0743,
+      "f1_micro": 0.1813,
+      "f1_weighted": 0.179
+    },
+    "scaled_scores": {
+      "accuracy": 0.0007,
+      "f1_macro": 0.0406,
+      "f1_micro": 0.0007,
+      "f1_weighted": 0.0512
+    }
+  },
+  "xgboost:cellxgene_census/dkd": {
+    "method_id": "xgboost",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 2596.6,
+      "exit_code": 0,
+      "disk_read_mb": 1332,
+      "duration_sec": 197,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 24679
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0.9476,
+    "metric_values": {
+      "accuracy": 0.9644,
+      "f1_macro": 0.9225,
+      "f1_micro": 0.9644,
+      "f1_weighted": 0.9634
+    },
+    "scaled_scores": {
+      "accuracy": 0.9565,
+      "f1_macro": 0.9197,
+      "f1_micro": 0.9565,
+      "f1_weighted": 0.9577
+    }
+  },
+  "knn:cellxgene_census/gtex_v9": {
+    "method_id": "knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 480.9,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 17.5,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 11981
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.7345,
+    "metric_values": {
+      "accuracy": 0.8523,
+      "f1_macro": 0.3913,
+      "f1_micro": 0.8523,
+      "f1_weighted": 0.8582
+    },
+    "scaled_scores": {
+      "accuracy": 0.8473,
+      "f1_macro": 0.387,
+      "f1_micro": 0.8473,
+      "f1_weighted": 0.8565
+    }
+  },
+  "logistic_regression:cellxgene_census/gtex_v9": {
+    "method_id": "logistic_regression",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 1681,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 55.5,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 7578
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.7703,
+    "metric_values": {
+      "accuracy": 0.8829,
+      "f1_macro": 0.4437,
+      "f1_micro": 0.8829,
+      "f1_weighted": 0.8851
+    },
+    "scaled_scores": {
+      "accuracy": 0.8789,
+      "f1_macro": 0.4397,
+      "f1_micro": 0.8789,
+      "f1_weighted": 0.8837
+    }
+  },
+  "majority_vote:cellxgene_census/gtex_v9": {
+    "method_id": "majority_vote",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 158.9,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 11,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 8500
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.0248,
+    "metric_values": {
+      "accuracy": 0.0799,
+      "f1_macro": 0.0082,
+      "f1_micro": 0.0799,
+      "f1_weighted": 0.0118
+    },
+    "scaled_scores": {
+      "accuracy": 0.0491,
+      "f1_macro": 0.0011,
+      "f1_micro": 0.0491,
+      "f1_weighted": 0
+    }
+  },
+  "mlp:cellxgene_census/gtex_v9": {
+    "method_id": "mlp",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 681.1,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 369,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 4711
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.6547,
+    "metric_values": {
+      "accuracy": 0.7784,
+      "f1_macro": 0.2948,
+      "f1_micro": 0.7784,
+      "f1_weighted": 0.7896
+    },
+    "scaled_scores": {
+      "accuracy": 0.771,
+      "f1_macro": 0.2898,
+      "f1_micro": 0.771,
+      "f1_weighted": 0.7871
+    }
+  },
+  "naive_bayes:cellxgene_census/gtex_v9": {
+    "method_id": "naive_bayes",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 90.3,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 9.1,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 4608
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.6566,
+    "metric_values": {
+      "accuracy": 0.7599,
+      "f1_macro": 0.3363,
+      "f1_micro": 0.7599,
+      "f1_weighted": 0.7937
+    },
+    "scaled_scores": {
+      "accuracy": 0.7519,
+      "f1_macro": 0.3315,
+      "f1_micro": 0.7519,
+      "f1_weighted": 0.7913
+    }
+  },
+  "random_labels:cellxgene_census/gtex_v9": {
+    "method_id": "random_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 151.8,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 11,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 8500
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.0071,
+    "metric_values": {
+      "accuracy": 0.0324,
+      "f1_macro": 0.0071,
+      "f1_micro": 0.0324,
+      "f1_weighted": 0.0397
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0.0282
+    }
+  },
+  "scanvi:cellxgene_census/gtex_v9": {
+    "method_id": "scanvi",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 97.2,
+      "exit_code": 0,
+      "disk_read_mb": 3072,
+      "duration_sec": 661,
+      "disk_write_mb": 2,
+      "peak_memory_mb": 43008
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.7693,
+    "metric_values": {
+      "accuracy": 0.8899,
+      "f1_macro": 0.4083,
+      "f1_micro": 0.8899,
+      "f1_weighted": 0.9019
+    },
+    "scaled_scores": {
+      "accuracy": 0.8862,
+      "f1_macro": 0.4041,
+      "f1_micro": 0.8862,
+      "f1_weighted": 0.9007
+    }
+  },
+  "scanvi_scarches:cellxgene_census/gtex_v9": {
+    "method_id": "scanvi_scarches",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 103.1,
+      "exit_code": 0,
+      "disk_read_mb": 3072,
+      "duration_sec": 1553,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 42189
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.7731,
+    "metric_values": {
+      "accuracy": 0.8797,
+      "f1_macro": 0.4555,
+      "f1_micro": 0.8797,
+      "f1_weighted": 0.8908
+    },
+    "scaled_scores": {
+      "accuracy": 0.8757,
+      "f1_macro": 0.4516,
+      "f1_micro": 0.8757,
+      "f1_weighted": 0.8895
+    }
+  },
+  "scgpt_zeroshot:cellxgene_census/gtex_v9": {
+    "method_id": "scgpt_zeroshot",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 106.2,
+      "exit_code": 0,
+      "disk_read_mb": 3584,
+      "duration_sec": 2118,
+      "disk_write_mb": 205,
+      "peak_memory_mb": 1677722
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.5257,
+    "metric_values": {
+      "accuracy": 0.6234,
+      "f1_macro": 0.2534,
+      "f1_micro": 0.6234,
+      "f1_weighted": 0.6375
+    },
+    "scaled_scores": {
+      "accuracy": 0.6108,
+      "f1_macro": 0.248,
+      "f1_micro": 0.6108,
+      "f1_weighted": 0.6331
+    }
+  },
+  "scimilarity:cellxgene_census/gtex_v9": {
+    "method_id": "scimilarity",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 158.1,
+      "exit_code": 0,
+      "disk_read_mb": 41882,
+      "duration_sec": 793,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 27341
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.5694,
+    "metric_values": {
+      "accuracy": 0.6665,
+      "f1_macro": 0.3254,
+      "f1_micro": 0.6665,
+      "f1_weighted": 0.6504
+    },
+    "scaled_scores": {
+      "accuracy": 0.6553,
+      "f1_macro": 0.3206,
+      "f1_micro": 0.6553,
+      "f1_weighted": 0.6462
+    }
+  },
+  "scimilarity_knn:cellxgene_census/gtex_v9": {
+    "method_id": "scimilarity_knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 188.4,
+      "exit_code": 0,
+      "disk_read_mb": 41882,
+      "duration_sec": 1124,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 34714
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.732,
+    "metric_values": {
+      "accuracy": 0.8253,
+      "f1_macro": 0.4563,
+      "f1_micro": 0.8253,
+      "f1_weighted": 0.8386
+    },
+    "scaled_scores": {
+      "accuracy": 0.8194,
+      "f1_macro": 0.4524,
+      "f1_micro": 0.8194,
+      "f1_weighted": 0.8367
+    }
+  },
+  "seurat_transferdata:cellxgene_census/gtex_v9": {
+    "method_id": "seurat_transferdata",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 104.2,
+      "exit_code": 0,
+      "disk_read_mb": 3072,
+      "duration_sec": 416,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 23552
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.7324,
+    "metric_values": {
+      "accuracy": 0.841,
+      "f1_macro": 0.4186,
+      "f1_micro": 0.841,
+      "f1_weighted": 0.8457
+    },
+    "scaled_scores": {
+      "accuracy": 0.8357,
+      "f1_macro": 0.4145,
+      "f1_micro": 0.8357,
+      "f1_weighted": 0.8438
+    }
+  },
+  "singler:cellxgene_census/gtex_v9": {
+    "method_id": "singler",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 100.2,
+      "exit_code": 0,
+      "disk_read_mb": 3072,
+      "duration_sec": 5642,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 16487
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.6896,
+    "metric_values": {
+      "accuracy": 0.7903,
+      "f1_macro": 0.3753,
+      "f1_micro": 0.7903,
+      "f1_weighted": 0.823
+    },
+    "scaled_scores": {
+      "accuracy": 0.7833,
+      "f1_macro": 0.3708,
+      "f1_micro": 0.7833,
+      "f1_weighted": 0.8209
+    }
+  },
+  "true_labels:cellxgene_census/gtex_v9": {
+    "method_id": "true_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 165.2,
+      "exit_code": 0,
+      "disk_read_mb": 411,
+      "duration_sec": 9.5,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5530
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 1,
+    "metric_values": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    },
+    "scaled_scores": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    }
+  },
+  "uce:cellxgene_census/gtex_v9": {
+    "method_id": "uce",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 626.6,
+      "exit_code": 0,
+      "disk_read_mb": 49562,
+      "duration_sec": 8344,
+      "disk_write_mb": 30618,
+      "peak_memory_mb": 524084
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": 0.0054,
+      "f1_macro": 0.0037,
+      "f1_micro": 0.0054,
+      "f1_weighted": 0.0082
+    },
+    "scaled_scores": {
+      "accuracy": -0.0279,
+      "f1_macro": -0.0035,
+      "f1_micro": -0.0279,
+      "f1_weighted": -0.0037
+    }
+  },
+  "xgboost:cellxgene_census/gtex_v9": {
+    "method_id": "xgboost",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": 3304.3,
+      "exit_code": 0,
+      "disk_read_mb": 2970,
+      "duration_sec": 947,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 34816
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0.7034,
+    "metric_values": {
+      "accuracy": 0.8328,
+      "f1_macro": 0.3251,
+      "f1_micro": 0.8328,
+      "f1_weighted": 0.8408
+    },
+    "scaled_scores": {
+      "accuracy": 0.8272,
+      "f1_macro": 0.3203,
+      "f1_micro": 0.8272,
+      "f1_weighted": 0.8389
+    }
+  },
+  "knn:cellxgene_census/hypomap": {
+    "method_id": "knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 196.9,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 23.7,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 21812
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9878,
+    "metric_values": {
+      "accuracy": 0.9954,
+      "f1_macro": 0.973,
+      "f1_micro": 0.9954,
+      "f1_weighted": 0.9954
+    },
+    "scaled_scores": {
+      "accuracy": 0.9933,
+      "f1_macro": 0.971,
+      "f1_micro": 0.9933,
+      "f1_weighted": 0.9936
+    }
+  },
+  "logistic_regression:cellxgene_census/hypomap": {
+    "method_id": "logistic_regression",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 1665.2,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 52.3,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18740
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9898,
+    "metric_values": {
+      "accuracy": 0.9964,
+      "f1_macro": 0.9767,
+      "f1_micro": 0.9964,
+      "f1_weighted": 0.9963
+    },
+    "scaled_scores": {
+      "accuracy": 0.9947,
+      "f1_macro": 0.9749,
+      "f1_micro": 0.9947,
+      "f1_weighted": 0.9949
+    }
+  },
+  "majority_vote:cellxgene_census/hypomap": {
+    "method_id": "majority_vote",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 43.8,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 58.1,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18330
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.1012,
+    "metric_values": {
+      "accuracy": 0.4516,
+      "f1_macro": 0.0778,
+      "f1_micro": 0.4516,
+      "f1_weighted": 0.281
+    },
+    "scaled_scores": {
+      "accuracy": 0.1987,
+      "f1_macro": 0.0076,
+      "f1_micro": 0.1987,
+      "f1_weighted": 0
+    }
+  },
+  "mlp:cellxgene_census/hypomap": {
+    "method_id": "mlp",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 670,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 403,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18535
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9926,
+    "metric_values": {
+      "accuracy": 0.9973,
+      "f1_macro": 0.9833,
+      "f1_micro": 0.9973,
+      "f1_weighted": 0.9972
+    },
+    "scaled_scores": {
+      "accuracy": 0.996,
+      "f1_macro": 0.9821,
+      "f1_micro": 0.996,
+      "f1_weighted": 0.9962
+    }
+  },
+  "naive_bayes:cellxgene_census/hypomap": {
+    "method_id": "naive_bayes",
+    "resources": {
+      "submit": "2025-01-23 17:12:58",
+      "cpu_pct": 134,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 26.2,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18330
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.984,
+    "metric_values": {
+      "accuracy": 0.9945,
+      "f1_macro": 0.9626,
+      "f1_micro": 0.9945,
+      "f1_weighted": 0.9946
+    },
+    "scaled_scores": {
+      "accuracy": 0.992,
+      "f1_macro": 0.9597,
+      "f1_micro": 0.992,
+      "f1_weighted": 0.9924
+    }
+  },
+  "random_labels:cellxgene_census/hypomap": {
+    "method_id": "random_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:58",
+      "cpu_pct": 85,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 48,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18228
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.0127,
+    "metric_values": {
+      "accuracy": 0.3157,
+      "f1_macro": 0.0707,
+      "f1_micro": 0.3157,
+      "f1_weighted": 0.3175
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0.0507
+    }
+  },
+  "scanvi:cellxgene_census/hypomap": {
+    "method_id": "scanvi",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 102.9,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 945,
+      "disk_write_mb": 2,
+      "peak_memory_mb": 92570
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.995,
+    "metric_values": {
+      "accuracy": 0.9973,
+      "f1_macro": 0.9926,
+      "f1_micro": 0.9973,
+      "f1_weighted": 0.9972
+    },
+    "scaled_scores": {
+      "accuracy": 0.996,
+      "f1_macro": 0.992,
+      "f1_micro": 0.996,
+      "f1_weighted": 0.9961
+    }
+  },
+  "scanvi_scarches:cellxgene_census/hypomap": {
+    "method_id": "scanvi_scarches",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 100.5,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 2498,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 92570
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9902,
+    "metric_values": {
+      "accuracy": 0.9964,
+      "f1_macro": 0.9783,
+      "f1_micro": 0.9964,
+      "f1_weighted": 0.9964
+    },
+    "scaled_scores": {
+      "accuracy": 0.9947,
+      "f1_macro": 0.9766,
+      "f1_micro": 0.9947,
+      "f1_weighted": 0.9949
+    }
+  },
+  "scgpt_zeroshot:cellxgene_census/hypomap": {
+    "method_id": "scgpt_zeroshot",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 230,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scimilarity:cellxgene_census/hypomap": {
+    "method_id": "scimilarity",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 700,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scimilarity_knn:cellxgene_census/hypomap": {
+    "method_id": "scimilarity_knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 700,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "seurat_transferdata:cellxgene_census/hypomap": {
+    "method_id": "seurat_transferdata",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 102.3,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 984,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 69530
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9933,
+    "metric_values": {
+      "accuracy": 0.9964,
+      "f1_macro": 0.9898,
+      "f1_micro": 0.9964,
+      "f1_weighted": 0.9964
+    },
+    "scaled_scores": {
+      "accuracy": 0.9947,
+      "f1_macro": 0.989,
+      "f1_micro": 0.9947,
+      "f1_weighted": 0.9949
+    }
+  },
+  "singler:cellxgene_census/hypomap": {
+    "method_id": "singler",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 100.8,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 5651,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 47616
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9805,
+    "metric_values": {
+      "accuracy": 0.9927,
+      "f1_macro": 0.9567,
+      "f1_micro": 0.9927,
+      "f1_weighted": 0.9927
+    },
+    "scaled_scores": {
+      "accuracy": 0.9893,
+      "f1_macro": 0.9534,
+      "f1_micro": 0.9893,
+      "f1_weighted": 0.9898
+    }
+  },
+  "true_labels:cellxgene_census/hypomap": {
+    "method_id": "true_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 276.3,
+      "exit_code": 0,
+      "disk_read_mb": 87,
+      "duration_sec": 4.7,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5530
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 1,
+    "metric_values": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    },
+    "scaled_scores": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    }
+  },
+  "uce:cellxgene_census/hypomap": {
+    "method_id": "uce",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 584.9,
+      "exit_code": 0,
+      "disk_read_mb": 88884,
+      "duration_sec": 15624,
+      "disk_write_mb": 74138,
+      "peak_memory_mb": 645940
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.0777,
+    "metric_values": {
+      "accuracy": 0.3841,
+      "f1_macro": 0.0979,
+      "f1_micro": 0.3841,
+      "f1_weighted": 0.3397
+    },
+    "scaled_scores": {
+      "accuracy": 0.1,
+      "f1_macro": 0.0292,
+      "f1_micro": 0.1,
+      "f1_weighted": 0.0816
+    }
+  },
+  "xgboost:cellxgene_census/hypomap": {
+    "method_id": "xgboost",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 2918.1,
+      "exit_code": 0,
+      "disk_read_mb": 12800,
+      "duration_sec": 1009,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 77927
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0.9921,
+    "metric_values": {
+      "accuracy": 0.9973,
+      "f1_macro": 0.9815,
+      "f1_micro": 0.9973,
+      "f1_weighted": 0.9972
+    },
+    "scaled_scores": {
+      "accuracy": 0.996,
+      "f1_macro": 0.9801,
+      "f1_micro": 0.996,
+      "f1_weighted": 0.9961
+    }
+  },
+  "knn:cellxgene_census/immune_cell_atlas": {
+    "method_id": "knn",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 397.3,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 24.7,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 15668
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.7721,
+    "metric_values": {
+      "accuracy": 0.8144,
+      "f1_macro": 0.651,
+      "f1_micro": 0.8144,
+      "f1_weighted": 0.8109
+    },
+    "scaled_scores": {
+      "accuracy": 0.8133,
+      "f1_macro": 0.6509,
+      "f1_micro": 0.8133,
+      "f1_weighted": 0.8109
+    }
+  },
+  "logistic_regression:cellxgene_census/immune_cell_atlas": {
+    "method_id": "logistic_regression",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 1718.5,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 66,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 15872
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.8577,
+    "metric_values": {
+      "accuracy": 0.885,
+      "f1_macro": 0.7793,
+      "f1_micro": 0.885,
+      "f1_weighted": 0.8832
+    },
+    "scaled_scores": {
+      "accuracy": 0.8843,
+      "f1_macro": 0.7792,
+      "f1_micro": 0.8843,
+      "f1_weighted": 0.8832
+    }
+  },
+  "majority_vote:cellxgene_census/immune_cell_atlas": {
+    "method_id": "majority_vote",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 159.5,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 12.3,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 15258
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": 0.0058,
+      "f1_macro": 0.0004,
+      "f1_micro": 0.0058,
+      "f1_weighted": 0.0001
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "mlp:cellxgene_census/immune_cell_atlas": {
+    "method_id": "mlp",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 689,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 1801,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 15668
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.825,
+    "metric_values": {
+      "accuracy": 0.8676,
+      "f1_macro": 0.6998,
+      "f1_micro": 0.8676,
+      "f1_weighted": 0.8666
+    },
+    "scaled_scores": {
+      "accuracy": 0.8668,
+      "f1_macro": 0.6997,
+      "f1_micro": 0.8668,
+      "f1_weighted": 0.8666
+    }
+  },
+  "naive_bayes:cellxgene_census/immune_cell_atlas": {
+    "method_id": "naive_bayes",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 106.3,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 21.5,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 15668
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.6139,
+    "metric_values": {
+      "accuracy": 0.6389,
+      "f1_macro": 0.5209,
+      "f1_micro": 0.6389,
+      "f1_weighted": 0.6612
+    },
+    "scaled_scores": {
+      "accuracy": 0.6368,
+      "f1_macro": 0.5207,
+      "f1_micro": 0.6368,
+      "f1_weighted": 0.6612
+    }
+  },
+  "random_labels:cellxgene_census/immune_cell_atlas": {
+    "method_id": "random_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 258,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 8.3,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 15258
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.041,
+    "metric_values": {
+      "accuracy": 0.0481,
+      "f1_macro": 0.0223,
+      "f1_micro": 0.0481,
+      "f1_weighted": 0.0568
+    },
+    "scaled_scores": {
+      "accuracy": 0.0426,
+      "f1_macro": 0.0219,
+      "f1_micro": 0.0426,
+      "f1_weighted": 0.0567
+    }
+  },
+  "scanvi:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scanvi",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 103.5,
+      "exit_code": 0,
+      "disk_read_mb": 9933,
+      "duration_sec": 783,
+      "disk_write_mb": 2,
+      "peak_memory_mb": 66970
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.8673,
+    "metric_values": {
+      "accuracy": 0.8926,
+      "f1_macro": 0.7967,
+      "f1_micro": 0.8926,
+      "f1_weighted": 0.8888
+    },
+    "scaled_scores": {
+      "accuracy": 0.892,
+      "f1_macro": 0.7966,
+      "f1_micro": 0.892,
+      "f1_weighted": 0.8888
+    }
+  },
+  "scanvi_scarches:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scanvi_scarches",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 101.2,
+      "exit_code": 0,
+      "disk_read_mb": 9933,
+      "duration_sec": 1862,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 64205
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.8581,
+    "metric_values": {
+      "accuracy": 0.9035,
+      "f1_macro": 0.7255,
+      "f1_micro": 0.9035,
+      "f1_weighted": 0.9012
+    },
+    "scaled_scores": {
+      "accuracy": 0.9029,
+      "f1_macro": 0.7253,
+      "f1_micro": 0.9029,
+      "f1_weighted": 0.9012
+    }
+  },
+  "scgpt_zeroshot:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scgpt_zeroshot",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 108.5,
+      "exit_code": 0,
+      "disk_read_mb": 10445,
+      "duration_sec": 2236,
+      "disk_write_mb": 205,
+      "peak_memory_mb": 1363149
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.6212,
+    "metric_values": {
+      "accuracy": 0.6787,
+      "f1_macro": 0.4735,
+      "f1_micro": 0.6787,
+      "f1_weighted": 0.658
+    },
+    "scaled_scores": {
+      "accuracy": 0.6768,
+      "f1_macro": 0.4733,
+      "f1_micro": 0.6768,
+      "f1_weighted": 0.658
+    }
+  },
+  "scimilarity:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scimilarity",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 261.4,
+      "exit_code": 0,
+      "disk_read_mb": 48640,
+      "duration_sec": 1751,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 56730
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.7877,
+    "metric_values": {
+      "accuracy": 0.8354,
+      "f1_macro": 0.6367,
+      "f1_micro": 0.8354,
+      "f1_weighted": 0.8455
+    },
+    "scaled_scores": {
+      "accuracy": 0.8345,
+      "f1_macro": 0.6366,
+      "f1_micro": 0.8345,
+      "f1_weighted": 0.8455
+    }
+  },
+  "scimilarity_knn:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scimilarity_knn",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 219.4,
+      "exit_code": 0,
+      "disk_read_mb": 48640,
+      "duration_sec": 1391,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 56730
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.8398,
+    "metric_values": {
+      "accuracy": 0.8752,
+      "f1_macro": 0.7403,
+      "f1_micro": 0.8752,
+      "f1_weighted": 0.8701
+    },
+    "scaled_scores": {
+      "accuracy": 0.8745,
+      "f1_macro": 0.7402,
+      "f1_micro": 0.8745,
+      "f1_weighted": 0.8701
+    }
+  },
+  "seurat_transferdata:cellxgene_census/immune_cell_atlas": {
+    "method_id": "seurat_transferdata",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": 101.8,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 911,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 54580
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.7864,
+    "metric_values": {
+      "accuracy": 0.8269,
+      "f1_macro": 0.6783,
+      "f1_micro": 0.8269,
+      "f1_weighted": 0.8156
+    },
+    "scaled_scores": {
+      "accuracy": 0.8258,
+      "f1_macro": 0.6782,
+      "f1_micro": 0.8258,
+      "f1_weighted": 0.8156
+    }
+  },
+  "singler:cellxgene_census/immune_cell_atlas": {
+    "method_id": "singler",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": "NA",
+      "exit_code": 143,
+      "disk_read_mb": "NA",
+      "duration_sec": 14410,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "true_labels:cellxgene_census/immune_cell_atlas": {
+    "method_id": "true_labels",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 165.5,
+      "exit_code": 0,
+      "disk_read_mb": 253,
+      "duration_sec": 6.7,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5735
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 1,
+    "metric_values": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    },
+    "scaled_scores": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    }
+  },
+  "uce:cellxgene_census/immune_cell_atlas": {
+    "method_id": "uce",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": 341.9,
+      "exit_code": 0,
+      "disk_read_mb": 77210,
+      "duration_sec": 13768,
+      "disk_write_mb": 61543,
+      "peak_memory_mb": 527872
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.0242,
+    "metric_values": {
+      "accuracy": 0.0366,
+      "f1_macro": 0.0131,
+      "f1_micro": 0.0366,
+      "f1_weighted": 0.0221
+    },
+    "scaled_scores": {
+      "accuracy": 0.031,
+      "f1_macro": 0.0127,
+      "f1_micro": 0.031,
+      "f1_weighted": 0.022
+    }
+  },
+  "xgboost:cellxgene_census/immune_cell_atlas": {
+    "method_id": "xgboost",
+    "resources": {
+      "submit": "2025-01-23 17:12:58",
+      "cpu_pct": 2529.3,
+      "exit_code": 0,
+      "disk_read_mb": 9831,
+      "duration_sec": 2766,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 61031
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0.7748,
+    "metric_values": {
+      "accuracy": 0.8192,
+      "f1_macro": 0.6453,
+      "f1_micro": 0.8192,
+      "f1_weighted": 0.8176
+    },
+    "scaled_scores": {
+      "accuracy": 0.8182,
+      "f1_macro": 0.6452,
+      "f1_micro": 0.8182,
+      "f1_weighted": 0.8176
+    }
+  },
+  "knn:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 597.1,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 16.8,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 22324
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.9368,
+    "metric_values": {
+      "accuracy": 0.9756,
+      "f1_macro": 0.8426,
+      "f1_micro": 0.9756,
+      "f1_weighted": 0.9744
+    },
+    "scaled_scores": {
+      "accuracy": 0.9706,
+      "f1_macro": 0.8364,
+      "f1_micro": 0.9706,
+      "f1_weighted": 0.9695
+    }
+  },
+  "logistic_regression:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "logistic_regression",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 2501.8,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 36.4,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 19252
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.9487,
+    "metric_values": {
+      "accuracy": 0.978,
+      "f1_macro": 0.8801,
+      "f1_micro": 0.978,
+      "f1_weighted": 0.977
+    },
+    "scaled_scores": {
+      "accuracy": 0.9734,
+      "f1_macro": 0.8754,
+      "f1_micro": 0.9734,
+      "f1_weighted": 0.9727
+    }
+  },
+  "majority_vote:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "majority_vote",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 49.3,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 54.4,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18432
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.0917,
+    "metric_values": {
+      "accuracy": 0.3239,
+      "f1_macro": 0.0376,
+      "f1_micro": 0.3239,
+      "f1_weighted": 0.1585
+    },
+    "scaled_scores": {
+      "accuracy": 0.1834,
+      "f1_macro": 0,
+      "f1_micro": 0.1834,
+      "f1_weighted": 0
+    }
+  },
+  "mlp:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "mlp",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 691.8,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 777,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 19047
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.9313,
+    "metric_values": {
+      "accuracy": 0.9703,
+      "f1_macro": 0.8381,
+      "f1_micro": 0.9703,
+      "f1_weighted": 0.9707
+    },
+    "scaled_scores": {
+      "accuracy": 0.9642,
+      "f1_macro": 0.8317,
+      "f1_micro": 0.9642,
+      "f1_weighted": 0.9652
+    }
+  },
+  "naive_bayes:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "naive_bayes",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 189.8,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 13.4,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18432
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.8984,
+    "metric_values": {
+      "accuracy": 0.9502,
+      "f1_macro": 0.7794,
+      "f1_micro": 0.9502,
+      "f1_weighted": 0.9522
+    },
+    "scaled_scores": {
+      "accuracy": 0.9399,
+      "f1_macro": 0.7707,
+      "f1_micro": 0.9399,
+      "f1_weighted": 0.9432
+    }
+  },
+  "random_labels:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "random_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 47.8,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 51.2,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 18330
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.0138,
+    "metric_values": {
+      "accuracy": 0.172,
+      "f1_macro": 0.0714,
+      "f1_micro": 0.172,
+      "f1_weighted": 0.1755
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0.0351,
+      "f1_micro": 0,
+      "f1_weighted": 0.0203
+    }
+  },
+  "scanvi:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scanvi",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 100.9,
+      "exit_code": 0,
+      "disk_read_mb": 13415,
+      "duration_sec": 680,
+      "disk_write_mb": 2,
+      "peak_memory_mb": 58061
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.9468,
+    "metric_values": {
+      "accuracy": 0.9768,
+      "f1_macro": 0.8758,
+      "f1_micro": 0.9768,
+      "f1_weighted": 0.9768
+    },
+    "scaled_scores": {
+      "accuracy": 0.972,
+      "f1_macro": 0.871,
+      "f1_micro": 0.972,
+      "f1_weighted": 0.9724
+    }
+  },
+  "scanvi_scarches:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scanvi_scarches",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 103.6,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 1720,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 59700
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.9554,
+    "metric_values": {
+      "accuracy": 0.9781,
+      "f1_macro": 0.9051,
+      "f1_micro": 0.9781,
+      "f1_weighted": 0.9774
+    },
+    "scaled_scores": {
+      "accuracy": 0.9735,
+      "f1_macro": 0.9013,
+      "f1_micro": 0.9735,
+      "f1_weighted": 0.9731
+    }
+  },
+  "scgpt_zeroshot:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scgpt_zeroshot",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 440,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scimilarity:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scimilarity",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 1120,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scimilarity_knn:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scimilarity_knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 1120,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "seurat_transferdata:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "seurat_transferdata",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 102.3,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 803,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 70656
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.9111,
+    "metric_values": {
+      "accuracy": 0.9659,
+      "f1_macro": 0.7819,
+      "f1_micro": 0.9659,
+      "f1_weighted": 0.9607
+    },
+    "scaled_scores": {
+      "accuracy": 0.9588,
+      "f1_macro": 0.7734,
+      "f1_micro": 0.9588,
+      "f1_weighted": 0.9533
+    }
+  },
+  "singler:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "singler",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": "NA",
+      "exit_code": 143,
+      "disk_read_mb": "NA",
+      "duration_sec": 16351,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "true_labels:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "true_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 422.5,
+      "exit_code": 0,
+      "disk_read_mb": 882,
+      "duration_sec": 2.9,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5940
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 1,
+    "metric_values": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    },
+    "scaled_scores": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    }
+  },
+  "uce:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "uce",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 339.6,
+      "exit_code": 0,
+      "disk_read_mb": 91341,
+      "duration_sec": 12152,
+      "disk_write_mb": 77517,
+      "peak_memory_mb": 536167
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.0119,
+    "metric_values": {
+      "accuracy": 0.1666,
+      "f1_macro": 0.0698,
+      "f1_micro": 0.1666,
+      "f1_weighted": 0.1702
+    },
+    "scaled_scores": {
+      "accuracy": -0.0065,
+      "f1_macro": 0.0335,
+      "f1_micro": -0.0065,
+      "f1_weighted": 0.014
+    }
+  },
+  "xgboost:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "xgboost",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 3642.5,
+      "exit_code": 0,
+      "disk_read_mb": 13312,
+      "duration_sec": 569,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 66970
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0.937,
+    "metric_values": {
+      "accuracy": 0.9752,
+      "f1_macro": 0.8453,
+      "f1_micro": 0.9752,
+      "f1_weighted": 0.9735
+    },
+    "scaled_scores": {
+      "accuracy": 0.9701,
+      "f1_macro": 0.8393,
+      "f1_micro": 0.9701,
+      "f1_weighted": 0.9685
+    }
+  },
+  "knn:cellxgene_census/tabula_sapiens": {
+    "method_id": "knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 200.2,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 16.2,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 29389
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1594,
+    "metric_values": {
+      "accuracy": 0.1725,
+      "f1_macro": 0.1029,
+      "f1_micro": 0.1725,
+      "f1_weighted": 0.2218
+    },
+    "scaled_scores": {
+      "accuracy": 0.1577,
+      "f1_macro": 0.1012,
+      "f1_micro": 0.1577,
+      "f1_weighted": 0.2211
+    }
+  },
+  "logistic_regression:cellxgene_census/tabula_sapiens": {
+    "method_id": "logistic_regression",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 1208.1,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 230,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 26624
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1657,
+    "metric_values": {
+      "accuracy": 0.1831,
+      "f1_macro": 0.1244,
+      "f1_micro": 0.1831,
+      "f1_weighted": 0.2039
+    },
+    "scaled_scores": {
+      "accuracy": 0.1685,
+      "f1_macro": 0.1226,
+      "f1_micro": 0.1685,
+      "f1_weighted": 0.2032
+    }
+  },
+  "majority_vote:cellxgene_census/tabula_sapiens": {
+    "method_id": "majority_vote",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 25.9,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 157,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 24986
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.0018,
+    "metric_values": {
+      "accuracy": 0.0211,
+      "f1_macro": 0.002,
+      "f1_micro": 0.0211,
+      "f1_weighted": 0.0009
+    },
+    "scaled_scores": {
+      "accuracy": 0.0036,
+      "f1_macro": 0,
+      "f1_micro": 0.0036,
+      "f1_weighted": 0
+    }
+  },
+  "mlp:cellxgene_census/tabula_sapiens": {
+    "method_id": "mlp",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 1183.6,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 3102,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 25805
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.2609,
+    "metric_values": {
+      "accuracy": 0.2887,
+      "f1_macro": 0.1214,
+      "f1_micro": 0.2887,
+      "f1_weighted": 0.3723
+    },
+    "scaled_scores": {
+      "accuracy": 0.276,
+      "f1_macro": 0.1197,
+      "f1_micro": 0.276,
+      "f1_weighted": 0.3717
+    }
+  },
+  "naive_bayes:cellxgene_census/tabula_sapiens": {
+    "method_id": "naive_bayes",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 119.8,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 23.2,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 25293
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1591,
+    "metric_values": {
+      "accuracy": 0.1585,
+      "f1_macro": 0.1622,
+      "f1_micro": 0.1585,
+      "f1_weighted": 0.1899
+    },
+    "scaled_scores": {
+      "accuracy": 0.1434,
+      "f1_macro": 0.1605,
+      "f1_micro": 0.1434,
+      "f1_weighted": 0.1892
+    }
+  },
+  "random_labels:cellxgene_census/tabula_sapiens": {
+    "method_id": "random_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 34.5,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 142,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 24884
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.005,
+    "metric_values": {
+      "accuracy": 0.0176,
+      "f1_macro": 0.0039,
+      "f1_micro": 0.0176,
+      "f1_weighted": 0.019
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0.0019,
+      "f1_micro": 0,
+      "f1_weighted": 0.0182
+    }
+  },
+  "scanvi:cellxgene_census/tabula_sapiens": {
+    "method_id": "scanvi",
+    "resources": {
+      "submit": "2025-01-24 07:02:19",
+      "cpu_pct": 101,
+      "exit_code": 0,
+      "disk_read_mb": 19559,
+      "duration_sec": 1477,
+      "disk_write_mb": 3,
+      "peak_memory_mb": 133940
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1549,
+    "metric_values": {
+      "accuracy": 0.1725,
+      "f1_macro": 0.1083,
+      "f1_micro": 0.1725,
+      "f1_weighted": 0.1981
+    },
+    "scaled_scores": {
+      "accuracy": 0.1577,
+      "f1_macro": 0.1066,
+      "f1_micro": 0.1577,
+      "f1_weighted": 0.1974
+    }
+  },
+  "scanvi_scarches:cellxgene_census/tabula_sapiens": {
+    "method_id": "scanvi_scarches",
+    "resources": {
+      "submit": "2025-01-25 04:55:31",
+      "cpu_pct": 100.4,
+      "exit_code": 0,
+      "disk_read_mb": 19559,
+      "duration_sec": 3510,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 141824
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.2369,
+    "metric_values": {
+      "accuracy": 0.2711,
+      "f1_macro": 0.1427,
+      "f1_micro": 0.2711,
+      "f1_weighted": 0.2911
+    },
+    "scaled_scores": {
+      "accuracy": 0.2581,
+      "f1_macro": 0.1411,
+      "f1_micro": 0.2581,
+      "f1_weighted": 0.2905
+    }
+  },
+  "scgpt_zeroshot:cellxgene_census/tabula_sapiens": {
+    "method_id": "scgpt_zeroshot",
+    "resources": {
+      "submit": "2025-01-25 06:10:00",
+      "cpu_pct": 118.3,
+      "exit_code": 0,
+      "disk_read_mb": 20071,
+      "duration_sec": 1258,
+      "disk_write_mb": 206,
+      "peak_memory_mb": 1782580
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1466,
+    "metric_values": {
+      "accuracy": 0.162,
+      "f1_macro": 0.1074,
+      "f1_micro": 0.162,
+      "f1_weighted": 0.1876
+    },
+    "scaled_scores": {
+      "accuracy": 0.147,
+      "f1_macro": 0.1056,
+      "f1_micro": 0.147,
+      "f1_weighted": 0.1869
+    }
+  },
+  "scimilarity:cellxgene_census/tabula_sapiens": {
+    "method_id": "scimilarity",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 192,
+      "exit_code": 0,
+      "disk_read_mb": 58368,
+      "duration_sec": 2415,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 85300
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1873,
+    "metric_values": {
+      "accuracy": 0.2007,
+      "f1_macro": 0.1318,
+      "f1_micro": 0.2007,
+      "f1_weighted": 0.247
+    },
+    "scaled_scores": {
+      "accuracy": 0.1864,
+      "f1_macro": 0.1301,
+      "f1_micro": 0.1864,
+      "f1_weighted": 0.2463
+    }
+  },
+  "scimilarity_knn:cellxgene_census/tabula_sapiens": {
+    "method_id": "scimilarity_knn",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 369.2,
+      "exit_code": 0,
+      "disk_read_mb": 58368,
+      "duration_sec": 799,
+      "disk_write_mb": 41882,
+      "peak_memory_mb": 85402
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1788,
+    "metric_values": {
+      "accuracy": 0.1866,
+      "f1_macro": 0.1392,
+      "f1_micro": 0.1866,
+      "f1_weighted": 0.2341
+    },
+    "scaled_scores": {
+      "accuracy": 0.172,
+      "f1_macro": 0.1375,
+      "f1_micro": 0.172,
+      "f1_weighted": 0.2334
+    }
+  },
+  "seurat_transferdata:cellxgene_census/tabula_sapiens": {
+    "method_id": "seurat_transferdata",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 101.3,
+      "exit_code": 0,
+      "disk_read_mb": 19559,
+      "duration_sec": 2042,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 103015
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.32,
+    "metric_values": {
+      "accuracy": 0.3768,
+      "f1_macro": 0.1672,
+      "f1_micro": 0.3768,
+      "f1_weighted": 0.3838
+    },
+    "scaled_scores": {
+      "accuracy": 0.3656,
+      "f1_macro": 0.1655,
+      "f1_micro": 0.3656,
+      "f1_weighted": 0.3833
+    }
+  },
+  "singler:cellxgene_census/tabula_sapiens": {
+    "method_id": "singler",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 100.4,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 6012,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 90112
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.1567,
+    "metric_values": {
+      "accuracy": 0.1725,
+      "f1_macro": 0.1296,
+      "f1_micro": 0.1725,
+      "f1_weighted": 0.1843
+    },
+    "scaled_scores": {
+      "accuracy": 0.1577,
+      "f1_macro": 0.1279,
+      "f1_micro": 0.1577,
+      "f1_weighted": 0.1836
+    }
+  },
+  "true_labels:cellxgene_census/tabula_sapiens": {
+    "method_id": "true_labels",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 168.4,
+      "exit_code": 0,
+      "disk_read_mb": 68,
+      "duration_sec": 5.7,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 5530
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 1,
+    "metric_values": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    },
+    "scaled_scores": {
+      "accuracy": 1,
+      "f1_macro": 1,
+      "f1_micro": 1,
+      "f1_weighted": 1
+    }
+  },
+  "uce:cellxgene_census/tabula_sapiens": {
+    "method_id": "uce",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 659.6,
+      "exit_code": 0,
+      "disk_read_mb": 115303,
+      "duration_sec": 19879,
+      "disk_write_mb": 103220,
+      "peak_memory_mb": 702464
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": 0.0106,
+      "f1_macro": 0.0015,
+      "f1_micro": 0.0106,
+      "f1_weighted": 0.0008
+    },
+    "scaled_scores": {
+      "accuracy": -0.0072,
+      "f1_macro": -0.0005,
+      "f1_micro": -0.0072,
+      "f1_weighted": -0.0001
+    }
+  },
+  "xgboost:cellxgene_census/tabula_sapiens": {
+    "method_id": "xgboost",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": 3201.9,
+      "exit_code": 0,
+      "disk_read_mb": 19456,
+      "duration_sec": 11352,
+      "disk_write_mb": 1,
+      "peak_memory_mb": 100967
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0.2157,
+    "metric_values": {
+      "accuracy": 0.243,
+      "f1_macro": 0.1044,
+      "f1_micro": 0.243,
+      "f1_weighted": 0.302
+    },
+    "scaled_scores": {
+      "accuracy": 0.2294,
+      "f1_macro": 0.1027,
+      "f1_micro": 0.2294,
+      "f1_weighted": 0.3014
+    }
+  },
+  "geneformer:cellxgene_census/dkd": {
+    "method_id": "geneformer",
+    "resources": {
+      "submit": "2025-01-24 02:41:18",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 1981,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scgpt_finetuned:cellxgene_census/dkd": {
+    "method_id": "scgpt_finetuned",
+    "resources": {
+      "submit": "2025-01-23 17:12:29",
+      "cpu_pct": "NA",
+      "exit_code": 143,
+      "disk_read_mb": "NA",
+      "duration_sec": 14410,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scprint:cellxgene_census/dkd": {
+    "method_id": "scprint",
+    "resources": {
+      "submit": "2025-01-24 03:49:59",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 450,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/dkd",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "geneformer:cellxgene_census/gtex_v9": {
+    "method_id": "geneformer",
+    "resources": {
+      "submit": "2025-01-25 03:52:41",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 12321,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scgpt_finetuned:cellxgene_census/gtex_v9": {
+    "method_id": "scgpt_finetuned",
+    "resources": {
+      "submit": "2025-01-23 17:32:08",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 12301,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scprint:cellxgene_census/gtex_v9": {
+    "method_id": "scprint",
+    "resources": {
+      "submit": "2025-01-24 07:01:19",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 13501,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/gtex_v9",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "geneformer:cellxgene_census/hypomap": {
+    "method_id": "geneformer",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 240,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scgpt_finetuned:cellxgene_census/hypomap": {
+    "method_id": "scgpt_finetuned",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 120,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scprint:cellxgene_census/hypomap": {
+    "method_id": "scprint",
+    "resources": {
+      "submit": "2025-01-24 07:11:59",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 6970,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/hypomap",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "geneformer:cellxgene_census/immune_cell_atlas": {
+    "method_id": "geneformer",
+    "resources": {
+      "submit": "2025-01-23 17:12:59",
+      "cpu_pct": "NA",
+      "exit_code": 143,
+      "disk_read_mb": "NA",
+      "duration_sec": 104033,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scgpt_finetuned:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scgpt_finetuned",
+    "resources": {
+      "submit": "2025-01-23 17:13:00",
+      "cpu_pct": "NA",
+      "exit_code": 143,
+      "disk_read_mb": "NA",
+      "duration_sec": 14421,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scprint:cellxgene_census/immune_cell_atlas": {
+    "method_id": "scprint",
+    "resources": {
+      "submit": "2025-01-24 07:32:19",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 1851,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/immune_cell_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "geneformer:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "geneformer",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 240,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scgpt_finetuned:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scgpt_finetuned",
+    "resources": {
+      "submit": "2025-01-23 17:12:39",
+      "cpu_pct": "NA",
+      "exit_code": 99,
+      "disk_read_mb": "NA",
+      "duration_sec": 130,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scprint:cellxgene_census/mouse_pancreas_atlas": {
+    "method_id": "scprint",
+    "resources": {
+      "submit": "2025-01-24 06:57:49",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 161,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/mouse_pancreas_atlas",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "geneformer:cellxgene_census/tabula_sapiens": {
+    "method_id": "geneformer",
+    "resources": {
+      "submit": "2025-01-24 07:52:19",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 5761,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scgpt_finetuned:cellxgene_census/tabula_sapiens": {
+    "method_id": "scgpt_finetuned",
+    "resources": {
+      "submit": "2025-01-23 17:33:28",
+      "cpu_pct": "NA",
+      "exit_code": 143,
+      "disk_read_mb": "NA",
+      "duration_sec": 14430,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  },
+  "scprint:cellxgene_census/tabula_sapiens": {
+    "method_id": "scprint",
+    "resources": {
+      "submit": "2025-01-24 06:44:49",
+      "cpu_pct": "NA",
+      "exit_code": 1,
+      "disk_read_mb": "NA",
+      "duration_sec": 12401,
+      "disk_write_mb": "NA",
+      "peak_memory_mb": "NA"
+    },
+    "dataset_id": "cellxgene_census/tabula_sapiens",
+    "mean_score": 0,
+    "metric_values": {
+      "accuracy": "NA",
+      "f1_macro": "NA",
+      "f1_micro": "NA",
+      "f1_weighted": "NA"
+    },
+    "scaled_scores": {
+      "accuracy": 0,
+      "f1_macro": 0,
+      "f1_micro": 0,
+      "f1_weighted": 0
+    }
+  }
+}
